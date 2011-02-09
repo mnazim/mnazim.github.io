@@ -111,17 +111,20 @@ pre, code {
 #nav {
     position:relative;
     left:620px;
-    top:190px;
-    margin-top:-140px;
-    width:30px;
+    top:210px;
+    margin:0;
+    margin-top:-190px;
+    width:25px;
+    text-align:center;
 }
 
 #nav a {
     display:block;
     padding:5px 2px;
+    margin: 0 auto;
     margin-bottom: 10px;
     text-align:center;
-    width:30px;
+    width:20px;
     border: 1px solid transparent;
     border-radius: 5px ;
     -moz-border-radius: 5px ;
