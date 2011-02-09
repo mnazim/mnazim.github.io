@@ -62,6 +62,7 @@ a:hover {
     color:#00252e;
 }
 
+a  img { border: 0;}
 a:visited {
 }
 
