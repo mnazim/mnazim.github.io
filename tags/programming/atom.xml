@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>mirnazim.org</title>
+<subtitle>Mir Nazim's weblog</subtitle>
+<link href="http://mirnazim.org/atom.xml" rel="self" />
+<link href="http://mirnazim.org/" />
+<id>tag:mirnazim.org,2011-02-09T04:10:10Z:/</id>
+<updated>2011-02-09T04:10:10Z</updated>
+<author>
+  <name>Mir Nazim</name>
+  <email>me@mirnazim.org</email>
+</author>
+
+
+<entry>
+  <title>Vim is my choice</title>
+  <link href="http://mirnazim.org/writings/vim-is-my-choice" />
+  <id>tag:mirnazim.org,2010-04-25:/writings/vim-is-my-choice</id>
+  <updated>2010-04-25T00:00:00Z</updated>
+  <summary>
+    <p>I have been using vim since I started using Linux, yet I never really used it until I took the dive about 6 months ago. Since then vim has been surprising me every single day. Now I cannot imagine using anything else. This my little vim story.</p>
+<a href="http://mirnazim.org/writings/vim-is-my-choice"> continue reading...</a>
+  </summary>
+</entry>
+
+</feed>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>mirnazim.org</title>
+<subtitle>Mir Nazim's weblog</subtitle>
+<link href="http://mirnazim.org/atom.xml" rel="self" />
+<link href="http://mirnazim.org/" />
+<id>tag:mirnazim.org,2011-02-09T04:10:10Z:/</id>
+<updated>2011-02-09T04:10:10Z</updated>
+<author>
+  <name>Mir Nazim</name>
+  <email>me@mirnazim.org</email>
+</author>
+
+
+<entry>
+  <title>Moved my vim and other configuration files to github</title>
+  <link href="http://mirnazim.org/notes/moved-my-dotfiles-repo-to-github" />
+  <id>tag:mirnazim.org,2011-02-07:/notes/moved-my-dotfiles-repo-to-github</id>
+  <updated>2011-02-07T21:54:00Z</updated>
+  <summary>
+    <p>Finally, I gave in and moved my Vim, bash and other dotfiles from <a href="http://bitbucket.org/">Hg</a>/<a href="http://mercurial.selenic.com/">bitbucket</a> to <a href="http://git-scm.com/">git</a>/<a href="http://github.com">github</a>. The repository is available at <a href="http://github.com/mnazim/dotfiles">http://github.com/mnazim/dotfiles</a> . GitHub is awesome, just found out git is not that bad either.</p>
+<a href="http://mirnazim.org/notes/moved-my-dotfiles-repo-to-github"> continue reading...</a>
+  </summary>
+</entry>
+
+<entry>
+  <title>argparse - Command line option and argument parsing</title>
+  <link href="http://mirnazim.org/links/argparse-commandline-options-argument-parsing" />
+  <id>tag:mirnazim.org,2010-08-09:/links/argparse-commandline-options-argument-parsing</id>
+  <updated>2010-08-09T04:04:00Z</updated>
+  <summary>
+    <p>The argparse module was added to Python 2.7 as a replacement for optparse. The implementation of argparse supports features that would not have been easy to add to optparse, and that would have required backwards-incompatible API changes, so a new module was brought into the library instead. optparse is still supported, but is not likely to receive new features.</p>
+<a href="http://mirnazim.org/links/argparse-commandline-options-argument-parsing"> read more on &rarr; www.doughellmann.com</a>
+  </summary>
+</entry>
+
+<entry>
+  <title>Vim is my choice</title>
+  <link href="http://mirnazim.org/writings/vim-is-my-choice" />
+  <id>tag:mirnazim.org,2010-04-25:/writings/vim-is-my-choice</id>
+  <updated>2010-04-25T00:00:00Z</updated>
+  <summary>
+    <p>I have been using vim since I started using Linux, yet I never really used it until I took the dive about 6 months ago. Since then vim has been surprising me every single day. Now I cannot imagine using anything else. This my little vim story.</p>
+<a href="http://mirnazim.org/writings/vim-is-my-choice"> continue reading...</a>
+  </summary>
+</entry>
+
+<entry>
+  <title>Free Kashmir - An Economic Perspective</title>
+  <link href="http://mirnazim.org/writings/free-kashmir-an-economic-perspective" />
+  <id>tag:mirnazim.org,2010-02-10:/writings/free-kashmir-an-economic-perspective</id>
+  <updated>2010-02-10T00:00:00Z</updated>
+  <summary>
+    <p>Free Kashmir. A dream every Kashmiri nurtures inside his/her heart. But is Free Kashmir a viable and feasible option? Let look at some facts and figures from an economic perspective and then decide is it really possible.</p>
+<a href="http://mirnazim.org/writings/free-kashmir-an-economic-perspective"> continue reading...</a>
+  </summary>
+</entry>
+
+</feed>

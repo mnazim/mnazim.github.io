@@ -1,0 +1,280 @@
+@font-face {
+    font-family:"Graublau Web";
+    src:local("Graublau Web"),
+    local("Graublau Web Regular"),
+    local("GraublauWeb"),
+    local("GraublauWeb-Regular"),
+    url(../fonts/graublau-web.otf) format("opentype")
+}
+
+@font-face {
+    font-family:"Graublau Web";
+    font-weight:700;
+    src:local("Graublau Web Bold"),
+    local("GraublauWeb-Bold"),
+    url(../fonts/graublau-web-bold.otf) format("opentype")
+}
+
+@font-face {
+	font-family: "Gentium";
+	src: local("Gentium Basic"),local("Gentium Basic Regular"),local("GentiumBasic"),local("GentiumBasic-Regular"),url(../fonts/gentium-basic.ttf) format("truetype");
+	/*src: url(fonts/gentium-basic.eot);*/
+}
+
+@font-face {
+	font-family: "Gentium";
+	font-style: italic;
+	src: local("Gentium Basic Italic"),local("GentiumBasic-Italic"),url(../fonts/gentium-basic-italic.ttf) format("truetype");
+	/*src: url(fonts/gentium-basic-italic.eot);*/
+}
+
+@font-face {
+	font-family: "Gentium";
+	font-weight: 700;
+	src: local("Gentium Basic Bold"),local("GentiumBasic-Bold"),url(../fonts/gentium-basic-bold.ttf) format("truetype");
+	/*src: url(fonts/gentium-basic-bold.eot);*/
+}
+
+@font-face {
+	font-family: "Gentium";
+	font-style: italic;
+	font-weight: 700;
+	src: local("Gentium Basic Bold Italic"),local("GentiumBasic-BoldItalic"),url(../fonts/gentium-basic-bold-italic.ttf) format("truetype");
+	/*src: url(fonts/gentium-basic-bold-italic.eot);*/
+}
+
+body {
+    font: normal 18px/28px "Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
+    background:#222;
+    color:#333;
+    padding:0;margin:0;
+}
+
+html>body {font-size:18px; line-height:28px;}
+
+a {
+    text-decoration:none;
+    color:#2760BF; 
+}
+
+a:hover {
+    text-decoration:underline;
+    color:#00252e;
+}
+
+a:visited {
+}
+
+h1, h2, h3, h4 {
+    font-family:"Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size:45px;
+    line-height:50px;
+}
+
+h2 {
+    font-size:32px;
+    line-height:50px;
+}
+
+h3 {
+    font-size:23px
+    line-height:25px;
+}
+
+h4 {
+    font-size:18px;
+    line-height:25px;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+    color:#222;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+    color:#4183c4;
+    text-decoration:none;
+}
+
+pre, code {
+    font-family: "Anonymous Pro" "Consolas", "Inconsolata", "Monaco", "Droid Sans Mono", "Bitstream Vera Mono", monospace;
+}
+#page {
+    width:612px;
+    min-height:100%;
+    margin:20px auto;
+}
+
+#nav {
+    position:relative;
+    left:620px;
+    top:90px;
+    margin-top:-60px;
+    width:30px;
+}
+
+#nav a {
+    display:block;
+    padding:5px 2px;
+    margin-bottom: 10px;
+    text-align:center;
+    width:20px;
+    width:25px;
+    border: 1px solid transparent;
+    border-radius: 5px ;
+    -moz-border-radius: 5px ;
+    -webkit-border-radius: 5px ;
+}
+#nav a:hover {
+    border: 1px solid #fff;
+}
+
+#footer a ,
+#header a {
+    color:#40a2ff;
+}
+#footer a:hover ,
+#header a:hover {
+    color:#f9b350;
+    text-decoration:none;
+}
+
+#header {
+    color:#fff;
+}
+
+#header  a{
+    color:#fff;
+}
+#header  a:hover {
+}
+
+#sitename h1{
+    text-align:left;
+    margin:0 20px;
+    padding:0;
+    font-size:35px;
+}
+
+#content {
+    font-family: "Gentium Basic", Gentium, Palatino, Georgia, serif;
+    background:#fbfbfb;
+    padding: 10px 20px;
+    border-radius:15px;
+    -moz-border-radius:15px;
+    -wekbit-border-radius:15px;
+    -webkit-box-shadow: #000 2px 5px 10px;
+    -moz-box-shadow: #000 2px 5px 10px;
+}
+
+#header {
+    text-align:center;
+}
+
+#index {
+    margin:20px 0;
+}
+
+#index .entry {
+    margin-bottom:60px;
+}
+
+#index .entry h3 {
+    margin:0;
+    color:#555;
+}
+
+#index .entry h2 {
+    border-bottom:1px solid #e1d1c1;
+    margin:0;
+    font-weight:bold;
+}
+
+#index .entry .summary {
+}
+
+#index .entry p {
+}
+
+#index .entry .published {
+    font-family:"Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
+    padding-right:23px;
+    font-size:14px;
+    float:left;
+}
+
+#index .entry .meta {
+    clear:both;
+    height:35px;
+}
+
+#index .entry .meta .link-url{
+    font-style:italic;
+    float:left;
+}
+
+#index .entry .meta .permalink{
+    font-family:"Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-align:center;
+    float:right;
+}
+#index .entry .meta .permalink a{
+    text-decoration:none;
+    display:block;
+    margin:5px 10px;
+    width:25px;
+    border-radius:5px;
+}
+
+#index .entry .meta .permalink a:hover {
+    background-color:#222;
+    color:#fff;
+}
+
+.entry-full .meta .source,
+#index .entry .meta .source{
+}
+
+.entry-full .tags,
+#index .entry .tags{
+    font-style:italic;
+    float:right;
+}
+
+.entry-full h1 {
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.entry-full .published {
+    text-align:center;
+    margin-bottom:-25px;
+}
+
+.tags {
+    text-align:right;
+    font-style:italic;
+}
+
+#footer {
+    margin-top: 10px;
+    font-size:13px;
+    line-height: 20px;
+    color:#fff;
+}
+
+#comments {
+    font-size:16px;
+    font-style:italic;
+    background:#eee;
+    border-radius:10px;
+    -webkit-box-shadow: #bbb 1px 2px 5px;
+    -moz-box-shadow: #bbb 1px 2px 5px;
+    box-shadow: #bbb 1px 2px 5px;
+    padding: 0px 20px;
+    font-weight:bold;
+    margin-top:30px;
+}
