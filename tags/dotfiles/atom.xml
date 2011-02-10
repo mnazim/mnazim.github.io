@@ -4,8 +4,8 @@
 <subtitle>Mir Nazim's weblog</subtitle>
 <link href="http://mirnazim.org/atom.xml" rel="self" />
 <link href="http://mirnazim.org/" />
-<id>tag:mirnazim.org,2011-02-10T00:59:47Z:/</id>
-<updated>2011-02-10T00:59:47Z</updated>
+<id>tag:mirnazim.org,2011-02-10T20:00:19Z:/</id>
+<updated>2011-02-10T20:00:19Z</updated>
 <author>
   <name>Mir Nazim</name>
   <email>me@mirnazim.org</email>
@@ -17,10 +17,10 @@
   <link href="http://mirnazim.org/notes/moved-my-dotfiles-repo-to-github" />
   <id>tag:mirnazim.org,2011-02-07:/notes/moved-my-dotfiles-repo-to-github</id>
   <updated>2011-02-07T21:54:00Z</updated>
-  <summary>
-    <p>Finally, I gave in and moved my Vim, bash and other dotfiles from <a href="http://bitbucket.org/">Hg</a>/<a href="http://mercurial.selenic.com/">bitbucket</a> to <a href="http://git-scm.com/">git</a>/<a href="http://github.com">github</a>. The repository is available at <a href="http://github.com/mnazim/dotfiles">http://github.com/mnazim/dotfiles</a> . GitHub is awesome, just found out git is not that bad either.</p>
-<a href="http://mirnazim.org/notes/moved-my-dotfiles-repo-to-github"> continue reading...</a>
-  </summary>
+  <content type="xhtml" xml:base="http://mirnazim.org">
+    <div xmlns="http://www.w3.org/1999/xhtml"><p>Finally, I gave in and moved my Vim, bash and other dotfiles from <a href="http://bitbucket.org/">Hg</a>/<a href="http://mercurial.selenic.com/">bitbucket</a> to <a href="http://git-scm.com/">git</a>/<a href="http://github.com">github</a>. The repository is available at <a href="http://github.com/mnazim/dotfiles">http://github.com/mnazim/dotfiles</a> . GitHub is awesome, just found out git is not that bad either.</p>
+<a href="http://mirnazim.org/notes/moved-my-dotfiles-repo-to-github"> continue reading...</a></div>
+  </content>
 </entry>
 
 </feed>

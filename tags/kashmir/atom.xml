@@ -4,8 +4,8 @@
 <subtitle>Mir Nazim's weblog</subtitle>
 <link href="http://mirnazim.org/atom.xml" rel="self" />
 <link href="http://mirnazim.org/" />
-<id>tag:mirnazim.org,2011-02-10T00:59:47Z:/</id>
-<updated>2011-02-10T00:59:47Z</updated>
+<id>tag:mirnazim.org,2011-02-10T20:00:19Z:/</id>
+<updated>2011-02-10T20:00:19Z</updated>
 <author>
   <name>Mir Nazim</name>
   <email>me@mirnazim.org</email>
@@ -17,10 +17,10 @@
   <link href="http://mirnazim.org/writings/free-kashmir-an-economic-perspective" />
   <id>tag:mirnazim.org,2010-02-10:/writings/free-kashmir-an-economic-perspective</id>
   <updated>2010-02-10T00:00:00Z</updated>
-  <summary>
-    <p>Free Kashmir. A dream every Kashmiri nurtures inside his/her heart. But is Free Kashmir a viable and feasible option? Let look at some facts and figures from an economic perspective and then decide is it really possible.</p>
-<a href="http://mirnazim.org/writings/free-kashmir-an-economic-perspective"> continue reading...</a>
-  </summary>
+  <content type="xhtml" xml:base="http://mirnazim.org">
+    <div xmlns="http://www.w3.org/1999/xhtml"><p>Free Kashmir. A dream every Kashmiri nurtures inside his/her heart. But is Free Kashmir a viable and feasible option? Let look at some facts and figures from an economic perspective and then decide is it really possible.</p>
+<a href="http://mirnazim.org/writings/free-kashmir-an-economic-perspective"> continue reading...</a></div>
+  </content>
 </entry>
 
 </feed>
