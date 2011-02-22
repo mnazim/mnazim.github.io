@@ -1,0 +1,26 @@
+title: Convore - A modern take on IRC
+author : Mir Nazim
+published : 2011-02-22 01:35:00
+tags : [convore, irc, webchat, python, django]
+public : yes
+chronological : yes
+kind : note
+summary: |
+    [Convore.com](http://convore.com) is latest entry into web based chat systems. While there are many others(Campfire, StackOverflow Chat, TinyChat etc.), Convore really is the first chat service that hits the sweet spot between IRC and web based chat service. 
+...
+
+[Convore.com](http://convore.com) is latest entry into web based chat systems. While there are many others(Campfire, StackOverflow Chat, TinyChat etc.), Convore really is the first chat service that hits the sweet spot between IRC and web based chat service. 
+
+[![Convore][convore.jpg]][convore.jpg]
+
+[convore.jpg]:/media/img/content/convore.png "Convore - Mandatory screenshot"
+
+Convore allows anyone to set up a chat group instantly, but unlike others, free of cost. Even private groups are free of cost. Add to it a pretty and usable user interface that your mom can figure out, you have a near perfect IRC replacement(for your non-geek amigos, at least).
+
+Anyone who has spent some time on FOSS IRC channels know that when people decide to discuss on a particular topic, one has to wait for the current discussion to finish before proposing/starting discussion on a different topic. Failing to do so is considered rude and could result in a kick out by admins. Worry no more. Topics on Convore are mutually exclusive, which means there can be any number of active topics at one time.
+
+I am really enjoying Convore. We even started using it as our office collaboration(bye bye Skype, GTalk). 
+
+I wish Convore and its [team](https://convore.com/about/) best of luck.
+
+Join me now: [https://convore.com/users/mirnazim/](https://convore.com/users/mirnazim/)
