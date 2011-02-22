@@ -23,15 +23,4 @@
   </content>
 </entry>
 
-<entry>
-  <title>argparse - Command line option and argument parsing</title>
-  <link href="http://mirnazim.org/links/argparse-commandline-options-argument-parsing" />
-  <id>tag:mirnazim.org,2010-08-09:/links/argparse-commandline-options-argument-parsing</id>
-  <updated>2010-08-09T04:04:00Z</updated>
-  <content type="xhtml" xml:base="http://mirnazim.org">
-    <div xmlns="http://www.w3.org/1999/xhtml"><p>The argparse module was added to Python 2.7 as a replacement for optparse. The implementation of argparse supports features that would not have been easy to add to optparse, and that would have required backwards-incompatible API changes, so a new module was brought into the library instead. optparse is still supported, but is not likely to receive new features.</p>
-<a href="http://mirnazim.org/links/argparse-commandline-options-argument-parsing"> continue reading on www.doughellmann.com...</a></div>
-  </content>
-</entry>
-
 </feed>

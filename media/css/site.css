@@ -50,6 +50,10 @@ body {
     color:#333;
     padding:0;margin:0;
 }
+img {
+    max-width:560px;
+    margin:0 auto;
+}
 
 html>body {font-size:18px; line-height:28px;}
 

@@ -4,13 +4,24 @@
 <subtitle>Mir Nazim's weblog</subtitle>
 <link href="http://mirnazim.org/atom.xml" rel="self" />
 <link href="http://mirnazim.org/" />
-<id>tag:mirnazim.org,2011-02-10T20:00:19Z:/</id>
-<updated>2011-02-10T20:00:19Z</updated>
+<id>tag:mirnazim.org,2011-02-23T02:03:56Z:/</id>
+<updated>2011-02-23T02:03:56Z</updated>
 <author>
   <name>Mir Nazim</name>
   <email>me@mirnazim.org</email>
 </author>
 
+
+<entry>
+  <title>Convore - A modern take on IRC</title>
+  <link href="http://mirnazim.org/notes/convore-a-modern-take-on-irc" />
+  <id>tag:mirnazim.org,2011-02-22:/notes/convore-a-modern-take-on-irc</id>
+  <updated>2011-02-22T01:35:00Z</updated>
+  <content type="xhtml" xml:base="http://mirnazim.org">
+    <div xmlns="http://www.w3.org/1999/xhtml"><p><a href="http://convore.com">Convore.com</a> is latest entry in the realm of web based chat systems. While there are many others(Campfire, StackOverflow Chat, TinyChat etc.), Convore really is the first chat service that hits the sweet spot between <a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat" title="Internet Relay Chat">IRC</a> and web based chat service.</p>
+<a href="http://mirnazim.org/notes/convore-a-modern-take-on-irc"> continue reading...</a></div>
+  </content>
+</entry>
 
 <entry>
   <title>Moved my vim and other configuration files to github</title>
