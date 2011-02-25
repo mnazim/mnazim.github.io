@@ -4,13 +4,24 @@
 <subtitle>Mir Nazim's weblog</subtitle>
 <link href="http://mirnazim.org/atom.xml" rel="self" />
 <link href="http://mirnazim.org/" />
-<id>tag:mirnazim.org,2011-02-23T02:03:56Z:/</id>
-<updated>2011-02-23T02:03:56Z</updated>
+<id>tag:mirnazim.org,2011-02-26T00:47:37Z:/</id>
+<updated>2011-02-26T00:47:37Z</updated>
 <author>
   <name>Mir Nazim</name>
   <email>me@mirnazim.org</email>
 </author>
 
+
+<entry>
+  <title>Understanding Git Conceptually</title>
+  <link href="http://mirnazim.org/links/understanding-git-conceptually" />
+  <id>tag:mirnazim.org,2011-02-26:/links/understanding-git-conceptually</id>
+  <updated>2011-02-26T00:41:00Z</updated>
+  <content type="xhtml" xml:base="http://mirnazim.org">
+    <div xmlns="http://www.w3.org/1999/xhtml"><p>Have you been putting off using <a href="http://git-scm.com">Git</a> because it seems confusing? Do all the guides and turorials you have been going through confirm your doubts? Not any more. Here is "The Git Introduction" we all have been searching for. Instead of going on and on about the commands, this tutorial actually concentrates on how Git manages things without overwhelming one's senses. Go through it and it will be a cake walk after that.</p>
+<a href="http://mirnazim.org/links/understanding-git-conceptually"> continue reading on www.eecs.harvard.edu...</a></div>
+  </content>
+</entry>
 
 <entry>
   <title>Convore - A modern take on IRC</title>
