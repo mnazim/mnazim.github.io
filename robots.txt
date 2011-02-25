@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /templates/
 Disallow: /content/
 Disallow: /README.markdown
-Disallow: /make.py
+Disallow: /*.py
