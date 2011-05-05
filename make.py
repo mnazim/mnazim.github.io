@@ -12,7 +12,7 @@ import markdown2
 
 CONFIG = {
     'content_root': 'content',
-    'output_to': '/home/mir/Labs/mnazim.github.com',
+    'output_to': '.',
     'templates': 'templates',
     'date_format': '%Y-%m-%d',
     'base_url': '/',
