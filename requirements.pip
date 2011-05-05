@@ -1,0 +1,4 @@
+Jinja2==2.5.5
+PyYAML==3.09
+distribute==0.6.15
+markdown2==1.0.1.17
