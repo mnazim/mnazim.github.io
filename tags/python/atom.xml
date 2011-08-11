@@ -4,8 +4,8 @@
 <subtitle>Mir Nazim's weblog</subtitle>
 <link href="http://mirnazim.org/atom.xml" rel="self" />
 <link href="http://mirnazim.org/" />
-<id>tag:mirnazim.org,2011-08-12T02:45:58Z:/</id>
-<updated>2011-08-12T02:45:58Z</updated>
+<id>tag:mirnazim.org,2011-08-12T02:57:37Z:/</id>
+<updated>2011-08-12T02:57:37Z</updated>
 <author>
   <name>Mir Nazim</name>
   <email>me@mirnazim.org</email>
@@ -15,8 +15,8 @@
 <entry>
   <title>LocalTunnel - Expose local web server to the world</title>
   <link href="http://mirnazim.org/notes/localtunnel-expose-local-webserver-to-the-world" />
-  <id>tag:mirnazim.org,2011-05-07:/notes/localtunnel-expose-local-webserver-to-the-world</id>
-  <updated>2011-05-07T17:57:00Z</updated>
+  <id>tag:mirnazim.org,2011-08-12:/notes/localtunnel-expose-local-webserver-to-the-world</id>
+  <updated>2011-08-12T17:00:00Z</updated>
   <content type="xhtml" xml:base="http://mirnazim.org">
     <div xmlns="http://www.w3.org/1999/xhtml"><p>How many times did you hope there was a quick way to show the changes to your client quickly. Well LocalTunnel does exactly that.</p>
 <a href="http://mirnazim.org/notes/localtunnel-expose-local-webserver-to-the-world"> continue reading...</a></div>
