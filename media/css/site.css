@@ -118,6 +118,52 @@ li, ol {
     line-height: 16px;
 }
 
+
+table
+{
+    font-family:"Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	background: #fff;
+    margin:10px auto;
+	min-width: 380px;
+	border-collapse: collapse;
+	text-align: left;
+    overflow:auto;
+}
+table th
+{
+	font-size: 16px;
+	padding: 10px 8px;
+	border-bottom: 2px solid #ccc;
+}
+table td
+{
+	border-bottom: 1px solid #ccc;
+	padding: 6px 8px;
+}
+table tbody tr:hover 
+{
+    background:#eee;
+}
+
+blockquote {
+	margin: 1em 2em;
+	border-left: 2px solid #999;
+    font-style:oblique;
+	padding-left: 1em;
+}
+blockquote p:first-letter {
+	float: left;
+	margin: .2em .1em .1em 0;
+    font-family:"Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
+	font-size: 260%;
+	font-weight: bold; 
+}
+blockquote p:first-line {
+	font-variant: small-caps;
+}
+
+
 #page {
     width:712px;
     margin:0px auto !important;

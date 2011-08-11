@@ -133,7 +133,7 @@ class Entry(object):
 
     @property
     def body_html(self):
-        return markdown2.markdown(self.body, extras=['cuddled-lists', 'code-friendly', 'wiki-tables', 'code-color'])
+        return markdown2.markdown(self.body, extras=['code-color'])
 
 
     @property
