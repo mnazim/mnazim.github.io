@@ -160,7 +160,7 @@ blockquote p:first-letter {
 	font-weight: bold; 
 }
 blockquote p:first-line {
-	font-variant: small-caps;
+    font-weight:bold;
 }
 
 
