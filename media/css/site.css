@@ -44,14 +44,13 @@
 }
 
 body {
-    font: normal 18px/28px "Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
-    background:#222;
-    background:#1d1d1d;
+    font: normal 18px/28px "Gentium Basic", Gentium, Palatino, Georgia, serif;
+    font-family:     background:#fff;
     color:#333;
     padding:0;margin:0;
 }
 img {
-    max-width:560px;
+    max-width:680px;
     margin:0 auto;
 }
 
@@ -96,7 +95,7 @@ h4 {
 }
 
 h1 a, h2 a, h3 a, h4 a {
-    color:#222;
+    color:#444;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
@@ -105,80 +104,66 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
 }
 
 pre, code {
-    font-family: "Anonymous Pro" "Consolas", "Inconsolata", "Monaco", "Droid Sans Mono", "Bitstream Vera Mono", monospace;
+    font-family: "Inconsolata", "Consolas", "Monaco", "Droid Sans Mono", "Bitstream Vera Mono", monospace;
+    font-size:14px;
 }
+
+pre {
+    padding:20px;
+    line-height:0.7em;
+    overflow:auto;
+}
+
+li, ol {
+    line-height: 16px;
+}
+
 #page {
-    width:612px;
-    min-height:100%;
-    margin:20px auto;
+    width:712px;
+    margin:0px auto !important;
+    background:#fff;
 }
 
 #nav {
-    position:relative;
-    left:620px;
-    top:210px;
-    margin:0;
-    margin-top:-190px;
-    width:25px;
+    margin:8px 0 0 0;
     text-align:center;
 }
 
 #nav a {
-    display:block;
-    padding:5px 2px;
     margin: 0 auto;
-    margin-bottom: 10px;
     text-align:center;
-    width:20px;
-    border: 1px solid transparent;
-    border-radius: 5px ;
-    -moz-border-radius: 5px ;
-    -webkit-border-radius: 5px ;
 }
-#nav a:hover {
-    border: 1px solid #fff;
-}
+#nav a img { width:32px; height:32px; }
+#nav a:hover {}
 
-#footer a ,
-#header a {
-    color:#40a2ff;
-}
-#footer a:hover ,
-#header a:hover {
-    color:#f9b350;
-    text-decoration:none;
-}
+#nav span .spacer { width: 32px;}
+
 
 #header {
-    color:#fff;
+    text-align:center;
+    font-family:"Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
+    color:#444;
 }
 
 #header  a{
-    color:#fff;
+    color:##40a2ff;
 }
 #header  a:hover {
+    text-decoration:none;
 }
 
 #sitename h1{
-    text-align:left;
-    margin:0 20px;
+    margin:0px;
     padding:0;
-    font-size:35px;
+    font-size: 32px;
+}
+#sitename h1 a{
+    color:#ddd;
 }
 
 #content {
     font-family: "Gentium Basic", Gentium, Palatino, Georgia, serif;
-    background:#fbfbfb;
     padding: 10px 20px;
-    border-radius:15px;
-    -moz-border-radius:15px;
-    -wekbit-border-radius:15px;
-    -webkit-box-shadow: #000 2px 5px 10px;
-    -moz-box-shadow: #000 2px 5px 10px;
-}
-
-#header {
-    text-align:center;
 }
 
 #index {
@@ -268,21 +253,41 @@ pre, code {
 }
 
 #footer {
+    text-align:center;
     margin-top: 10px;
     font-size:13px;
     line-height: 20px;
-    color:#fff;
+    color:#444;
 }
 
 #comments {
     font-size:16px;
     font-style:italic;
-    background:#eee;
-    border-radius:10px;
-    -webkit-box-shadow: #bbb 1px 2px 5px;
-    -moz-box-shadow: #bbb 1px 2px 5px;
-    box-shadow: #bbb 1px 2px 5px;
     padding: 0px 20px;
-    font-weight:bold;
     margin-top:30px;
+}
+
+h1.tag_name {
+}
+
+a.tag_feed_icon {
+    margin-top:20px;
+}
+
+
+div.popup .content .image img {
+    max-width:100%;
+}
+
+#about {
+    display:none;
+}
+
+#about_me {
+    font: normal 16px/22px "Gentium Basic", Gentium, Palatino, Georgia, serif;
+    width:712px;
+}
+#about_me img.me {
+    float:left;
+    margin: 10px 5px 2px;
 }

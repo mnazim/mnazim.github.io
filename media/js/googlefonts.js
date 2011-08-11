@@ -1,7 +1,7 @@
 WebFontConfig = {
   google: { 
     families: [ 
-        'Anonymous Pro',
+        'Inconsolata',
     ] 
   }
 };
