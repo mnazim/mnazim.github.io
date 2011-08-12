@@ -11,7 +11,7 @@ summary: |
 
 ***Code! Code! Code! Commit/Push. Deploy to staging. Send an email asking someone(somwhere else) to review changes.***
 
-Recognize the scenario. What if the was a way to quickly show a web app running on your laptop/maching to a client or someone sitting somewhere else? Well now you can! All you need is this awesome tool called [LocalTunnel](http://progrium.com/localtunnel/) ([GitHub repository](http://github.com/progrium/localtunnel)).
+Recognize the scenario. What if the was a way to quickly show a web app running on your laptop/machine to a client or someone sitting somewhere else? Well now you can! All you need is this awesome tool called [LocalTunnel](http://progrium.com/localtunnel/) ([GitHub repository](http://github.com/progrium/localtunnel)).
 
 
 ### Installation on Ubuntu
