@@ -331,9 +331,9 @@ div.popup .content .image img {
 
 #about_me {
     font: normal 16px/22px "Gentium Basic", Gentium, Palatino, Georgia, serif;
-    width:712px;
+    width:612px;
 }
 #about_me img.me {
     float:left;
-    margin: 10px 5px 2px;
+    margin: 2px;
 }
