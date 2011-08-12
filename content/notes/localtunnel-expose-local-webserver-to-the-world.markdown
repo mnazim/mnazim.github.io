@@ -9,12 +9,10 @@ summary: |
     How many times did you hope there was a quick way to show the changes to your client quickly. Well LocalTunnel does exactly that.
 ...
 
- - Code! Code! Code!
- - Commit. Push.
- - Deploy to staging.
- - Send email to client to review changes.
+***Code! Code! Code! Commit/Push. Deploy to staging. Send an email asking someone(somwhere else) to review changes.***
 
-Recognize the scenario. What if you wanted to a way to quickly show a web app on your laptop/maching to client or someone else? Well now you can! All you need is the awesome tool called [LocalTunnel](http://progrium.com/localtunnel/) ([GitHub](http://github.com/progrium/localtunnel))
+Recognize the scenario. What if the was a way to quickly show a web app running on your laptop/maching to a client or someone sitting somewhere else? Well now you can! All you need is this awesome tool called [LocalTunnel](http://progrium.com/localtunnel/) ([GitHub repository](http://github.com/progrium/localtunnel)).
+
 
 ### Installation on Ubuntu
 
