@@ -2,23 +2,21 @@
 # -*- coding: utf-8
 
 
-"""
-   _____ _       ____  _____  _______     __   _____  ____  _____  ______
-  / ____| |     / __ \|  __ \|  __ \ \   / /  / ____|/ __ \|  __ \|  ____|
- | (___ | |    | |  | | |__) | |__) \ \_/ /  | |    | |  | | |  | | |__
-  \___ \| |    | |  | |  ___/|  ___/ \   /   | |    | |  | | |  | |  __|
-  ____) | |____| |__| | |    | |      | |    | |____| |__| | |__| | |____
- |_____/|______|\____/|_|    |_|      |_|     \_____|\____/|_____/|______|
+# Copyleft (C) 2010 Mir Nazim <hello@mirnazim.org>
+# 
+# Everyone is permitted to copy and distribute verbatim or modified
+# copies of this license document, and changing it is allowed as long
+# as the name is changed.
+# 
+# TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+# 
+# 0. You just DO WHATEVER THE FUCK YOU WANT TO. (IT'S SLOPPY CODE ANYWAY)
+#
+# WARANTIES: 
+# 0. Are you kidding me?
+# 1. Seriously, Are you fucking kidding me?
+# 2. If anything goes wrong, sue the "The Empire".
 
-
-         __          __     _____  _   _ _____ _   _  _____
-         \ \        / /\   |  __ \| \ | |_   _| \ | |/ ____|
-          \ \  /\  / /  \  | |__) |  \| | | | |  \| | |  __
-           \ \/  \/ / /\ \ |  _  /| . ` | | | | . ` | | |_ |
-            \  /\  / ____ \| | \ \| |\  |_| |_| |\  | |__| |
-             \/  \/_/    \_\_|  \_\_| \_|_____|_| \_|\_____|
-
-"""
 
 import os
 import re

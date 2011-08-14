@@ -150,9 +150,11 @@ blockquote p:first-line {
 #page {
     width:712px;
     margin:0px auto !important;
-    /*background:#fff;*/
 }
 
+.in_progress {
+    background:#fff url(../img/in_progress.png);
+}
 #nav {
     margin:8px 0 0 0;
     text-align:center;
@@ -318,11 +320,28 @@ div.popup .content .image img {
 
 #about_me {
     font: normal 16px/22px "Gentium Basic", Gentium, Palatino, Georgia, serif;
-    width:612px;
+    width:444px;
+}
+#about_me p {
+    margin-top: 0px;
 }
 #about_me img.me {
-    float:left;
-    margin: 2px;
+    border: 3px solid #aaa;
+}
+
+#about_me label{
+background: none repeat scroll 0 0 #AAAAAA;
+color: #444444 !important;
+font-family: "Yanone Kaffeesatz",Ubuntu,Helvetica,Arial,sans-serif;
+font-size: 14px;
+font-weight: bold;
+padding: 2px 6px;
+position: relative;
+top: -213px;
+}
+
+#facebox {
+    top:45px !important;
 }
 
 .codehilite {
