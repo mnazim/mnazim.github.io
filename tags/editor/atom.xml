@@ -4,13 +4,24 @@
 <subtitle>Mir Nazim's weblog</subtitle>
 <link href="http://mirnazim.org/atom.xml" rel="self" />
 <link href="http://mirnazim.org/" />
-<id>tag:mirnazim.org,2011-08-13T02:45:14Z:/</id>
-<updated>2011-08-13T02:45:14Z</updated>
+<id>tag:mirnazim.org,2011-08-14T12:12:37Z:/</id>
+<updated>2011-08-14T12:12:37Z</updated>
 <author>
   <name>Mir Nazim</name>
   <email>me@mirnazim.org</email>
 </author>
 
+
+<entry>
+  <title>List of vim plugins I use - with mini tutorials</title>
+  <link href="http://mirnazim.org/writings/vim-plugins-i-use" />
+  <id>tag:mirnazim.org,2011-08-14:/writings/vim-plugins-i-use</id>
+  <updated>2011-08-14T17:00:00Z</updated>
+  <content type="xhtml" xml:base="http://mirnazim.org">
+    <div xmlns="http://www.w3.org/1999/xhtml"><p>List of vim plugins I use on daily basis along with  mini tutorials on installation and usage.</p>
+<a href="http://mirnazim.org/writings/vim-plugins-i-use"> continue reading...</a></div>
+  </content>
+</entry>
 
 <entry>
   <title>Vim is my choice</title>

@@ -1,53 +1,16 @@
-@font-face {
-    font-family:"Graublau Web";
-    src:local("Graublau Web"),
-    local("Graublau Web Regular"),
-    local("GraublauWeb"),
-    local("GraublauWeb-Regular"),
-    url(../fonts/graublau-web.otf) format("opentype")
+.wf-loading { 
+  visibility: hidden; 
 }
-
-@font-face {
-    font-family:"Graublau Web";
-    font-weight:700;
-    src:local("Graublau Web Bold"),
-    local("GraublauWeb-Bold"),
-    url(../fonts/graublau-web-bold.otf) format("opentype")
-}
-
-@font-face {
-	font-family: "Gentium";
-	src: local("Gentium Basic"),local("Gentium Basic Regular"),local("GentiumBasic"),local("GentiumBasic-Regular"),url(../fonts/gentium-basic.ttf) format("truetype");
-	/*src: url(fonts/gentium-basic.eot);*/
-}
-
-@font-face {
-	font-family: "Gentium";
-	font-style: italic;
-	src: local("Gentium Basic Italic"),local("GentiumBasic-Italic"),url(../fonts/gentium-basic-italic.ttf) format("truetype");
-	/*src: url(fonts/gentium-basic-italic.eot);*/
-}
-
-@font-face {
-	font-family: "Gentium";
-	font-weight: 700;
-	src: local("Gentium Basic Bold"),local("GentiumBasic-Bold"),url(../fonts/gentium-basic-bold.ttf) format("truetype");
-	/*src: url(fonts/gentium-basic-bold.eot);*/
-}
-
-@font-face {
-	font-family: "Gentium";
-	font-style: italic;
-	font-weight: 700;
-	src: local("Gentium Basic Bold Italic"),local("GentiumBasic-BoldItalic"),url(../fonts/gentium-basic-bold-italic.ttf) format("truetype");
-	/*src: url(fonts/gentium-basic-bold-italic.eot);*/
+.wf-active, .wf-inactive {
+  visibility: visible; 
 }
 
 body {
     font: normal 18px/28px "Gentium Basic", Gentium, Palatino, Georgia, serif;
-    font-family:     background:#fff;
-    color:#333;
+    font-family:    
+    color:#444;
     padding:0;margin:0;
+    background: #fff; 
 }
 img {
     max-width:680px;
@@ -62,7 +25,7 @@ a {
 }
 
 a:hover {
-    text-decoration:underline;
+    border-bottom: 1px dotted #444;
     color:#00252e;
 }
 
@@ -71,7 +34,11 @@ a:visited {
 }
 
 h1, h2, h3, h4 {
-    font-family:"Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
+    font-family:"Yanone Kaffeesatz", Ubuntu, Helvetica, Arial, sans-serif;
+}
+h2, h3, h4 {
+    border-bottom: 1px solid #eee;
+    color: #444;
 }
 
 h1 {
@@ -101,44 +68,60 @@ h1 a, h2 a, h3 a, h4 a {
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
     color:#4183c4;
     text-decoration:none;
+    border:none;
 }
 
-pre, code {
+pre code, pre {
     font-family: "Inconsolata", "Consolas", "Monaco", "Droid Sans Mono", "Bitstream Vera Mono", monospace;
-    font-size:14px;
+    font-style:normal;
 }
 
 pre {
-    padding:20px;
-    line-height:0.7em;
-    overflow:auto;
+    margin:0 !important;
+    padding:0 !important;
+    background: #002B36 url(../img/noise.png) repeat-x !important;
 }
 
-li, ol {
-    line-height: 16px;
+pre code { 
+    font-size: inherit;
+    background:inherit;
+}
+
+code {
+    font-style:italic;
+    font-size:0.8em;
+    background: #eee;
+    padding: 0 2px;
+}
+
+li {
+    margin-top:-6px;
 }
 
 
 table
 {
-    font-family:"Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
+    font-family: Ubuntu, Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	background: #fff;
-    margin:10px auto;
 	min-width: 380px;
 	border-collapse: collapse;
+    border: 1px solid #ddd;
 	text-align: left;
     overflow:auto;
 }
 table th
 {
 	font-size: 16px;
-	padding: 10px 8px;
-	border-bottom: 2px solid #ccc;
+    font-weight:normal;
+	padding: 10px 8px 6px;
+	border: 1px solid #ddd;
+    background: #eee;
+    
 }
 table td
 {
-	border-bottom: 1px solid #ccc;
+	border: 1px solid #ccc;
 	padding: 6px 8px;
 }
 table tbody tr:hover 
@@ -155,7 +138,7 @@ blockquote {
 blockquote p:first-letter {
 	float: left;
 	margin: .2em .1em .1em 0;
-    font-family:"Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
+    font-family:"Yanone Kaffeesatz", Ubuntu, Helvetica, Arial, sans-serif;
 	font-size: 260%;
 	font-weight: bold; 
 }
@@ -167,27 +150,31 @@ blockquote p:first-line {
 #page {
     width:712px;
     margin:0px auto !important;
-    background:#fff;
+    /*background:#fff;*/
 }
 
 #nav {
     margin:8px 0 0 0;
     text-align:center;
+    position:fixed;
+    left: 12px;
+    top: 6px;
 }
 
 #nav a {
     margin: 0 auto;
     text-align:center;
+    display:block;
+    border:none;
 }
 #nav a img { width:32px; height:32px; }
 #nav a:hover {}
 
-#nav span .spacer { width: 32px;}
 
 
 #header {
     text-align:center;
-    font-family:"Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
+    font-family:"Yanone Kaffeesatz", Ubuntu, Helvetica, Arial, sans-serif;
     color:#444;
 }
 
@@ -205,11 +192,12 @@ blockquote p:first-line {
 }
 #sitename h1 a{
     color:#ddd;
+    border:none;
 }
 
 #content {
     font-family: "Gentium Basic", Gentium, Palatino, Georgia, serif;
-    padding: 10px 20px;
+    padding-left:13px;
 }
 
 #index {
@@ -238,7 +226,7 @@ blockquote p:first-line {
 }
 
 #index .entry .published {
-    font-family:"Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
+    font-family:"Yanone Kaffeesatz", Ubuntu, Helvetica, Arial, sans-serif;
     padding-right:23px;
     font-size:14px;
     float:left;
@@ -255,7 +243,7 @@ blockquote p:first-line {
 }
 
 #index .entry .meta .permalink{
-    font-family:"Graublau Web", Ubuntu, Helvetica, Arial, sans-serif;
+    font-family:"Yanone Kaffeesatz", Ubuntu, Helvetica, Arial, sans-serif;
     font-size: 14px;
     text-align:center;
     float:right;
@@ -283,14 +271,12 @@ blockquote p:first-line {
     float:right;
 }
 
-.entry-full h1 {
+#header .published {
+    font-family:"Yanone Kaffeesatz", Ubuntu, Helvetica, Arial, sans-serif;
+    font-weight:700;
     text-align:center;
-    margin-bottom:60px;
-}
-
-.entry-full .published {
-    text-align:center;
-    margin-bottom:-25px;
+    margin:18px;
+    margin-bottom:-12px;
 }
 
 .tags {
@@ -313,11 +299,12 @@ blockquote p:first-line {
     margin-top:30px;
 }
 
-h1.tag_name {
+h1.tag_name img {
+    margin:0;
 }
 
 a.tag_feed_icon {
-    margin-top:20px;
+    margin-top:25px;
 }
 
 
@@ -336,4 +323,29 @@ div.popup .content .image img {
 #about_me img.me {
     float:left;
     margin: 2px;
+}
+
+.codehilite {
+    background: #002B36 url(../img/code_top_bg.png) repeat-x !important;
+    padding:40px 10px 20px 20px;
+    border-radius: 0 0 5px 5px;
+    line-height:0.78em;
+    overflow:auto;
+    font-size:0.8em !important;
+    border-radius: 5px;
+    max-width: 99%;
+    margin: -15px auto auto;
+}
+
+.tipsy {
+    font-family:Ubuntu, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.published a {
+    color:#444;
+}
+
+.published a:hover {
+    color:#2760BF; 
 }

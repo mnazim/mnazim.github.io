@@ -4,9 +4,10 @@
 {% block head_feed_title %}tagged: {{tag.name}} &raquo; mirnazim.org {% endblock %}
 {% block header %}
 {% if tag.name %}
-<h1 class="tag_name">
+<div class="published"><a href="/">Mir Nazim</a></div>
+<h1 class="tag_name"> 
 tag: {{ tag.name }}
-<a class="tag_feed_icon" title="{% block feed_link_title %}{{tag.name}} &raquo; mirnazim.org{% endblock %}" href="{% block feed_link %}/tags/{{ tag.slug }}/atom.xml{% endblock %}"><img src="{{ media_url }}img/rss.png" height="32" width="32" alt="RSS feeds for tag {{ tag.name }}"/></a>
+<a class="tag_feed_icon" title="Atom feed for {{tag.name}} tag" href="/tags/{{ tag.slug }}/atom.xml"><img src="{{ media_url }}img/rss.png" height="32" width="32" /></a>
 </h1>
 {% endif %}
 {% endblock %}
