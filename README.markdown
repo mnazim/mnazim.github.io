@@ -1,1 +1,1 @@
-Source code content and markup for htpp://mirnazim.org
+Source code content and markup for http://mirnazim.org
