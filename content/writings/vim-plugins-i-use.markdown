@@ -301,7 +301,7 @@ If you want to use solarized in the terminal vim you will need to set `TERM` env
     :::bash
     export TERM="xterm-256color"
 
-You can also use [CSAprox][csapprox] plugin to use gvim themes inside terminal vim.
+You can also use [CSAprox][csaprox] plugin to use gvim themes inside terminal vim.
 
 
 ## The rest
