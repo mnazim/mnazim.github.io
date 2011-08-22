@@ -260,7 +260,7 @@ Tagbar displays the tags of the current file in a sidebar, similar to Taglist, b
     :::bash
     $ sudo aptitude install exuberant-ctags  # Required by Tagbar
     $ cd ~/.vim
-    $ git submodule add git://github.com/majutsushi/tagbar.git bundle/fugitive
+    $ git submodule add git://github.com/majutsushi/tagbar.git bundle/tagbar
     $ git submodule init && git submodule update
 
 Tagbar does not need any configuration by default and can be opened by `:TagbarOpen` or `:TagbarToggle`, but I have configured it as follows
@@ -296,17 +296,31 @@ Solarized is the awesome colorscheme for vim(and many other apps) by [Ethan Scho
     let g:solarized_visibility="high"
     colorscheme solarized
 
+If you want to use solarized in the terminal vim you will need to set `TERM` environment variable.
+
+    :::bash
+    export TERM="xterm-256color"
+
+You can also use [CSAprox][csapprox] plugin to use gvim themes inside terminal vim.
+
 
 ## The rest
 
-While the 10 plugins described above are the ones without which I cannot even imagine working sanely, they are not the only ones. I use a variety of utility and syntax plugins. Some of them are:
+While the plugins described above are the ones without which I cannot even imagine working sanely, they are not the only ones. I use a variety of utility and syntax plugins. Some of them are:
 
+- [Surround][vim-surround-github] - For editing the surroundings of text.
 - [Better CSS Syntax][bettercss] - Provides better CSS syntax highlighting.
-- [CSSColor][csscolor] - Sets background of color hex codes to what they are.
+- [Vim CSS Color][csscolor-new] - Sets background of color hex codes to what they are.
 - [CSAprox][csaprox] - Allows use of GVim color schemes in almost all terminals
 - Syntax plugins for various programming languages like JavaScript, HTML/XML, PHP, etc.
 
 For curious minds, my vim configurations(along with some other stuff) is available at [github.com/mnazim/dotfiles][dotfiles].
+
+----
+
+#### Updates
+
+***August 22, 2011:*** Corrected some mistakes and updated some obsolete repositories to active ones, thanks to the good people over at [Hacker News][hn-link], [Reddit][reddit-link] and Stéfan van der Walt who took the time to drop me an email. 
 
 
 [tpope-github]: https://github.com/tpope/vim-pathogen
@@ -316,12 +330,12 @@ For curious minds, my vim configurations(along with some other stuff) is availab
 [command-t]: https://wincent.com/products/command-t 
 [command-t-git]: http://git.wincent.com/command-t.git 
 [delimitmate-github]:  https://github.com/Raimondi/delimitMate
-[closetag-github]:http://git.wincent.com/command-t.git 
+[closetag-github]:http://github.com/docunext/closetag.vim
 [pyflakes]: http://pypi.python.org/pypi/pyflakes 
 [pyflakes-github]: http://git.wincent.com/command-t.git 
 [pyflakes.png]:/media/img/content/vim-pyflakes.png "Pyflakes"
 [nerdcommenter-github]:  https://github.com/scrooloose/nerdcommenter
-[supertab-github]:  https://github.com/vim-scripts/supertab
+[supertab-github]:  https://github.com/ervandew/supertab 
 [supertab.png]:/media/img/content/supertab.png "SuperTab"
 [fugitive-github]:  https://github.com/tpope/vim-fugitive
 [vimcast]: http://vimcasts.org/
@@ -336,5 +350,9 @@ For curious minds, my vim configurations(along with some other stuff) is availab
 [solarized-readme]: https://github.com/altercation/vim-colors-solarized/blob/master/README.mkd 
 [bettercss]: https://github.com/vim-scripts/Better-CSS-Syntax-for-Vim 
 [csscolor]: https://github.com/vim-scripts/css_color.vim
+[csscolor-new]:github.com/ap/vim-css-color 
 [csaprox]: https://github.com/godlygeek/csapprox 
 [dotfiles]: https://github.com/mnazim/dotfiles
+[vim-surround-github]:https://github.com/tpope/vim-surround 
+[hn-link]:http://news.ycombinator.com/item?id=2910350 
+[reddit-link]:http://www.reddit.com/r/vim/comments/jkvl9/list_of_vim_plugins_i_use_with_mini_tutorials/ 

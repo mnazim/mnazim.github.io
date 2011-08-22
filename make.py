@@ -168,7 +168,7 @@ class Entry(object):
 
 
     def prepare(self):
-        file = open(self.abspath, 'r')
+        file = codecs.open(self.abspath, 'r')
         header = ['---']
         while True:
             line = file.readline()

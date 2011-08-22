@@ -183,7 +183,7 @@ autoload  bundle  sessions  undodir  vimrc
 
 <h2>4. CloseTag: Intelligently close HTML tags</h2>
 
-<p>&raquo; <a href="http://git.wincent.com/command-t.git">Github repository</a></p>
+<p>&raquo; <a href="http://github.com/docunext/closetag.vim">Github repository</a></p>
 
 <p>CloseTag is simple plugin that intelligently closes the html tags based of the currently open tag. It is triggered when you type <code>&lt;/</code>. CloseTag will detect and close the open tag intelligently.</p>
 
@@ -258,7 +258,7 @@ autocmd <span class="nb">FileType</span> html<span class="p">,</span>xhtml<span 
 
 <h2>7. SuperTab: Word completion on steriods</h2>
 
-<p>&raquo; <a href="https://github.com/vim-scripts/supertab">Github repository</a></p>
+<p>&raquo; <a href="https://github.com/ervandew/supertab">Github repository</a></p>
 
 <p>SuperTab let's me do all my insert mode completion using the <code>&lt;TAB&gt;</code> key.</p>
 
@@ -315,7 +315,7 @@ autocmd <span class="nb">FileType</span> html<span class="p">,</span>xhtml<span 
 
 <span class="nv">$ </span><span class="nb">cd</span> ~/.vim
 
-<span class="nv">$ </span>git submodule add git://github.com/majutsushi/tagbar.git bundle/fugitive
+<span class="nv">$ </span>git submodule add git://github.com/majutsushi/tagbar.git bundle/tagbar
 
 <span class="nv">$ </span>git submodule init <span class="o">&amp;&amp;</span> git submodule update
 </code></pre></div>
@@ -361,18 +361,32 @@ nnoremap <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class
 <span class="k">colorscheme</span> solarized
 </code></pre></div>
 
+<p>If you want to use solarized in the terminal vim you will need to set <code>TERM</code> environment variable.</p>
+
+<div class="codehilite"><pre><code><span class="nb">export </span><span class="nv">TERM</span><span class="o">=</span><span class="s2">&quot;xterm-256color&quot;</span>
+</code></pre></div>
+
+<p>You can also use [CSAprox][csapprox] plugin to use gvim themes inside terminal vim.</p>
+
 <h2>The rest</h2>
 
-<p>While the 10 plugins described above are the ones without which I cannot even imagine working sanely, they are not the only ones. I use a variety of utility and syntax plugins. Some of them are:</p>
+<p>While the plugins described above are the ones without which I cannot even imagine working sanely, they are not the only ones. I use a variety of utility and syntax plugins. Some of them are:</p>
 
 <ul>
+<li><p><a href="https://github.com/tpope/vim-surround">Surround</a> - For editing the surroundings of text.</p></li>
 <li><p><a href="https://github.com/vim-scripts/Better-CSS-Syntax-for-Vim">Better CSS Syntax</a> - Provides better CSS syntax highlighting.</p></li>
-<li><p><a href="https://github.com/vim-scripts/css_color.vim">CSSColor</a> - Sets background of color hex codes to what they are.</p></li>
+<li><p><a href="github.com/ap/vim-css-color">Vim CSS Color</a> - Sets background of color hex codes to what they are.</p></li>
 <li><p><a href="https://github.com/godlygeek/csapprox">CSAprox</a> - Allows use of GVim color schemes in almost all terminals</p></li>
 <li><p>Syntax plugins for various programming languages like JavaScript, HTML/XML, PHP, etc.</p></li>
 </ul>
 
 <p>For curious minds, my vim configurations(along with some other stuff) is available at <a href="https://github.com/mnazim/dotfiles">github.com/mnazim/dotfiles</a>.</p>
+
+<hr />
+
+<h4>Updates</h4>
+
+<p><strong><em>August 22, 2011:</em></strong> Corrected some mistakes and updated some obsolete repositories to active ones, thanks to the good people over at <a href="http://news.ycombinator.com/item?id=2910350">Hacker News</a>, <a href="http://www.reddit.com/r/vim/comments/jkvl9/list_of_vim_plugins_i_use_with_mini_tutorials/">Reddit</a> and Stéfan van der Walt who took the time to drop me an email. </p>
 
 </div>
 <div class="meta">
@@ -436,7 +450,7 @@ nnoremap <span class="p">&lt;</span>leader<span class="p">&gt;</span><span class
 $.facebox.settings.closeImage = '/media/facebox/closelabel.png'
 $.facebox.settings.loadingImage = '/media/facebox/loading.gif'
 jQuery(document).ready(function($) {
-  $('a[rel*=facebox], a[href$="jpg"], a[href$="jpeg"], a[href$="png"], a[href$="gif"]').facebox();
+  $('a[rel*=facebox]').facebox();
   $('#nav a').tipsy({gravity: 'w', opacity:1});
   $('a').tipsy({opacity:1});
 });

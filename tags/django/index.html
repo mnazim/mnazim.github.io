@@ -118,7 +118,7 @@ tag: django
 $.facebox.settings.closeImage = '/media/facebox/closelabel.png'
 $.facebox.settings.loadingImage = '/media/facebox/loading.gif'
 jQuery(document).ready(function($) {
-  $('a[rel*=facebox], a[href$="jpg"], a[href$="jpeg"], a[href$="png"], a[href$="gif"]').facebox();
+  $('a[rel*=facebox]').facebox();
   $('#nav a').tipsy({gravity: 'w', opacity:1});
   $('a').tipsy({opacity:1});
 });
