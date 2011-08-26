@@ -320,13 +320,16 @@ div.popup .content .image img {
 
 #about_me {
     font: normal 16px/22px "Gentium Basic", Gentium, Palatino, Georgia, serif;
-    width:444px;
+    width:621px;
 }
 #about_me p {
     margin-top: 0px;
+    line-height:1.3em;
+    font-size:0.95em;
 }
 #about_me img.me {
     border: 3px solid #aaa;
+    margin:8px 0 0;
 }
 
 #about_me label{
@@ -337,12 +340,9 @@ font-size: 14px;
 font-weight: bold;
 padding: 2px 6px;
 position: relative;
-top: -213px;
+top: -270px;
 }
 
-#facebox {
-    top:45px !important;
-}
 
 .codehilite {
     background: #002B36 url(../img/code_top_bg.png) repeat-x !important;

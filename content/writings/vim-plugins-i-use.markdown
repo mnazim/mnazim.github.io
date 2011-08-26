@@ -30,7 +30,13 @@ Here is what my `vim` directory looks like
     autoload  bundle  sessions  undodir  vimrc
 
 
-Everything is *soft linked* to the relevant locations from here. For example `~/dotfiles/vim` is linked to `~/.vim` and  `~/dotfiles/vim/vimrc` to `~/.vimrc`.
+Everything is *soft linked* to the relevant locations from here as shown by following commands: 
+
+    :::bash
+    $ ln -s ~/dotfiles/vim ~/.vim           
+    $ ln -s ~/dotfiles/vim/vimrc ~/.vimrc
+    $ ln -s ~/dotfiles/bash/bashrc ~/.bashrc
+    $ ln -s ~/dotfiles/bash/aliases ~/.bash_aliases
 
 ## 1. Pathogen: Vim package manager
 
@@ -321,6 +327,8 @@ For curious minds, my vim configurations(along with some other stuff) is availab
 #### Updates
 
 ***August 22, 2011:*** Corrected some mistakes and updated some obsolete repositories to active ones, thanks to the good people over at [Hacker News][hn-link], [Reddit][reddit-link] and Stéfan van der Walt who took the time to drop me an email. 
+
+***August 26, 2011:*** A few readers reported confusing language in the para defining soft-linking of files and directories inside `~/dotfiles` to relevant locations. Changed naration and added the example commands to be more explicit.
 
 
 [tpope-github]: https://github.com/tpope/vim-pathogen
