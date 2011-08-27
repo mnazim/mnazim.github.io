@@ -340,7 +340,7 @@ For curious minds, my vim configurations(along with some other stuff) is availab
 [delimitmate-github]:  https://github.com/Raimondi/delimitMate
 [closetag-github]:http://github.com/docunext/closetag.vim
 [pyflakes]: http://pypi.python.org/pypi/pyflakes 
-[pyflakes-github]: http://git.wincent.com/command-t.git 
+[pyflakes-github]: http://github.com/kevinw/pyflakes-vim 
 [pyflakes.png]:/media/img/content/vim-pyflakes.png "Pyflakes"
 [nerdcommenter-github]:  https://github.com/scrooloose/nerdcommenter
 [supertab-github]:  https://github.com/ervandew/supertab 
