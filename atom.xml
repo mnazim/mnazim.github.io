@@ -4,13 +4,24 @@
 <subtitle>Mir Nazim's weblog</subtitle>
 <link href="http://mirnazim.org/atom.xml" rel="self" />
 <link href="http://mirnazim.org/" />
-<id>tag:mirnazim.org,2011-08-28T05:14:12Z:/</id>
-<updated>2011-08-28T05:14:12Z</updated>
+<id>tag:mirnazim.org,2011-11-19T03:14:02Z:/</id>
+<updated>2011-11-19T03:14:02Z</updated>
 <author>
   <name>Mir Nazim</name>
   <email>me@mirnazim.org</email>
 </author>
 
+
+<entry>
+  <title>Jammu and Kashmir Developer Network Begins</title>
+  <link href="http://mirnazim.org/notes/jkdevnet-begins" />
+  <id>tag:mirnazim.org,2011-11-19:/notes/jkdevnet-begins</id>
+  <updated>2011-11-19T02:21:00Z</updated>
+  <content type="xhtml" xml:base="http://mirnazim.org">
+    <div xmlns="http://www.w3.org/1999/xhtml"><p>Long over due, Jammu and Kashmir Developer Network begins life.</p>
+<a href="http://mirnazim.org/notes/jkdevnet-begins"> continue reading...</a></div>
+  </content>
+</entry>
 
 <entry>
   <title>List of vim plugins I use - with mini tutorials</title>
@@ -108,17 +119,6 @@
   <content type="xhtml" xml:base="http://mirnazim.org">
     <div xmlns="http://www.w3.org/1999/xhtml"><p>I have been using vim since I started using Linux, yet I never really used it until I took the dive about 6 months ago. Since then vim has been surprising me every single day. Now I cannot imagine using anything else. This my little vim story.</p>
 <a href="http://mirnazim.org/writings/vim-is-my-choice"> continue reading...</a></div>
-  </content>
-</entry>
-
-<entry>
-  <title>Free Kashmir - An Economic Perspective</title>
-  <link href="http://mirnazim.org/writings/free-kashmir-an-economic-perspective" />
-  <id>tag:mirnazim.org,2010-02-10:/writings/free-kashmir-an-economic-perspective</id>
-  <updated>2010-02-10T00:00:00Z</updated>
-  <content type="xhtml" xml:base="http://mirnazim.org">
-    <div xmlns="http://www.w3.org/1999/xhtml"><p>Free Kashmir. A dream every Kashmiri nurtures inside his/her heart. But is Free Kashmir a viable and feasible option? Let look at some facts and figures from an economic perspective and then decide is it really possible.</p>
-<a href="http://mirnazim.org/writings/free-kashmir-an-economic-perspective"> continue reading...</a></div>
   </content>
 </entry>
 

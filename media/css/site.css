@@ -1,5 +1,5 @@
 .wf-loading { 
-  visibility: hidden; 
+  /*visibility: hidden; */
 }
 .wf-active, .wf-inactive {
   visibility: visible; 
@@ -195,6 +195,10 @@ blockquote p:first-line {
 #sitename h1 a{
     color:#ddd;
     border:none;
+}
+
+#sidebar {
+    position:absolute;
 }
 
 #content {
