@@ -1,0 +1,796 @@
+<html>
+<head>
+  <meta name="google-site-verification" content="7kNes4_ZZZxK2SmNwu1AB1fFQtxf_ZyFxSJ_4su_LDU" />
+  <title> Python Ecosystem - An Introduction  &raquo; mirnazim.org</title>
+  <link rel="stylesheet" type="text/css" href="/media/css/pygments_style.css" media="screen" /> 
+  <link rel="stylesheet" type="text/css" href="/media/css/site.css" media="screen" /> 
+  
+  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="mirnazim.org &raquo; Mir Nazim's Weblog" /> 
+<link rel="stylesheet" type="text/css" media="screen" href="http://www.devslide.com/public/labs/browser-detection/browser-detection.css" />
+</head>
+<body>
+<div id="page" class="loading">
+  <div id="header">
+    
+<div class="published"><a href="/">Mir Nazim</a> &ndash; November 28, 2011</div>
+<h1>Python Ecosystem - An Introduction</h1>
+
+  </div><!--/#header-->
+  <div id="content">
+    
+<div class="body">
+  <p>When developers shift from PHP, Ruby or any other platform to Python, the very first road block they face(most often) is the lack of overall understanding the Python ecosystem. Developers often yearn for a tutorial/resource that explains how to accomplish most tasks in a more or less standard way.</p>
+
+<p>What follows, is an extract from the internal wiki at my <a href="http://ikraftsoft.com/">workplace</a>, that documents the basics of Python ecosystem for web application development for our interns, trainees and experienced developers who shift to Python from other platforms.</p>
+
+<p><em>This is not a complete resouces. My target is to make it <strong>a work in perpetual progress</strong>. Hopefully, over time, this will develop into an exhaustive tutorial.</em></p>
+
+<h2>Intended Audience</h2>
+
+<p>This is not about teaching Python - the programming language. This tutorial will not magically transform you into a python ninja. I am assuming that you already know a basics of Python. If you don't, then stop right now. Go read Zed Shaw's brilliant free book <a href="http://learnpythonthehardway.org/">Learn Python The Hard Way</a> first and then come back.</p>
+
+<p>I am assuming you are working on Linux(preferably Ubuntu/Debian) or a Linux like operating system. Why? Because that is what I know best. I have not done any serious programming related work on MS Windows or Mac OS X, other than testing for cross browser compatibility. Checkout following tutorials on how to install Python on other platforms:</p>
+
+<ul>
+<li><p><a href="http://www.blog.pythonlibrary.org/2011/11/24/python-101-setting-up-python-on-windows/">Python 101: Setting up Python on Windows</a></p></li>
+<li><p><a href="http://docs.python.org/using/windows.html">Official documentation for Python on Windows</a></p></li>
+<li><p><a href="http://docs.python.org/using/mac.html">Official documentation for Python on Mac OS X</a></p></li>
+</ul>
+
+<p>Search the web for the best possible ways of installing Python on your operating system. I highly recommend asking on <a href="http://www.stackoverflow.com">Stack Overflow</a>. </p>
+
+<h2>The version confusion</h2>
+
+<p><em><strong>TL;DR:</strong> Python 2.x is the status quo, Python 3 is the shiny new thing. If you don't care, just skip to <strong>Installing Python</strong> section below.</em></p>
+
+<p>While starting with Python, installing version 3.x will seem like a natural first step, it might not be exactly what you want.</p>
+
+<p>Currently there are two actively developed version of Python - 2.7.x and 3.x(also called Python 3, Py3K and Python 3000). Python 3 is a different language from Python 2. There a some subtle and some stark semantic and syntactic differences. As of today, Python 2.6/2.7 is most installed and most used version. Many mainstream and important packages/frameworks/tools/utilities/modules are not yet 100% compatible with Python 3.</p>
+
+<p>Therefore, the safest choice would be to use 2.x(2.7.x to be more specific). Choose Python 3 only if you need to and/or fully understand the implications. </p>
+
+<p><a href="http://python3wos.appspot.com/">Python 3 Wall of Shame</a> documents the Python 3 compatibility for various packages. Check it thoroughly before deciding to start on Python 3.</p>
+
+<h2>Which VM to use</h2>
+
+<p>Python interpreter or the Python Virtual Machine has a number of different implementations, CPython being the main and most popular/installed implementation. CPython also acts as the reference implementation for other virtual machines. </p>
+
+<p><a href="http://pypy.org/">PyPy</a> is Python implemented in Python, <a href="http://www.jython.org/">Jython</a> is implemented in Java and runs on Java VM and <a href="http://ironpython.net/">IronPython</a> is the Python implementation for Microsoft .Net CLR.</p>
+
+<p>Unless it is really really important to choose otherwise, CPython should be used to avoid any surprises.</p>
+
+<p>If all this gibber jabber about versions and virtual machines is giving you headaches, then all you need is CPython version 2.7.x. Trust me on this.</p>
+
+<h2>Installing Python</h2>
+
+<p>Most of the Linux/Unix distros and Mac OS X come with Python pre-installed. If your's does not or has an older version, you can install version 2.7.x with following commands:</p>
+
+<p>On Ubuntu/Debian and derivatives</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo apt-get install python2.7
+</code></pre></div>
+
+<p><em><code>sudo</code> is a program for Unix-like operating systems that allows users to run programs with the security privileges of another user (normally the superuser, or root). <a href="http://en.wikipedia.org/wiki/Sudo">You can learn more about sudo at Wikipeia</a>.</em></p>
+
+<p>On Fedora/Red Hat and similar systems</p>
+
+<div class="codehilite"><pre><code>su
+
+yum install python2.7
+</code></pre></div>
+
+<p>From now onwards I will be using <code>sudo</code> in the examples; you should replace it with your distro specific equivalent.</p>
+
+<h2>Understanding the packages</h2>
+
+<p>First thing you need to understand that Python does not have any package management facilities by default. In fact, the very concept of packages in Python is very loose.</p>
+
+<p>As you might already know, Python code is organized into modules. A module can be a single file containing just one function or a directory containing one or more sub-modules. The difference between a package and a module is very minimal and every module can be thought of as a package.</p>
+
+<p>So what is the difference(if any) between a module and a package? For that you first need to understand how python finds the modules.</p>
+
+<p>As with any programming environment, some functions and classes(<code>str</code>, <code>len</code>, <code>Exception</code>, etc.) in Python are available in the global scope and other need to be imported by means of an <code>import</code> statement. For example:</p>
+
+<div class="codehilite"><pre><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">os.path</span> <span class="kn">import</span> <span class="n">basename</span><span class="p">,</span> <span class="n">dirname</span>
+</code></pre></div>
+
+<p>These packages must be somewhere in your filesystem so that they can be found by the <code>import</code> statement. How does Python know the location of these modules? These locations are set automatically when you install the Python virtual machine and are, almost always, dependent on the target platform.</p>
+
+<p>The package path is always available for your inspection in <code>sys.path</code>. Here is what it looks like on my laptop which runs <em>Ubuntu 11.10 Oneric Ocelot</em>.</p>
+
+<div class="codehilite"><pre><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span>
+
+<span class="p">[</span><span class="s">&#39;&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/plat-linux2&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/lib-tk&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/lib-old&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/lib-dynload&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/local/lib/python2.7/dist-packages&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/dist-packages&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/dist-packages/PIL&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/dist-packages/gst-0.10&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/dist-packages/gtk-2.0&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/pymodules/python2.7&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/dist-packages/ubuntu-sso-client&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/dist-packages/ubuntuone-client&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/dist-packages/ubuntuone-control-panel&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/dist-packages/ubuntuone-couch&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/dist-packages/ubuntuone-installer&#39;</span><span class="p">,</span>
+
+ <span class="s">&#39;/usr/lib/python2.7/dist-packages/ubuntuone-storage-protocol&#39;</span><span class="p">]</span>
+</code></pre></div>
+
+<p>This will give you the list of directories where python will search for a given package. It starts at the top and keeps going downwards until a name match is found. This means if two different directories contain two packages with the same name, the package search will always stop at the first absolute match encountered and will never go further down the list.</p>
+
+<p>You might have guessed by now, this package search path can  easily be hacked to make sure that python picks your packages first. All you need to do is:</p>
+
+<div class="codehilite"><pre><code><span class="o">&gt;&gt;&gt;</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s">&#39;/path/to/my/packages&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>While this approach comes in handy in many situations, you must always bear in mind that it is very easy to abuse it. Use it if you have to but don't abuse it.</p>
+
+<h3>The PYTHONPATH</h3>
+
+<p><code>PYTHONPATH</code> is a environment variable that can be used to augment the default package search paths. Think of it as a <code>PATH</code> variable but specifically for Python. It is simply a list(not a Python list like <code>sys.path</code>) of directories containing the Python modules separated by <code>:</code>. It can be simply set as follows:</p>
+
+<div class="codehilite"><pre><code><span class="nb">export </span><span class="nv">PYTHONPATH</span><span class="o">=</span>/path/to/some/directory:/path/to/another/directory:/path/to/yet/another/directory
+</code></pre></div>
+
+<p>In some situations you will not want to overwrite the existing PYTHONPATH, just append or prepend to it.</p>
+
+<div class="codehilite"><pre><code><span class="nb">export </span><span class="nv">PYTHONPATH</span><span class="o">=</span><span class="nv">$PYTHONPATH</span>:/path/to/some/directory    <span class="c"># Prepend</span>
+
+<span class="nb">export </span><span class="nv">PYTHONPATH</span><span class="o">=</span>/path/to/some/directory:<span class="nv">$PYTHONPATH</span>    <span class="c"># Append</span>
+</code></pre></div>
+
+<p>Generally, you will put this inside the shell startup files like <code>.bashrc</code>, <code>.zshrc</code> etc.</p>
+
+<p>In most cases, you should not need to set <code>PYTHONPATH</code> explicitly. There are more elegant way of accomplishing the same effect, which I will elaborate on in a moment.</p>
+
+<p>Now that you understand how python find the installed packages, we can revisit our original question. What is the difference between a module and a package? Package is just a module or a collection of modules/sub-modules, generally comes compressed inside a tarball, which contains 1) information on dependencies - if any 2) instructions to copy the files to the standard package search location and 3) compile instructions - if it contains code that must be compiled before installation. That's it.</p>
+
+<h2>Third party packages</h2>
+
+<p>Right from the start, for any serious programming with Python you will need to install third party packages for various tasks.</p>
+
+<p>On a Linux System there are at least 3 ways of installing the third party packages.</p>
+
+<ol>
+<li><p>using the package management system of your distro(deb, rpm, etc.)</p></li>
+<li><p>by means of various community developed tools <code>pip</code>, <code>easy_install</code>, etc.</p></li>
+<li><p>installing from the source files.</p></li>
+</ol>
+
+<p>All the three ways, almost always, accomplish the same thing <em>viz.</em> install dependencies, compile code if needed and copy the modules contained inside a package to the standard package search locations.</p>
+
+<p>While #2 and #3 will work almost unchanged on any operating system, I will once again point you to <a href="http://www.stackoverflow.com">Stack Overflow</a> to find out other ways of installing third party packages on your target platform.</p>
+
+<h3>Where to find third party packages</h3>
+
+<p>Before you can install third party packages, you will have to find them. There are more than a few ways of finding packages.</p>
+
+<ol>
+<li><p>the modules packaged for your distro specific package management system.</p></li>
+<li><p><a href="http://pypi.python.org/pypi">Python Package Index(or PyPI)</a></p></li>
+<li><p>Various source code hosting services like <a href="https://launchpad.net/">Launchpad</a>, <a href="http://github.com">GitHub</a>, <a href="https://bitbucket.org/">BitBucket</a>, etc.</p></li>
+</ol>
+
+<h3>Installing with distro specific package management system</h3>
+
+<p>Installing packages using the distro package management system is simply issuing the command or using whatever GUI app you use to install other apps. E.g to install <code>simplejson</code> a JSON parsing utility on an Ubuntu system, you will issue following command:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo apt-get install python-simplejson
+</code></pre></div>
+
+<h3>Installing with pip</h3>
+
+<p><em><code>easy_install</code> has mostly fallen out of favor. We will only concentrate on <code>pip</code>, which is a replament for <code>easy_install</code></em></p>
+
+<p><code>pip</code> is a tool for installing and managing Python packages, such as those found in the Python Package Index. <code>pip</code> is not installed with the Python virtual machine therefore we need to install it first. On Linux, I generally install it as follows:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo apt-get install python-pip
+</code></pre></div>
+
+<p>Before installing any other package I always upgrade <code>pip</code> to the latest version available in PyPI as Ubuntu repositories are generally behind PyPI. I upgrade <code>pip</code> with pip itself.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo pip install pip --upgrade
+</code></pre></div>
+
+<p>Now to install any python package you run <code>pip install package-name</code> command. Therefore, to install <code>simplejson</code> you will run following command.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo pip install simplejson
+</code></pre></div>
+
+<p>Removing packages is equally easy with it.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo pip uninstall simplejson
+</code></pre></div>
+
+<p>By default, <code>pip</code> will install the most recent stable version as found on PyPI, but often you will face situations where you will want to install a specific version of a package, because your project depends on that specific version. To accomplish that you will use the <code>pip install</code> command as follows:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo pip install <span class="nv">simplejson</span><span class="o">==</span>2.2.1
+</code></pre></div>
+
+<p>You will often want to upgrade, downgrade and/or reinstall packages. It can be done with following commands.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo pip install simplejson --updrage         <span class="c"># Upgrade a package to the latest version from PyPI</span>
+
+<span class="nv">$ </span>sudo pip install <span class="nv">simplejson</span><span class="o">==</span>2.2.1 --updrage  <span class="c"># Upgrade/downgrade a package to a given version</span>
+</code></pre></div>
+
+<p>Now what if you want to install the development version of a package which is in a version control repository and not yet on PyPI. <code>pip</code> takes care of that as well, but before you can do that, you will need to install the version control systems itself. On Ubuntu, you will install as follows.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo apt-get install git-core mercurial subversion
+</code></pre></div>
+
+<p>Once you have version control systems installed, installing a package from a version control repository can be done as follows:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo pip install git+http://somedomain.com/path/to/git-repo#egg<span class="o">=</span>packagename
+
+<span class="nv">$ </span>sudo pip install hg+http://somedomain.com/path/to/hg-repo#egg<span class="o">=</span>packagename
+
+<span class="nv">$ </span>sudo pip install svn+http://somedomain.com/path/to/svn-repo#egg<span class="o">=</span>packagename
+</code></pre></div>
+
+<p>Now you might be wondering what going on with these is <em>eggs</em>. Right now all you need to understand is that an egg is a zipped python package containing package source and some metadata. <code>pip</code> builds the egg information before it installs the package. You can find the egg name by inspecting the <code>setup.py</code> file within the code repository(it will almost always be there). Find the <code>setup</code> section and look for the line that looks like <code>name="something"</code>. It will look somewhat similar to following piece of code(taken from the <code>setup.py</code> file from simplejson).</p>
+
+<div class="codehilite"><pre><code><span class="n">setup</span><span class="p">(</span>
+
+    <span class="n">name</span><span class="o">=</span><span class="s">&quot;simplejson&quot;</span><span class="p">,</span> <span class="c"># &lt;--- This is your egg name</span>
+
+    <span class="n">version</span><span class="o">=</span><span class="n">VERSION</span><span class="p">,</span>
+
+    <span class="n">description</span><span class="o">=</span><span class="n">DESCRIPTION</span><span class="p">,</span>
+
+    <span class="n">long_description</span><span class="o">=</span><span class="n">LONG_DESCRIPTION</span><span class="p">,</span>
+
+    <span class="n">classifiers</span><span class="o">=</span><span class="n">CLASSIFIERS</span><span class="p">,</span>
+
+    <span class="n">author</span><span class="o">=</span><span class="s">&quot;Bob Ippolito&quot;</span><span class="p">,</span>
+
+    <span class="n">author_email</span><span class="o">=</span><span class="s">&quot;bob@redivi.com&quot;</span><span class="p">,</span>
+
+    <span class="n">url</span><span class="o">=</span><span class="s">&quot;http://github.com/simplejson/simplejson&quot;</span><span class="p">,</span>
+
+    <span class="n">license</span><span class="o">=</span><span class="s">&quot;MIT License&quot;</span><span class="p">,</span>
+
+    <span class="n">packages</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;simplejson&#39;</span><span class="p">,</span> <span class="s">&#39;simplejson.tests&#39;</span><span class="p">],</span>
+
+    <span class="n">platforms</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;any&#39;</span><span class="p">],</span>
+
+    <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</code></pre></div>
+
+<p>What if there is no <code>setup.py</code> file? How do you find the egg name? Well you don't need to. Just copy the package source to you project directory and import and use just like you would use your own code.</p>
+
+<h3>Installing from source.</h3>
+
+<p>Installing a python package from source is just one command. Extract the package content into a directory and run following command:</p>
+
+<div class="codehilite"><pre><code><span class="nb">cd</span> /path/to/package/directory
+
+python setup.py install
+</code></pre></div>
+
+<p>Although you can use this method of installation with no real difference at all, but understand that <code>pip</code> is always the recommended way of installing the packages because <code>pip</code> gives you ability to upgrade/downgrade the packages very easily without the extra work involved in manually downloading, extracting and installing. Installing from source should always be you last option; if everything else fails(which normally should never fail).</p>
+
+<h3>Install packages that need compiling</h3>
+
+<p>While we have covered most of what there is about installing packages, there is one thing we have not covered. The Python packages containing C/C++ code which will need to be compiled before they can be installed and used. The best example of such packages are database adapters, image processing libraries etc.</p>
+
+<p>While pip can manage the compilation of sources, I personally prefer to install such packages using the distro specific package management system, which installs the prebuilt binaries.</p>
+
+<p>If you still want/need to install with <code>pip</code>, here is what you will need on an Ubuntu system.</p>
+
+<p>Compiler and related tools.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo apt-get install build-essential
+</code></pre></div>
+
+<p>Python development files(headers etc.).</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo aptitude install python-dev-all
+</code></pre></div>
+
+<p>Assuming you are installing <code>psycopg2</code> - the PostgreSQL RDBMS adaptor for Python, you will also need the development files for PostgreSQL.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo aptitude install  postgresql-server-dev-all
+</code></pre></div>
+
+<p>Once these dependencies are met, you can now run <code>pip install</code>.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo pip install psycopg2
+</code></pre></div>
+
+<p>There is one thing that should be remembered: <strong><em>Not all such packages are compatible with <code>pip</code> installation method</em></strong>. But if you feel confident about compiling the sources and/or already have the necessary experience/understanding of how all this works on your target platform - by all means go ahead and install however the way you want.</p>
+
+<h2>The Development Environment</h2>
+
+<p>Different people like to setup their development environment in different ways, but in almost all programming communities, one(or more than one) way of setting up the development environment is more accepted than others. While there is nothing wrong in setting up your development environment differently, but generally these methods/setups are more tested and known to make some repetitive/biolerplate tasks in day to day work easy and maintainable.</p>
+
+<h3>virtualenv</h3>
+
+<p>The most popular method of setting up the development environment, in Python, is using the <strong>virtualenv</strong> package. Virtualenv is a tool to create isolated python environments. Now the question arises why do we need isolated python environment? To answer that I quote the virtualenv documentation itself.</p>
+
+<blockquote>
+  <p>The basic problem being addressed is one of dependencies and versions, and indirectly permissions. Imagine you have an application that needs version 1 of LibFoo, but another application requires version 2. How can you use both these applications? If you install everything into /usr/lib/python2.7/site-packages (or whatever your platform's standard location is), it's easy to end up in a situation where you unintentionally upgrade an application that shouldn't be upgraded.</p>
+</blockquote>
+
+<p>In simple words, you can have different/isolated python environments for each of your projects; you will install required packages for each of your projects into its own isolated environment.</p>
+
+<p>Use <code>pip</code> to install virtualenv as well.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo pip install virtualenv
+</code></pre></div>
+
+<p>Now once virtualenv is installed, run following commands to create an isolated python environment for your project.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>mkdir my_project_venv
+
+<span class="nv">$ </span>virtualenv --distribute my_project_venv
+
+<span class="c"># The output will something like:</span>
+
+New python executable in my_project_venv/bin/python
+
+Installing distribute.............................................done.
+
+Installing pip.....................done.
+</code></pre></div>
+
+<p>So what's happening here? You created a directory called <code>my_project_venv</code> to hold your new isolated python environment. The <code>--distribute</code> tell virtualenv to use new/improved packaging system based on <code>distribute</code> package instead of using old system based on <code>setuptools</code>. All you need to understand right now is that <code>--distribute</code> option will install <code>pip</code> automatically within the new virtual environment so you do not have to. As your knowledge/experience as a python developer increase, you will start better understanding these under the hood nuts and bolts.</p>
+
+<p>Now inspect the contents of <code>my_project_venv</code> directory, you will see a structure similar to:</p>
+
+<div class="codehilite"><pre><code><span class="c"># Showing only files/directories relevant to the discussion at hand</span>
+
+.
+
+|-- bin
+
+|   |-- activate  <span class="c"># &lt;-- Activates this virtualenv</span>
+
+|   |-- pip       <span class="c"># &lt;-- pip specific to this virtualenv</span>
+
+|   <span class="sb">`</span>-- python    <span class="c"># &lt;-- A copy of python interpreter</span>
+
+<span class="sb">`</span>-- lib
+
+    <span class="sb">`</span>-- python2.7 <span class="c"># &lt;-- This is where all new packages will go</span>
+</code></pre></div>
+
+<p>Activate the virtualenv with following command:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span><span class="nb">cd </span>my_project_venv
+
+<span class="nv">$ </span><span class="nb">source </span>bin/activate
+</code></pre></div>
+
+<p>After <em>sourcing</em> the <code>activate</code> script, your prompt should look something like this:</p>
+
+<div class="codehilite"><pre><code><span class="o">(</span>my_project_venv<span class="o">)</span><span class="nv">$ </span><span class="c"># the virtualenv name prepended to the prompt</span>
+</code></pre></div>
+
+<p>Now deactivate the virtualenv with following command:</p>
+
+<div class="codehilite"><pre><code><span class="o">(</span>my_project_venv<span class="o">)</span><span class="nv">$ </span>deactivate
+</code></pre></div>
+
+<p>Run following commands to better understand the difference between the system wide installation(deactivate the virtualenv first, if it is active).</p>
+
+<p>First let's find out which python/pip executable will be used if I called <code>python</code> or <code>pip</code> from terminal.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>which python
+
+/usr/bin/python
+
+<span class="nv">$ </span>which pip
+
+/usr/local/bin/pip
+</code></pre></div>
+
+<p><em>Learn about <code>which</code> command at <a href="http://en.wikipedia.org/wiki/Which_%28Unix%29">Wikipeia</a>.</em></p>
+
+<p>Now do it again, but activate the virtualenv first and note the differences in the output. On my machine it looks like:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span><span class="nb">cd </span>my_project_venv
+
+<span class="nv">$ </span><span class="nb">source </span>bin/activate
+
+<span class="o">(</span>my_project_venv<span class="o">)</span><span class="nv">$ </span>which python
+
+/home/mir/my_project_venv/bin/python
+
+<span class="o">(</span>my_project_venv<span class="o">)</span><span class="nv">$ </span>which pip
+
+/home/mir/my_project_venv/bin/pip
+</code></pre></div>
+
+<p>What <code>virtualenv</code> did, is make a copy python of executable, create a few utility scripts and a place to install project specific packages that you will eventually install/upgrade/remove over the life time of the project. It also did some package search path/PYTHONPATH magic to ensure that 1) when you install packages, they are installed inside the currently active virtualenv and not the system wide python installation and 2) when imported from code, the packages in the currently active virtualenv will take precedence over the ones installed in system wide Python installations.</p>
+
+<p>An important thing to note here is that, by default all the packages installed inside the system wide python are automatically available to the virtualenv. That means if you installed the <code>simplejson</code> package in your system wide python installation it automatically will be available to the all the virtualenvs. This behaviour can be altered by adding a <code>--no-site-packages</code> switch at the time of creation of virtualenv, like:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>virtualenv my_project_venv --no-site-packages
+</code></pre></div>
+
+<h3>virtualenvwrapper</h3>
+
+<p><code>virtualenvwrapper</code> is a wrapper around <code>virtualenv</code> which provides some really nice utilities to create/activate/manage/destroy virtual environments, which otherwise will be chore. To install <code>virtualenvwrapper</code>, run following command:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo pip install virtualenvwrapper
+</code></pre></div>
+
+<p>Once installed, you will need to configure it. Here is how I configure it.</p>
+
+<div class="codehilite"><pre><code><span class="k">if</span> <span class="o">[</span> <span class="sb">`</span>id -u<span class="sb">`</span> !<span class="o">=</span> <span class="s1">&#39;0&#39;</span> <span class="o">]</span>; <span class="k">then</span>
+
+<span class="k">  </span><span class="nb">export </span><span class="nv">VIRTUALENV_USE_DISTRIBUTE</span> <span class="o">=</span> 1        <span class="c"># &lt;-- Always use pip/distribute</span>
+
+  <span class="nb">export </span><span class="nv">WORKON_HOME</span><span class="o">=</span><span class="nv">$HOME</span>/.virtualenvs       <span class="c"># &lt;-- Where all virtualenvs will be stored</span>
+
+  <span class="nb">source</span> /usr/local/bin/virtualenvwrapper.sh
+
+  <span class="nb">export </span><span class="nv">PIP_VIRTUALENV_BASE</span> <span class="o">=</span> <span class="nv">$WORKON_HOME</span>
+
+  <span class="nb">export </span><span class="nv">PIP_RESPECT_VIRTUALENV</span> <span class="o">=</span> <span class="nb">true</span>
+
+<span class="k">fi</span>
+</code></pre></div>
+
+<p>Logout once and login again for the configuration to take effect. </p>
+
+<p>Now to create/activate/deactivate/delete a virutalenv, you will run following [self explainatory]command.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>mkvirtualenv my_project_venv
+
+<span class="nv">$ </span>workon my_project_venv
+
+<span class="nv">$ </span>deactivate
+
+<span class="nv">$ </span>rmvirtualenv my_project_venv
+</code></pre></div>
+
+<p><em>Tab based, bash shell command completion also works with virtualenvwrapper.</em></p>
+
+<p>Go over to <a href="http://www.doughellmann.com/projects/virtualenvwrapper/">virtualenvwrapper homepage</a> to learn more about available commands and configuration options.</p>
+
+<h3>Basic dependency management with pip and virtualenv</h3>
+
+<p><code>pip</code> in combination with <code>virtualenv</code> can provide basic dependency management facilities for your project. </p>
+
+<p>You can use <code>pip freeze</code> command to export the list of currently installed packages. For example, here is the list of python packages I use to build this blog: </p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>pip freeze -l 
+
+<span class="nv">Jinja2</span><span class="o">==</span>2.6
+
+<span class="nv">PyYAML</span><span class="o">==</span>3.10
+
+<span class="nv">Pygments</span><span class="o">==</span>1.4
+
+<span class="nv">distribute</span><span class="o">==</span>0.6.19
+
+<span class="nv">markdown2</span><span class="o">==</span>1.0.1.19
+</code></pre></div>
+
+<p><em>Note the <code>-l</code> switch. It tells <code>pip</code> to export only the packages installed in currently active virtual environment and exclude the globally installed packages from the list</em></p>
+
+<p>You can save this exported list to a file and add it to you version control system.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>pip freeze -l  &gt; requirements.txt
+</code></pre></div>
+
+<p><code>pip</code> can also install packages from a file containing the output of the <code>pip freeze</code> command.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>pip install -r requirements.txt
+</code></pre></div>
+
+<h2>Other important tools</h2>
+
+<p>While we covered the basics of python versions, VMs and package management, there are tasks in day to day work, other than these which require special purpose tools to accomplish. While I cannot go into every bit of detail for each of the tool but I will try give the overview. </p>
+
+<p><em>Apologies in advance, as most of the tools are specific to web application developers.</em></p>
+
+<h3>The Editor</h3>
+
+<p>There are quite a number of good editors which provide tools for programming in Python. I, personally, am biased towards Vim, but I do not intend to start the <em>Editor Wars</em> - or do I ;).</p>
+
+<p>Some good editors and IDEs(if you like IDEs) that have support for python programming are Vim/Gvim, Emacs, GEdit for GNOME, Kate for KDE, Scribes, Komodo Edit/IDE from ActiveState, Wing IDE from WingWare, PyCharm from JetBrains, PyDEV for Eclipse. There are others but these seem to be the most popular ones. Choose whichever works best for you.</p>
+
+<h3>Pyflakes: Source checking and linting</h3>
+
+<p>Pyflakes is a simple program which checks Python source files for errors by analyzing the text of the file. It checks for syntax and [some]logical errors, modules imported but unused, variables used only once etc.</p>
+
+<p>You can install it with <code>pip</code>:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>pip install pyflakes
+</code></pre></div>
+
+<p>Call it from the terminal with a python source code file as argument, like:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>pyflakes filename.py
+</code></pre></div>
+
+<p>Pyflakes can be integrated in your editor as well. Here is how it looks on my Vim. Note the <em>red squigly lines</em>.</p>
+
+<p><a href="/media/img/content/vim-pyflakes.png" title="Pyflakes"><img src="/media/img/content/vim-pyflakes.png" alt="PyFlakes" title="Pyflakes" /></a></p>
+
+<p>Ask on <a href="http://www.stackoverflow.com">Stack Overflow</a> how to add Pyflakes support for the editor of your choice.</p>
+
+<p><a href="https://launchpad.net/pyflakes">Pyflakes website</a></p>
+
+<h3>Requests: HTTP library for human beings</h3>
+
+<p>Requests is a library that makes working with HTTP a breeze. </p>
+
+<p>Install it with <code>pip</code>, like:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>pip install requests
+</code></pre></div>
+
+<p>Here is a simple example.</p>
+
+<div class="codehilite"><pre><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;https://api.github.com&#39;</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="p">(</span><span class="s">&#39;user&#39;</span><span class="p">,</span> <span class="s">&#39;pass&#39;</span><span class="p">))</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">status_code</span>
+
+<span class="mi">204</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s">&#39;content-type&#39;</span><span class="p">]</span>
+
+<span class="s">&#39;application/json&#39;</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">r</span><span class="o">.</span><span class="n">content</span>
+
+<span class="o">...</span>
+</code></pre></div>
+
+<p><a href="http://docs.python-requests.org/en/latest/index.html">Requests documentation</a></p>
+
+<h3>Flask: Microframework for web development</h3>
+
+<p>Flask is a microframework for Python based on Werkzeug, Jinja 2. </p>
+
+<p>Install it with <code>pip</code></p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>pip install Flask
+</code></pre></div>
+
+<p>Here is a simple example.</p>
+
+<div class="codehilite"><pre><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+
+
+
+<span class="nd">@app.route</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
+
+    <span class="k">return</span> <span class="s">&quot;Hello World!&quot;</span>
+
+
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="p">:</span>
+
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</code></pre></div>
+
+<p>Run it like:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>python hello.py
+
+ * Running on http://localhost:5000/
+</code></pre></div>
+
+<p><a href="http://flask.pocoo.org/">Flask website</a></p>
+
+<h3>Django: Full stack framework for web development</h3>
+
+<p>Django is a full stack web framework. It provides an ORM, HTTP library, form handling, XSS filtering, templating among other things. </p>
+
+<p>Install will <code>pip</code>, like:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>pip install Django
+</code></pre></div>
+
+<p>Head over <a href="http://djangoproject.com">Django website</a> and follow the documentation to learn it. It's quite easy.</p>
+
+<h3>Fabric: Streamline the use of SSH for deployment and/or system admin tasks</h3>
+
+<p>Fabric is a Python library and command-line tool for streamlining the use of SSH for application deployment or systems administration tasks.</p>
+
+<p>It provides a basic suite of operations for executing local or remote shell commands (normally or via sudo) and uploading/downloading files, as well as auxiliary functionality such as prompting the running user for input, or aborting execution.</p>
+
+<p>You can install fabfile with <code>pip</code></p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>pip install fabric
+</code></pre></div>
+
+<p>Here is a simple task written with fabric:</p>
+
+<div class="codehilite"><pre><code><span class="kn">from</span> <span class="nn">fabric.api</span> <span class="kn">import</span> <span class="n">run</span>
+
+
+
+<span class="k">def</span> <span class="nf">host_type</span><span class="p">():</span>
+
+    <span class="n">run</span><span class="p">(</span><span class="s">&#39;uname -s&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Then you execute the ask on one or more servers like:</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>fab -H localhost host_type
+
+<span class="o">[</span>localhost<span class="o">]</span> run: uname -s
+
+<span class="o">[</span>localhost<span class="o">]</span> out: Linux
+
+
+
+Done.
+
+Disconnecting from localhost... <span class="k">done</span>.
+</code></pre></div>
+
+<p><a href="http://fabfile.org">Fabric website</a></p>
+
+<h3>SciPy: tools for scientific computing with Python</h3>
+
+<p>If your work involves scientific and numerical computing, the SciPy is an indispensable tool for you.</p>
+
+<p>From SciPy website:</p>
+
+<blockquote>
+  <p>SciPy (pronounced "Sigh Pie") is open-source software for mathematics, science, and engineering. It is also the name of a very popular conference on scientific programming with Python. The SciPy library depends on NumPy, which provides convenient and fast N-dimensional array manipulation. The SciPy library is built to work with NumPy arrays, and provides many user-friendly and efficient numerical routines such as routines for numerical integration and optimization. Together, they run on all popular operating systems, are quick to install, and are free of charge. NumPy and SciPy are easy to use, but powerful enough to be depended upon by some of the world's leading scientists and engineers. If you need to manipulate numbers on a computer and display or publish the results, give SciPy a try! </p>
+</blockquote>
+
+<p>Head over to <a href="http://www.scipy.org/">SciPy website</a> for detailed download/install instructions and documentation.</p>
+
+<h3>PEP 8: Python Style Guide</h3>
+
+<p>While not a software tool <em>per se</em>, PEP 8 is a very important resource related to Python.</p>
+
+<p>PEP 8 is a document that defines coding conventions for the Python code comprising the standard library in the main Python distribution. The sole purpose of the document is to ensure that the python code from everywhere follows same physical layout of the code, naming patterns for vaiables, class and function names. Make sure you understand it thoroughly and follow it. It will ease you life a lot over time.</p>
+
+<p><a href="http://www.python.org/dev/peps/pep-0008/">PEP 0008</a></p>
+
+<h3>The Mighty Python Standard Library</h3>
+
+<p>Python's standard library is very extensive, offering a wide range of facilities. The library contains built-in modules (written in C) that provide access to system functionality such as file I/O, as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming. Some of these modules are explicitly designed to encourage and enhance the portability of Python programs by abstracting away platform-specifics into platform-neutral APIs.</p>
+
+<p>Checkout the <a href="http://docs.python.org/library/">Official documentation for the Standard Library</a>.</p>
+
+<h2>Parting thought</h2>
+
+<p>What I have covered so far in this tutorial, is just skimming the surface. There is a vast sea of useful tools, libraries and software available for Python for almost every concievable task and which cannot covered in a single go. You will have to discover them yourself, over time.</p>
+
+<p>Python has a great community of really very smart people, who have a very patient and helpful attitude towards new commers to the language. So hang out at IRC channels of your favorite open source projects, follow and ask in mailing lists, talk to people who have experience in implementing small and large systems in Python(and others). Overtime, as your experience/knowledge expands you will become one of them yourself.</p>
+
+<p>I leave you with the <strong>Zen Of Python</strong>. Ponder. Contemplate. Be Enlightened! <em>Happy Pythoning</em></p>
+
+<div class="codehilite"><pre><code> 1. Beautiful is better than ugly.
+
+ 2. Explicit is better than implicit.
+
+ 3. Simple is better than complex.
+
+ 4. Complex is better than complicated.
+
+ 5. Flat is better than nested.
+
+ 6. Sparse is better than dense.
+
+ 7. Readability counts.
+
+ 8. Special cases aren&#39;t special enough to break the rules.
+
+ 9. Although practicality beats purity.
+
+11. Errors should never pass silently.
+
+12. Unless explicitly silenced.
+
+13. In the face of ambiguity, refuse the temptation to guess.
+
+14. There should be one-- and preferably only one --obvious way to do it.
+
+15. Although that way may not be obvious at first unless you&#39;re Dutch.
+
+16. Now is better than never.
+
+17. Although never is often better than *right* now.
+
+18. If the implementation is hard to explain, it&#39;s a bad idea.
+
+19. If the implementation is easy to explain, it may be a good idea.
+
+20. Namespaces are one honking great idea -- let&#39;s do more of those!
+</code></pre></div>
+
+</div>
+<div class="meta">
+  
+</div>
+<div class="tags">
+  <p>This entry was tagged 
+  
+  <a class="tag" href="/tags/python"><span>python</span></a>, 
+  
+  <a class="tag" href="/tags/programming"><span>programming</span></a>, 
+  
+  <a class="tag" href="/tags/tools"><span>tools</span></a>, 
+  
+  <a class="tag" href="/tags/tutorial"><span>tutorial</span></a>
+  
+</div>
+<div id="underpost">
+  <h3>Discussions/Feedback.</h3>
+  <p>I do not accept comments on this blog. Managing the spam is a headache and I am better off without it. I, however, do welcome your feedback - good or bad via email at <code>feedback@mirnazim.org</code>. Specifically, I would be grateful for your feedback on errors, ommisions, broken links, etc. </p>
+</div>
+
+    <!--<div id="comments">-->
+      <!--<p>I do not accept comments on this blog(moderating spam gives me severe heartburns); However, I  welcome your feedback at <a href="#">feedback(at)mirnazim(dot)org</a></p>-->
+    <!--</div>-->
+  </div><!--/#content-->
+  <div id="footer">
+    <p>&copy; Mir Nazim 2010. Some Rights Reserved</p>
+  </div>
+</div><!--/#page-->
+
+
+
+<div id="nav">
+  <div><img src="/media/img/mirnazim.face.png"></div>
+  <a title="Home" href="/">home</a>
+  <a title="About" class="about" href="/about/">about</a>
+  <a title="Atom feeds" href="/atom.xml">atom</a>
+  <!--<span class="spacer">&nbsp;</span>-->
+  <a title="Twitter" href="http://twitter.com/mirnazim">twitter</a>
+  <a title="LinkedIn" href="http://in.linkedin.com/in/mirnazim">linkedIn</a>
+  <a title="Google+" href="http://gplus.to/mirnazim">google+</a>
+  <a title="Github" href="http://github.com/mnazim">github</a>
+  <a title="Flickr" href="http://www.flickr.com/photos/mirnazim/">flickr</a>
+</div>
+<!-- Google Analytics--> 
+<script type="text/javascript">
+if ('mirnazim.org' in window.location)  {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25128315-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+}
+</script>
+<!-- End Google Analytics-->
+<script type="text/javascript" src="/media/js/googlefonts.js"></script>
+</body>
+</html>

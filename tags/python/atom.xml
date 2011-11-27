@@ -4,13 +4,24 @@
 <subtitle>Mir Nazim's weblog</subtitle>
 <link href="http://mirnazim.org/atom.xml" rel="self" />
 <link href="http://mirnazim.org/" />
-<id>tag:mirnazim.org,2011-11-19T03:14:02Z:/</id>
-<updated>2011-11-19T03:14:02Z</updated>
+<id>tag:mirnazim.org,2011-11-28T02:17:37Z:/</id>
+<updated>2011-11-28T02:17:37Z</updated>
 <author>
   <name>Mir Nazim</name>
   <email>me@mirnazim.org</email>
 </author>
 
+
+<entry>
+  <title>Python Ecosystem - An Introduction</title>
+  <link href="http://mirnazim.org/writings/python-ecosystem-introduction" />
+  <id>tag:mirnazim.org,2011-11-28:/writings/python-ecosystem-introduction</id>
+  <updated>2011-11-28T03:00:00Z</updated>
+  <content type="xhtml" xml:base="http://mirnazim.org">
+    <div xmlns="http://www.w3.org/1999/xhtml"><p>Are you a python developer</p>
+<a href="http://mirnazim.org/writings/python-ecosystem-introduction"> continue reading...</a></div>
+  </content>
+</entry>
 
 <entry>
   <title>LocalTunnel - Expose local web server to the world</title>

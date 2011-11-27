@@ -4,13 +4,24 @@
 <subtitle>Mir Nazim's weblog</subtitle>
 <link href="http://mirnazim.org/atom.xml" rel="self" />
 <link href="http://mirnazim.org/" />
-<id>tag:mirnazim.org,2011-11-19T03:14:02Z:/</id>
-<updated>2011-11-19T03:14:02Z</updated>
+<id>tag:mirnazim.org,2011-11-28T02:17:37Z:/</id>
+<updated>2011-11-28T02:17:37Z</updated>
 <author>
   <name>Mir Nazim</name>
   <email>me@mirnazim.org</email>
 </author>
 
+
+<entry>
+  <title>Python Ecosystem - An Introduction</title>
+  <link href="http://mirnazim.org/writings/python-ecosystem-introduction" />
+  <id>tag:mirnazim.org,2011-11-28:/writings/python-ecosystem-introduction</id>
+  <updated>2011-11-28T03:00:00Z</updated>
+  <content type="xhtml" xml:base="http://mirnazim.org">
+    <div xmlns="http://www.w3.org/1999/xhtml"><p>Are you a python developer</p>
+<a href="http://mirnazim.org/writings/python-ecosystem-introduction"> continue reading...</a></div>
+  </content>
+</entry>
 
 <entry>
   <title>Jammu and Kashmir Developer Network Begins</title>
@@ -108,17 +119,6 @@
   <content type="xhtml" xml:base="http://mirnazim.org">
     <div xmlns="http://www.w3.org/1999/xhtml"><p>The argparse module was added to Python 2.7 as a replacement for optparse. The implementation of argparse supports features that would not have been easy to add to optparse, and that would have required backwards-incompatible API changes, so a new module was brought into the library instead. optparse is still supported, but is not likely to receive new features.</p>
 <a href="http://mirnazim.org/links/argparse-commandline-options-argument-parsing"> continue reading on www.doughellmann.com...</a></div>
-  </content>
-</entry>
-
-<entry>
-  <title>Vim is my choice</title>
-  <link href="http://mirnazim.org/writings/vim-is-my-choice" />
-  <id>tag:mirnazim.org,2010-04-25:/writings/vim-is-my-choice</id>
-  <updated>2010-04-25T00:00:00Z</updated>
-  <content type="xhtml" xml:base="http://mirnazim.org">
-    <div xmlns="http://www.w3.org/1999/xhtml"><p>I have been using vim since I started using Linux, yet I never really used it until I took the dive about 6 months ago. Since then vim has been surprising me every single day. Now I cannot imagine using anything else. This my little vim story.</p>
-<a href="http://mirnazim.org/writings/vim-is-my-choice"> continue reading...</a></div>
   </content>
 </entry>
 

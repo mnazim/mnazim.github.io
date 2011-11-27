@@ -2,7 +2,7 @@ WebFontConfig = {
   google: { 
     families: [ 
       'Gentium+Basic:400,400italic,700,700italic:latin',
-      'Inconsolata:latin',
+      'Ubuntu+Mono:400,400italic,700,700italic',
       'Yanone+Kaffeesatz:latin',
     ] 
   }

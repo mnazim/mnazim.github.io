@@ -57,6 +57,9 @@ KINDS = {
     'photo': {
         'name': 'photo', 'name_plural': 'photos',
     },
+    'page': {
+        'name': 'page', 'name_plural': 'pages',
+    },
 
 }
 
