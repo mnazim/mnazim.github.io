@@ -6,7 +6,7 @@ public: yes
 chronological : yes
 kind: writing
 summary: |
-    Are you a python developer
+    When developers shift from PHP, Ruby or any other platform to Python, the very first road block they face(most often) is the lack of overall understanding the Python ecosystem. Developers often yearn for a tutorial/resource that explains how to accomplish most tasks in a more or less standard way.
 ...
 
 When developers shift from PHP, Ruby or any other platform to Python, the very first road block they face(most often) is the lack of overall understanding the Python ecosystem. Developers often yearn for a tutorial/resource that explains how to accomplish most tasks in a more or less standard way.
