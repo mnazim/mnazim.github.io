@@ -234,9 +234,9 @@ yum install python2.7
 
 <p>You will often want to upgrade, downgrade and/or reinstall packages. It can be done with following commands.</p>
 
-<div class="codehilite"><pre><code><span class="nv">$ </span>sudo pip install simplejson --updrage         <span class="c"># Upgrade a package to the latest version from PyPI</span>
+<div class="codehilite"><pre><code><span class="nv">$ </span>sudo pip install simplejson --upgrade         <span class="c"># Upgrade a package to the latest version from PyPI</span>
 
-<span class="nv">$ </span>sudo pip install <span class="nv">simplejson</span><span class="o">==</span>2.2.1 --updrage  <span class="c"># Upgrade/downgrade a package to a given version</span>
+<span class="nv">$ </span>sudo pip install <span class="nv">simplejson</span><span class="o">==</span>2.2.1 --upgrade  <span class="c"># Upgrade/downgrade a package to a given version</span>
 </code></pre></div>
 
 <p>Now what if you want to install the development version of a package which is in a version control repository and not yet on PyPI. <code>pip</code> takes care of that as well, but before you can do that, you will need to install the version control systems itself. On Ubuntu, you will install as follows.</p>
@@ -283,6 +283,47 @@ yum install python2.7
 </code></pre></div>
 
 <p>What if there is no <code>setup.py</code> file? How do you find the egg name? Well you don't need to. Just copy the package source to you project directory and import and use just like you would use your own code.</p>
+
+<h4>The --user switch</h4>
+
+<p>All the above examples will install the packages system wide. If you use <code>--user</code> switch with <code>pip install</code>, the packages will be installed in your <code>~/.local</code> directory. For example, on my machine, it is as follows.</p>
+
+<div class="codehilite"><pre><code><span class="nv">$ </span>pip install --user markdown2
+
+Downloading/unpacking markdown2
+
+  Downloading markdown2-1.0.1.19.zip <span class="o">(</span>130Kb<span class="o">)</span>: 130Kb downloaded
+
+  Running setup.py egg_info <span class="k">for </span>package markdown2
+
+
+
+Installing collected packages: markdown2
+
+  Running setup.py install <span class="k">for </span>markdown2
+
+    warning: build_py: byte-compiling is disabled, skipping.
+
+
+
+    changing mode of build/scripts-2.7/markdown2 from 664 to 775
+
+    warning: install_lib: byte-compiling is disabled, skipping.
+
+
+
+
+
+    changing mode of /home/mir/.local/bin/markdown2 to 775
+
+Successfully installed markdown2
+
+Cleaning up...
+</code></pre></div>
+
+<p><em>Note the filesystem location(<code>/home/mir/.local/bin/markdown2</code>) where the markdown2 package was installed.</em></p>
+
+<p>There are a number of reasons for why you would not want to install all the packages in the system wide locations. I will go over them in a moment when I show you how to setup a separate and isolated python environments for each of your projects.</p>
 
 <h3>Installing from source.</h3>
 
@@ -693,43 +734,49 @@ Disconnecting from localhost... <span class="k">done</span>.
 
 <p>I leave you with the <strong>Zen Of Python</strong>. Ponder. Contemplate. Be Enlightened! <em>Happy Pythoning</em></p>
 
-<div class="codehilite"><pre><code> 1. Beautiful is better than ugly.
+<div class="codehilite"><pre><code>&gt;&gt;&gt; import this
 
- 2. Explicit is better than implicit.
+The Zen of Python, by Tim Peters
 
- 3. Simple is better than complex.
 
- 4. Complex is better than complicated.
 
- 5. Flat is better than nested.
+Beautiful is better than ugly.
 
- 6. Sparse is better than dense.
+Explicit is better than implicit.
 
- 7. Readability counts.
+Simple is better than complex.
 
- 8. Special cases aren&#39;t special enough to break the rules.
+Complex is better than complicated.
 
- 9. Although practicality beats purity.
+Flat is better than nested.
 
-11. Errors should never pass silently.
+Sparse is better than dense.
 
-12. Unless explicitly silenced.
+Readability counts.
 
-13. In the face of ambiguity, refuse the temptation to guess.
+Special cases aren&#39;t special enough to break the rules.
 
-14. There should be one-- and preferably only one --obvious way to do it.
+Although practicality beats purity.
 
-15. Although that way may not be obvious at first unless you&#39;re Dutch.
+Errors should never pass silently.
 
-16. Now is better than never.
+Unless explicitly silenced.
 
-17. Although never is often better than *right* now.
+In the face of ambiguity, refuse the temptation to guess.
 
-18. If the implementation is hard to explain, it&#39;s a bad idea.
+There should be one-- and preferably only one --obvious way to do it.
 
-19. If the implementation is easy to explain, it may be a good idea.
+Although that way may not be obvious at first unless you&#39;re Dutch.
 
-20. Namespaces are one honking great idea -- let&#39;s do more of those!
+Now is better than never.
+
+Although never is often better than *right* now.
+
+If the implementation is hard to explain, it&#39;s a bad idea.
+
+If the implementation is easy to explain, it may be a good idea.
+
+Namespaces are one honking great idea -- let&#39;s do more of those!
 </code></pre></div>
 
 </div>
@@ -750,6 +797,9 @@ Disconnecting from localhost... <span class="k">done</span>.
 </div>
 <div id="underpost">
   <h3>Discussions/Feedback.</h3>
+  
+    <p>If you wish to, you can discuss/upvote/downvote this post at <a href="http://news.ycombinator.com/item?id=3286399">Hacker News</a>.</p>
+  
   <p>I do not accept comments on this blog. Managing the spam is a headache and I am better off without it. I, however, do welcome your feedback - good or bad via email at <code>feedback@mirnazim.org</code>. Specifically, I would be grateful for your feedback on errors, ommisions, broken links, etc. </p>
 </div>
 

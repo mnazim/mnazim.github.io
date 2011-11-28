@@ -5,6 +5,7 @@ tags: [ python, programming, tools, tutorial]
 public: yes
 chronological : yes
 kind: writing
+discussions_link: http://news.ycombinator.com/item?id=3286399 
 summary: |
     When developers shift from PHP, Ruby or any other platform to Python, the very first road block they face(most often) is the lack of overall understanding the Python ecosystem. Developers often yearn for a tutorial/resource that explains how to accomplish most tasks in a more or less standard way.
 ...
@@ -198,8 +199,8 @@ By default, `pip` will install the most recent stable version as found on PyPI, 
 You will often want to upgrade, downgrade and/or reinstall packages. It can be done with following commands.
 
     :::bash
-    $ sudo pip install simplejson --updrage         # Upgrade a package to the latest version from PyPI
-    $ sudo pip install simplejson==2.2.1 --updrage  # Upgrade/downgrade a package to a given version
+    $ sudo pip install simplejson --upgrade         # Upgrade a package to the latest version from PyPI
+    $ sudo pip install simplejson==2.2.1 --upgrade  # Upgrade/downgrade a package to a given version
 
 Now what if you want to install the development version of a package which is in a version control repository and not yet on PyPI. `pip` takes care of that as well, but before you can do that, you will need to install the version control systems itself. On Ubuntu, you will install as follows.
 
@@ -231,6 +232,32 @@ Now you might be wondering what going on with these is *eggs*. Right now all you
         **kw)
 
 What if there is no `setup.py` file? How do you find the egg name? Well you don't need to. Just copy the package source to you project directory and import and use just like you would use your own code.
+
+#### The --user switch
+
+All the above examples will install the packages system wide. If you use `--user` switch with `pip install`, the packages will be installed in your `~/.local` directory. For example, on my machine, it is as follows.
+
+    :::bash
+    $ pip install --user markdown2
+    Downloading/unpacking markdown2
+      Downloading markdown2-1.0.1.19.zip (130Kb): 130Kb downloaded
+      Running setup.py egg_info for package markdown2
+        
+    Installing collected packages: markdown2
+      Running setup.py install for markdown2
+        warning: build_py: byte-compiling is disabled, skipping.
+        
+        changing mode of build/scripts-2.7/markdown2 from 664 to 775
+        warning: install_lib: byte-compiling is disabled, skipping.
+        
+        
+        changing mode of /home/mir/.local/bin/markdown2 to 775
+    Successfully installed markdown2
+    Cleaning up...
+
+*Note the filesystem location(`/home/mir/.local/bin/markdown2`) where the markdown2 package was installed.*
+
+There are a number of reasons for why you would not want to install all the packages in the system wide locations. I will go over them in a moment when I show you how to setup a separate and isolated python environments for each of your projects.
 
 ### Installing from source.
 
@@ -577,25 +604,28 @@ Python has a great community of really very smart people, who have a very patien
 I leave you with the **Zen Of Python**. Ponder. Contemplate. Be Enlightened! _Happy Pythoning_
 
     :::text
-     1. Beautiful is better than ugly.
-     2. Explicit is better than implicit.
-     3. Simple is better than complex.
-     4. Complex is better than complicated.
-     5. Flat is better than nested.
-     6. Sparse is better than dense.
-     7. Readability counts.
-     8. Special cases aren't special enough to break the rules.
-     9. Although practicality beats purity.
-    11. Errors should never pass silently.
-    12. Unless explicitly silenced.
-    13. In the face of ambiguity, refuse the temptation to guess.
-    14. There should be one-- and preferably only one --obvious way to do it.
-    15. Although that way may not be obvious at first unless you're Dutch.
-    16. Now is better than never.
-    17. Although never is often better than *right* now.
-    18. If the implementation is hard to explain, it's a bad idea.
-    19. If the implementation is easy to explain, it may be a good idea.
-    20. Namespaces are one honking great idea -- let's do more of those!
+    >>> import this
+    The Zen of Python, by Tim Peters
+    
+    Beautiful is better than ugly.
+    Explicit is better than implicit.
+    Simple is better than complex.
+    Complex is better than complicated.
+    Flat is better than nested.
+    Sparse is better than dense.
+    Readability counts.
+    Special cases aren't special enough to break the rules.
+    Although practicality beats purity.
+    Errors should never pass silently.
+    Unless explicitly silenced.
+    In the face of ambiguity, refuse the temptation to guess.
+    There should be one-- and preferably only one --obvious way to do it.
+    Although that way may not be obvious at first unless you're Dutch.
+    Now is better than never.
+    Although never is often better than *right* now.
+    If the implementation is hard to explain, it's a bad idea.
+    If the implementation is easy to explain, it may be a good idea.
+    Namespaces are one honking great idea -- let's do more of those!
 
 
 
