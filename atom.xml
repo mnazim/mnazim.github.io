@@ -4,13 +4,24 @@
 <subtitle>Mir Nazim's weblog</subtitle>
 <link href="http://mirnazim.org/atom.xml" rel="self" />
 <link href="http://mirnazim.org/" />
-<id>tag:mirnazim.org,2011-11-28T22:57:47Z:/</id>
-<updated>2011-11-28T22:57:47Z</updated>
+<id>tag:mirnazim.org,2011-11-29T21:33:19Z:/</id>
+<updated>2011-11-29T21:33:19Z</updated>
 <author>
   <name>Mir Nazim</name>
   <email>me@mirnazim.org</email>
 </author>
 
+
+<entry>
+  <title>Great feedback on Python Ecosystem guide - Thank You</title>
+  <link href="http://mirnazim.org/notes/thank-you-for-python-ecosystem-feedback" />
+  <id>tag:mirnazim.org,2011-11-29:/notes/thank-you-for-python-ecosystem-feedback</id>
+  <updated>2011-11-29T09:35:00Z</updated>
+  <content type="xhtml" xml:base="http://mirnazim.org">
+    <div xmlns="http://www.w3.org/1999/xhtml"><p>I got a great feedback on Python Ecosystem guide.</p>
+<a href="http://mirnazim.org/notes/thank-you-for-python-ecosystem-feedback"> continue reading...</a></div>
+  </content>
+</entry>
 
 <entry>
   <title>Python Ecosystem - An Introduction</title>
@@ -108,17 +119,6 @@
   <content type="xhtml" xml:base="http://mirnazim.org">
     <div xmlns="http://www.w3.org/1999/xhtml"><p>Finally, I gave in and moved my Vim, bash and other dotfiles from <a href="http://bitbucket.org/">Hg</a>/<a href="http://mercurial.selenic.com/">bitbucket</a> to <a href="http://git-scm.com/">git</a>/<a href="http://github.com">github</a>. The repository is available at <a href="http://github.com/mnazim/dotfiles">http://github.com/mnazim/dotfiles</a> . GitHub is awesome, just found out git is not that bad either.</p>
 <a href="http://mirnazim.org/notes/moved-my-dotfiles-repo-to-github"> continue reading...</a></div>
-  </content>
-</entry>
-
-<entry>
-  <title>argparse - Command line option and argument parsing</title>
-  <link href="http://mirnazim.org/links/argparse-commandline-options-argument-parsing" />
-  <id>tag:mirnazim.org,2010-08-09:/links/argparse-commandline-options-argument-parsing</id>
-  <updated>2010-08-09T04:04:00Z</updated>
-  <content type="xhtml" xml:base="http://mirnazim.org">
-    <div xmlns="http://www.w3.org/1999/xhtml"><p>The argparse module was added to Python 2.7 as a replacement for optparse. The implementation of argparse supports features that would not have been easy to add to optparse, and that would have required backwards-incompatible API changes, so a new module was brought into the library instead. optparse is still supported, but is not likely to receive new features.</p>
-<a href="http://mirnazim.org/links/argparse-commandline-options-argument-parsing"> continue reading on www.doughellmann.com...</a></div>
   </content>
 </entry>
 
