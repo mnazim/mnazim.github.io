@@ -4,8 +4,8 @@
 <subtitle>Mir Nazim's weblog</subtitle>
 <link href="http://mirnazim.org/atom.xml" rel="self" />
 <link href="http://mirnazim.org/" />
-<id>tag:mirnazim.org,2011-11-29T21:33:19Z:/</id>
-<updated>2011-11-29T21:33:19Z</updated>
+<id>tag:mirnazim.org,2011-12-12T01:44:42Z:/</id>
+<updated>2011-12-12T01:44:42Z</updated>
 <author>
   <name>Mir Nazim</name>
   <email>me@mirnazim.org</email>
@@ -29,7 +29,7 @@
   <id>tag:mirnazim.org,2011-11-28:/writings/python-ecosystem-introduction</id>
   <updated>2011-11-28T03:00:00Z</updated>
   <content type="xhtml" xml:base="http://mirnazim.org">
-    <div xmlns="http://www.w3.org/1999/xhtml"><p>When developers shift from PHP, Ruby or any other platform to Python, the very first road block they face(most often) is the lack of overall understanding the Python ecosystem. Developers often yearn for a tutorial/resource that explains how to accomplish most tasks in a more or less standard way.</p>
+    <div xmlns="http://www.w3.org/1999/xhtml"><p>When developers shift from PHP, Ruby or any other platform to Python, the very first road block they face (most often) is a lack of an overall understanding of the Python ecosystem. Developers often yearn for a tutorial or resource that explains how to accomplish most tasks in a more or less standard way.</p>
 <a href="http://mirnazim.org/writings/python-ecosystem-introduction"> continue reading...</a></div>
   </content>
 </entry>

@@ -118,6 +118,10 @@ class Entry(object):
     def summary_html(self):
         return "%s" % markdown2.markdown(self.header['summary'].strip())
 
+    @property
+    def credits_html(self):
+        return "%s" % markdown2.markdown(self.header['credits'].strip())
+
 
     @property
     def summary_atom(self):

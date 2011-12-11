@@ -177,7 +177,7 @@ blockquote p:first-line {
     left: 0;
     top: 6px;
     font-family: Ubuntu, Helvetica, Arial, sans-serif;
-    opacity: 0.1;
+    opacity: 0.5;
     height: 100%;
     -moz-transition: opacity 0.5s ease-in;
     -webkit-transition: opacity 0.5s ease-in;
