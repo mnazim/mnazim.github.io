@@ -301,7 +301,7 @@ Python development files (headers, etc.):
     :::bash
     $ sudo aptitude install python-dev-all 
 
-If your distribution does not have `python-dev-all`, look for packages with names similar to `python-dev`, `python2.X-dev`, etc. 
+If your distribution does not have `python-dev-all`, look for packages with name similar to `python-dev`, `python2.X-dev`, etc. 
 
 Assuming you are installing `psycopg2` (the PostgreSQL RDBMS adapter for Python), you will also need the development files for PostgreSQL.
 
