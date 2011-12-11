@@ -223,7 +223,7 @@ You could install from a repository, equally easily. Note the triple slash in th
     :::bash
     $ sudo pip install git+file:///path/to/local/repository
 
-One thing should be noted that while installing via `git` protocol, you should `git+git` prefix like so:
+One thing should be noted that while installing via `git` protocol, you should use `git+git` prefix like so:
 
     :::bash
     $ sudo pip install git+git://hostname_or_ip/path/to/git-repo#egg=packagename
