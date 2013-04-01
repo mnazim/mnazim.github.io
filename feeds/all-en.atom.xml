@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mir Nazim</title><link href="http://mirnazim.org/" rel="alternate"></link><link href="http://mirnazim.org/feeds/all-en.atom.xml" rel="self"></link><id>http://mirnazim.org/</id><updated>2013-04-02T01:53:00+02:00</updated><entry><title>On Child Education</title><link href="http://mirnazim.org/writings/on-child-education" rel="alternate"></link><updated>2013-04-02T01:53:00+02:00</updated><author><name>Mir Nazim</name></author><id>tag:mirnazim.org,2013-04-02:writings/on-child-education</id><summary type="html">&lt;p&gt;&lt;em&gt;(This is an incomplete work, Only purpose of this page is to serve as a place to collect my thoughts.)&lt;/em&gt;&lt;/p&gt;
+&lt;div class="section" id="you-can-live-without-telivision"&gt;
+&lt;h2&gt;You can live without telivision&lt;/h2&gt;
+&lt;p&gt;Unplug your TV set, pick it up, take it out, and smash it and burn it beyond salvage. Period. No excuses. Disadvantages of TV are far greater than the advantages and those advantages can easily be replaced with better alternatives. Want your children to learn from Discovery Channel - everything available on DVD and P2P networks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="schools-are-evil"&gt;
+&lt;h2&gt;Schools are evil&lt;/h2&gt;
+&lt;p&gt;Don't send them off to schools. Schools will damage your child in the ways you cannot imagine. Just like TV, the disadvantages of the schools system far outweigh the advantages. You want your children to learn social skills, encourage them to go to parks and play with other kids in your residential locality.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="reading-and-writing-are-primary-skills"&gt;
+&lt;h2&gt;Reading and writing are primary skills&lt;/h2&gt;
+&lt;p&gt;Teach you children to read and write a couple of languages.(your native language, English, and may be one more language of your liking). The key is to start early; you will be amazed to see how fast your 2 year old kids can pick-up reading, even before they start speaking properly.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="books-are-awesome"&gt;
+&lt;h2&gt;Books are awesome&lt;/h2&gt;
+&lt;p&gt;Now give them books. Lot's of them. Not computers, not iPads. The actual physical, paper books. Read with them; write with them but don't force them. Start slow, not more than 30 minutes, once or twice a week. Build up their curiosity a few pages at a time.&lt;/p&gt;
+&lt;!-- Mastakes are tools; use them --&gt;
+&lt;!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --&gt;
+&lt;!--  --&gt;
+&lt;!-- Once they are adults, let them and encourage them make their own decisions. --&gt;
+&lt;!--  --&gt;
+&lt;!--  --&gt;
+&lt;!-- Now, what about those are not fortunate enough to have literate parents and/or have to give up education for earning the basic survival - a real problem in our sub-continent. Identify such kids in your locality; form a group of literate people; GOTO Step 0 above. Encourage your friends and relatives to form similar groups in their respective localities. --&gt;
+&lt;!--  --&gt;
+&lt;!-- Now what about schools completion certificates. The only certificate your child will ever need is the completion of High School and/or Senior School. National Open School is one such alternative. --&gt;
+&lt;!--  --&gt;
+&lt;/div&gt;
+</summary><category term="education"></category></entry><entry><title>Python Ecosystem – An Introduction</title><link href="http://mirnazim.org/writings/python-ecosystem-an-introduction" rel="alternate"></link><updated>2011-11-28T03:00:00+01:00</updated><author><name>Mir Nazim</name></author><id>tag:mirnazim.org,2011-11-28:writings/python-ecosystem-an-introduction</id><summary type="html">&lt;p&gt;When developers shift from PHP, Ruby or any other platform to Python, the very first road block they face (most often) is a lack of an overall understanding of the Python ecosystem. Developers often yearn for a tutorial or resource that explains how to accomplish most tasks in a more or less standard way.&lt;/p&gt;
+&lt;p&gt;What follows is an extract from the internal wiki at my &lt;a href="http://ikraftsoft.com/"&gt;workplace&lt;/a&gt;, which documents the basics of the Python ecosystem for web application development for our interns, trainees and experienced developers who shift to Python from other platforms.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This is not a complete resource. My target is to make it &lt;strong&gt;a work in perpetual progress&lt;/strong&gt;. Hopefully, over time, this will develop into an exhaustive tutorial.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Intended Audience&lt;/h2&gt;
+&lt;p&gt;This is not about teaching Python - the programming language. This tutorial will not magically transform you into a Python ninja. I am assuming that you already know the basics of Python. If you don't, then stop right now. Go read Zed Shaw's brilliant free book &lt;a href="http://learnpythonthehardway.org/"&gt;Learn Python The Hard Way&lt;/a&gt; first and then come back.&lt;/p&gt;
+&lt;p&gt;I am assuming you are working on Linux (preferably Ubuntu/Debian) or a Linux-like operating system. Why? Because that is what I know best. I have not done any serious programming related work on MS Windows or Mac OS X, other than testing for cross-browser compatibility. Check out the following tutorials on how to install Python on other platforms:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.blog.pythonlibrary.org/2011/11/24/python-101-setting-up-python-on-windows/"&gt;Python 101: Setting up Python on Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://docs.python.org/using/windows.html"&gt;Official documentation for Python on Windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://docs.python.org/using/mac.html"&gt;Official documentation for Python on Mac OS X&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Search the web for the best possible ways of installing Python on your operating system. I highly recommend asking on &lt;a href="http://www.stackoverflow.com"&gt;Stack Overflow&lt;/a&gt;. &lt;/p&gt;
+&lt;h2&gt;The version confusion&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Python 2.x is the status quo; Python 3 is the shiny new thing. If you don't care, just skip to &lt;strong&gt;Installing Python&lt;/strong&gt; section below.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When starting with Python, installing version 3.x will seem like a natural first step, but it might not be exactly what you want.&lt;/p&gt;
+&lt;p&gt;Currently there are two actively developed versions of Python - 2.7.x and 3.x (also called Python 3, Py3K and Python 3000). Python 3 is a different language from Python 2. There are some subtle and some stark semantic and syntactic differences. As of today, Python 2.6/2.7 is the most installed and most used version. Many mainstream and important packages/frameworks/tools/utilities/modules are not yet 100% compatible with Python 3.&lt;/p&gt;
+&lt;p&gt;Therefore, the safest choice would be to use 2.x (2.7.x to be more specific). Choose Python 3 only if you need it and/or fully understand the implications.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://python3wos.appspot.com/"&gt;Python 3 Wall of Shame&lt;/a&gt; documents the Python 3 compatibility for various packages. Check it thoroughly before deciding to start with Python 3.&lt;/p&gt;
+&lt;h2&gt;Which VM to use&lt;/h2&gt;
+&lt;p&gt;The Python interpreter or the Python Virtual Machine has a number of different implementations, CPython being the main and most popularly installed implementation. CPython also acts as the reference implementation for other virtual machines. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://pypy.org/"&gt;PyPy&lt;/a&gt; is Python implemented in Python, &lt;a href="http://www.jython.org/"&gt;Jython&lt;/a&gt; is implemented in Java and runs on the Java VM and &lt;a href="http://ironpython.net/"&gt;IronPython&lt;/a&gt; is the Python implementation for Microsoft .NET CLR.&lt;/p&gt;
+&lt;p&gt;Unless it is really, really important to choose otherwise, CPython should be used to avoid any surprises.&lt;/p&gt;
+&lt;p&gt;If all this jibber jabber about versions and virtual machines is giving you headaches, then all you need is CPython version 2.7.x. Trust me on this.&lt;/p&gt;
+&lt;h2&gt;Installing Python&lt;/h2&gt;
+&lt;p&gt;Most of the Linux/Unix distros and Mac OS X come with Python pre-installed. If yours does not or has an older version, you can install version 2.7.x with the following command:&lt;/p&gt;
+&lt;p&gt;On Ubuntu/Debian and derivatives&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install python2.7
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;&lt;code&gt;sudo&lt;/code&gt; is a program for Unix-like operating systems that allows users to run programs with the security privileges of another user (normally the superuser, or root). &lt;a href="http://en.wikipedia.org/wiki/Sudo"&gt;You can learn more about sudo at Wikipedia&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;On Fedora/Red Hat and similar systems&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;sudo yum install python2.7
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;On RHEL you would likely need EPEL repositories enabled for install to work&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;From this point on, I will be using &lt;code&gt;sudo&lt;/code&gt; in my examples; you should replace this with your distro-specific equivalent.&lt;/p&gt;
+&lt;h2&gt;Understanding the packages&lt;/h2&gt;
+&lt;p&gt;The first thing you need to understand is that Python does not have any package management facilities by default. In fact, the very concept of packages in Python is very loose.&lt;/p&gt;
+&lt;p&gt;As you might already know, Python code is organized into modules. A module can be a single file containing just one function or a directory containing one or more sub-modules. The difference between a package and a module is very minimal and every module can be thought of as a package.&lt;/p&gt;
+&lt;p&gt;So what is the difference (if any) between a module and a package? For that you first need to understand how Python finds the modules.&lt;/p&gt;
+&lt;p&gt;As with any programming environment, some functions and classes (&lt;code&gt;str&lt;/code&gt;, &lt;code&gt;len&lt;/code&gt;, &lt;code&gt;Exception&lt;/code&gt;, etc.) in Python are available in the global scope(called &lt;code&gt;builtin&lt;/code&gt; scope in Python) and others need to be imported by means of an &lt;code&gt;import&lt;/code&gt; statement. For example:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;os.path&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;basename&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;dirname&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;These packages must be somewhere in your filesystem so that they can be found by the &lt;code&gt;import&lt;/code&gt; statement. How does Python know the location of these modules? These locations are set automatically when you install the Python virtual machine and are, almost always, dependent on the target platform.&lt;/p&gt;
+&lt;p&gt;The package path is always available for your inspection in &lt;code&gt;sys.path&lt;/code&gt;. Here is what it looks like on my laptop which runs &lt;em&gt;Ubuntu 11.10 Oneric Ocelot&lt;/em&gt;.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/plat-linux2&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/lib-tk&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/lib-old&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/lib-dynload&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/local/lib/python2.7/dist-packages&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/dist-packages&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/dist-packages/PIL&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/dist-packages/gst-0.10&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/dist-packages/gtk-2.0&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/pymodules/python2.7&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/dist-packages/ubuntu-sso-client&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/dist-packages/ubuntuone-client&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/dist-packages/ubuntuone-control-panel&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/dist-packages/ubuntuone-couch&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/dist-packages/ubuntuone-installer&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+ &lt;span class="s"&gt;&amp;#39;/usr/lib/python2.7/dist-packages/ubuntuone-storage-protocol&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This will give you the list of directories where Python will search for a given package. It starts at the top and keeps going downwards until a name match is found. This means if two different directories contain two packages with the same name, the package search will always stop at the first absolute match encountered and will never go further down the list.&lt;/p&gt;
+&lt;p&gt;As you might have guessed by now, this package search path can easily be hacked to ensure that Python picks your packages first. All you need to do is:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;insert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;/path/to/my/packages&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;While this approach comes in handy in many situations, you must always bear in mind that it is very easy to abuse it. &lt;strong&gt;Use it if you have to but don't abuse it&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;site&lt;/code&gt; module controls the method by which these package search paths are set. It is imported automatically at the time of initialization of Python virtual machine. If you would like to understand the process involved in more detail, head over to it's &lt;a href="http://docs.python.org/library/site.html"&gt;official documentation page&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;The PYTHONPATH&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;PYTHONPATH&lt;/code&gt; is a environment variable that can be used to augment the default package search paths. Think of it as a &lt;code&gt;PATH&lt;/code&gt; variable but specifically for Python. It is simply a list (not a Python list like &lt;code&gt;sys.path&lt;/code&gt;) of directories containing the Python modules separated by &lt;code&gt;:&lt;/code&gt;. It can be simply set as follows:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PYTHONPATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/path/to/some/directory:/path/to/another/directory:/path/to/yet/another/directory
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;In some situations you will not want to overwrite the existing &lt;code&gt;PYTHONPATH&lt;/code&gt;, but just append or prepend to it.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PYTHONPATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$PYTHONPATH&lt;/span&gt;:/path/to/some/directory    &lt;span class="c"&gt;# Append&lt;/span&gt;
+&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PYTHONPATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/path/to/some/directory:&lt;span class="nv"&gt;$PYTHONPATH&lt;/span&gt;    &lt;span class="c"&gt;# Prepend&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Generally, you will put this inside the shell startup files like &lt;code&gt;.bashrc&lt;/code&gt;, &lt;code&gt;.zshrc&lt;/code&gt;, etc.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;PYTHONPATH&lt;/code&gt;, &lt;code&gt;sys.path.insert&lt;/code&gt; and similar techniques are hack and generally it is better to stay away for these hacks. Use them, if they solve your local development environment problems but your production environments should not depend on such hacks. There are more elegant ways of accomplishing the same effect, on which I will elaborate in a moment&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Now that you understand how Python finds the installed packages, we can revisit our original question. What is the difference between a module and a package? A package is just a module or a collection of modules/sub-modules, and generally comes compressed inside a tarball, which contains 1) information on dependencies - if any 2) instructions to copy the files to the standard package search location and 3) compile instructions - if it contains code that must be compiled before installation. That's it.&lt;/p&gt;
+&lt;h2&gt;Third party packages&lt;/h2&gt;
+&lt;p&gt;Right from the start, for any serious programming with Python you will need to install third party packages for various tasks.&lt;/p&gt;
+&lt;p&gt;On a Linux System there are at least 3 ways of installing third party packages.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;using the package management system of your distro (deb, rpm, etc.)&lt;/li&gt;
+&lt;li&gt;by means of various community-developed tools like &lt;code&gt;pip&lt;/code&gt;, &lt;code&gt;easy_install&lt;/code&gt;, etc.&lt;/li&gt;
+&lt;li&gt;installing from the source files&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;All three ways, almost always, accomplish the same thing &lt;em&gt;viz.&lt;/em&gt; install dependencies, compile code if needed and copy the modules contained inside a package to the standard package search locations.&lt;/p&gt;
+&lt;p&gt;While #2 and #3 will work almost unchanged on any operating system, I will once again point you to &lt;a href="http://www.stackoverflow.com"&gt;Stack Overflow&lt;/a&gt; to find out other ways of installing third party packages on your target platform.&lt;/p&gt;
+&lt;h3&gt;Where to find third party packages&lt;/h3&gt;
+&lt;p&gt;Before you can install third party packages, you will have to find them. There are more than a few ways of finding packages.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;the modules packaged for your distro-specific package management system&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pypi.python.org/pypi"&gt;Python Package Index (or PyPI)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various source code hosting services like &lt;a href="https://launchpad.net/"&gt;Launchpad&lt;/a&gt;, &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt;, &lt;a href="https://bitbucket.org/"&gt;BitBucket&lt;/a&gt;, etc.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Installing with distro-specific package management systems&lt;/h3&gt;
+&lt;p&gt;Installing packages using the distro package management system is simply issuing the command or using whatever GUI app you use to install other apps. E.g., to install &lt;code&gt;simplejson&lt;/code&gt; (a JSON parsing utility) on an Ubuntu system, you would issue the following command:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install python-simplejson
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Installing with pip&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;easy_install&lt;/code&gt; has mostly fallen out of favor. We will only concentrate on &lt;code&gt;pip&lt;/code&gt;, which is a replacement for &lt;code&gt;easy_install&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pip&lt;/code&gt; is a tool for installing and managing Python packages, such as those found in the Python Package Index. &lt;code&gt;pip&lt;/code&gt; is not installed with the Python virtual machine, therefore we need to install it first. On Linux, I generally install it as follows:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install python-pip
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Before installing any other package I always upgrade &lt;code&gt;pip&lt;/code&gt; to the latest version available in PyPI as Ubuntu repositories are generally behind PyPI. I upgrade &lt;code&gt;pip&lt;/code&gt; with pip itself.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install pip --upgrade
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now, to install any python package, you would run the &lt;code&gt;pip install package-name&lt;/code&gt; command. Therefore, to install &lt;code&gt;simplejson&lt;/code&gt; you would run the following command:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install simplejson
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Removing packages is just as easy.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip uninstall simplejson
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;By default, &lt;code&gt;pip&lt;/code&gt; will install the most recent stable version found on PyPI, but often you will face situations where you will want to install a specific version of a package, because your project depends on that specific version. To accomplish that you will use the &lt;code&gt;pip install&lt;/code&gt; command as follows:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install &lt;span class="nv"&gt;simplejson&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;2.2.1
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You will often want to upgrade, downgrade and/or reinstall packages. This can be done with the following commands.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install simplejson --upgrade         &lt;span class="c"&gt;# Upgrade a package to the latest version from PyPI&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install &lt;span class="nv"&gt;simplejson&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;2.2.1 --upgrade  &lt;span class="c"&gt;# Upgrade/downgrade a package to a given version&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now, what if you want to install the development version of a package which is in a version control repository and not yet on PyPI? &lt;code&gt;pip&lt;/code&gt; takes care of that as well, but before you can do this, you will need to install the version control systems itself. On Ubuntu, you would perform the installation as follows:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install git-core mercurial subversion
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Once you have the version control system installed, installing a package from a version control repository can be done as follows:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install git+http://hostname_or_ip/path/to/git-repo#egg&lt;span class="o"&gt;=&lt;/span&gt;packagename
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install hg+http://hostname_or_ip/path/to/hg-repo#egg&lt;span class="o"&gt;=&lt;/span&gt;packagename
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install svn+http://hostname_or_ip/path/to/svn-repo#egg&lt;span class="o"&gt;=&lt;/span&gt;packagename
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You could install from a repository, equally easily. Note the triple slash in the filesystem path.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install git+file:///path/to/local/repository
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;One thing should be noted that while installing via &lt;code&gt;git&lt;/code&gt; protocol, you should use &lt;code&gt;git+git&lt;/code&gt; prefix like so:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install git+git://hostname_or_ip/path/to/git-repo#egg&lt;span class="o"&gt;=&lt;/span&gt;packagename
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now, you might be wondering what going on with these &lt;em&gt;eggs&lt;/em&gt;. Right now all you need to understand is that an egg is a zipped Python package containing package source and some metadata. &lt;code&gt;pip&lt;/code&gt; builds the egg information before it installs the package. You can find the egg name by inspecting the &lt;code&gt;setup.py&lt;/code&gt; file within the code repository (it will almost always be there). Find the &lt;code&gt;setup&lt;/code&gt; section and look for the line that looks like &lt;code&gt;name="something"&lt;/code&gt;. It will look somewhat similar to the following piece of code (taken from the &lt;code&gt;setup.py&lt;/code&gt; file from simplejson).&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+    &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;simplejson&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="c"&gt;# &amp;lt;--- This is your egg name&lt;/span&gt;
+    &lt;span class="n"&gt;version&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;VERSION&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;description&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;DESCRIPTION&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;long_description&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;LONG_DESCRIPTION&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;classifiers&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;CLASSIFIERS&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Bob Ippolito&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;author_email&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;bob@redivi.com&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;url&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://github.com/simplejson/simplejson&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;license&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;MIT License&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="n"&gt;packages&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;simplejson&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;simplejson.tests&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+    &lt;span class="n"&gt;platforms&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;any&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+    &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;kw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;What if there is no &lt;code&gt;setup.py&lt;/code&gt; file? How do you find the egg name? Well, you don't need to. Just copy the package source to your project directory and import and use it just like you would use your own code.&lt;/p&gt;
+&lt;h4&gt;The --user switch&lt;/h4&gt;
+&lt;p&gt;All of the above examples will install the packages system-wide. If you use &lt;code&gt;--user&lt;/code&gt; switch with &lt;code&gt;pip install&lt;/code&gt;, the packages will be installed in your &lt;code&gt;~/.local&lt;/code&gt; directory. For example, on my machine, it looks like this:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install --user markdown2
+Downloading/unpacking markdown2
+  Downloading markdown2-1.0.1.19.zip &lt;span class="o"&gt;(&lt;/span&gt;130Kb&lt;span class="o"&gt;)&lt;/span&gt;: 130Kb downloaded
+  Running setup.py egg_info &lt;span class="k"&gt;for &lt;/span&gt;package markdown2
+
+Installing collected packages: markdown2
+  Running setup.py install &lt;span class="k"&gt;for &lt;/span&gt;markdown2
+    warning: build_py: byte-compiling is disabled, skipping.
+
+    changing mode of build/scripts-2.7/markdown2 from 664 to 775
+    warning: install_lib: byte-compiling is disabled, skipping.
+
+
+    changing mode of /home/mir/.local/bin/markdown2 to 775
+Successfully installed markdown2
+Cleaning up...
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Note the filesystem location (&lt;code&gt;/home/mir/.local/bin/markdown2&lt;/code&gt;) where the markdown2 package was installed.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;There are a number of reasons for why you would not want to install all the packages in the system-wide locations. I will go over them in a moment when I show you how to set up separate and isolated Python environments for each of your projects.&lt;/p&gt;
+&lt;h3&gt;Installing from source.&lt;/h3&gt;
+&lt;p&gt;Installing a python package from source is just one command. Extract the package content into a directory and run the following commands:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; /path/to/package/directory
+python setup.py install
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Although you can use this method of installation with no real difference at all, understand that &lt;code&gt;pip&lt;/code&gt; is always the recommended way of installing the packages because &lt;code&gt;pip&lt;/code&gt; gives you the ability to upgrade/downgrade the packages very easily without the extra work involved in manually downloading, extracting and installing. Installing from source should always be your last option, if all else fails (which it normally should not).&lt;/p&gt;
+&lt;h3&gt;Install packages that need compiling&lt;/h3&gt;
+&lt;p&gt;While we have covered most of what there is to installing packages, there is one thing we have not covered: Python packages containing C/C++ code which need to be compiled before they can be installed and used. The best examples of such packages are database adapters, image processing libraries, etc.&lt;/p&gt;
+&lt;p&gt;While pip can manage the compilation of source, I personally prefer to install such packages using the distro-specific package management system, which installs the pre-built binaries.&lt;/p&gt;
+&lt;p&gt;If you still want/need to install with &lt;code&gt;pip&lt;/code&gt;, here is what you will need on an Ubuntu system.&lt;/p&gt;
+&lt;p&gt;Compiler and related tools:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install build-essential
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Python development files (headers, etc.):&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo aptitude install python-dev-all
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If your distribution does not have &lt;code&gt;python-dev-all&lt;/code&gt;, look for packages with name similar to &lt;code&gt;python-dev&lt;/code&gt;, &lt;code&gt;python2.X-dev&lt;/code&gt;, etc. &lt;/p&gt;
+&lt;p&gt;Assuming you are installing &lt;code&gt;psycopg2&lt;/code&gt; (the PostgreSQL RDBMS adapter for Python), you will also need the development files for PostgreSQL.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo aptitude install  postgresql-server-dev-all
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Once these dependencies are satisfied, you can now run &lt;code&gt;pip install&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install psycopg2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;There is one thing that should be remembered: &lt;strong&gt;&lt;em&gt;Not all such packages are compatible with the &lt;code&gt;pip&lt;/code&gt; installation method&lt;/em&gt;&lt;/strong&gt;. But if you feel confident about compiling the source and/or already have the necessary experience/understanding of how all this works on your target platform, then by all means go ahead and install however you want.&lt;/p&gt;
+&lt;h2&gt;The Development Environment&lt;/h2&gt;
+&lt;p&gt;Different people like to set up their development environment in different ways, but in almost all programming communities, one (or more than one) way of setting up the development environment is more accepted than others. While there is nothing wrong with setting up your development environment differently, generally these methods/setups are more tested and known to make some repetitive/boilerplate tasks in day-to-day work easy and maintainable.&lt;/p&gt;
+&lt;h3&gt;virtualenv&lt;/h3&gt;
+&lt;p&gt;The most popular method of setting up the development environment in Python is using the &lt;strong&gt;virtualenv&lt;/strong&gt; package. Virtualenv is a tool to create isolated Python environments. Now, the question arises: why do we need an isolated Python environment? To answer that, allow me to quote the virtualenv documentation itself.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The basic problem being addressed is one of dependencies and versions, and indirectly permissions. Imagine you have an application that needs version 1 of LibFoo, but another application requires version 2. How can you use both these applications? If you install everything into /usr/lib/python2.7/site-packages (or whatever your platform's standard location is), it's easy to end up in a situation where you unintentionally upgrade an application that shouldn't be upgraded.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To put it simply, you can have different/isolated Python environments for each of your projects; you will install required packages for each of your projects into its own isolated environment.&lt;/p&gt;
+&lt;p&gt;Use &lt;code&gt;pip&lt;/code&gt; to install virtualenv as well.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install virtualenv
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now once virtualenv is installed, run the following commands to create an isolated Python environment for your project.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir my_project_venv
+&lt;span class="nv"&gt;$ &lt;/span&gt;virtualenv --distribute my_project_venv
+&lt;span class="c"&gt;# The output will something like:&lt;/span&gt;
+New python executable in my_project_venv/bin/python
+Installing distribute.............................................done.
+Installing pip.....................done.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;So what's happening here? You created a directory called &lt;code&gt;my_project_venv&lt;/code&gt; to hold your new isolated Python environment. The &lt;code&gt;--distribute&lt;/code&gt; tells virtualenv to use new/improved packaging system based on the &lt;code&gt;distribute&lt;/code&gt; package instead of using the old system based on &lt;code&gt;setuptools&lt;/code&gt;. All you need to understand right now is that the &lt;code&gt;--distribute&lt;/code&gt; option will install &lt;code&gt;pip&lt;/code&gt; automatically within the new virtual environment, so that you don't have to. As your knowledge/experience as a Python developer increase, you will start to better understand these nuts and bolts under the hood.&lt;/p&gt;
+&lt;p&gt;Now inspect the contents of the &lt;code&gt;my_project_venv&lt;/code&gt; directory, and you'll see a structure like this:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Showing only files/directories relevant to the discussion at hand&lt;/span&gt;
+.
+|-- bin
+|   |-- activate  &lt;span class="c"&gt;# &amp;lt;-- Activates this virtualenv&lt;/span&gt;
+|   |-- pip       &lt;span class="c"&gt;# &amp;lt;-- pip specific to this virtualenv&lt;/span&gt;
+|   &lt;span class="sb"&gt;`&lt;/span&gt;-- python    &lt;span class="c"&gt;# &amp;lt;-- A copy of python interpreter&lt;/span&gt;
+&lt;span class="sb"&gt;`&lt;/span&gt;-- lib
+    &lt;span class="sb"&gt;`&lt;/span&gt;-- python2.7 &lt;span class="c"&gt;# &amp;lt;-- This is where all new packages will go&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Activate the virtualenv with the following command:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;my_project_venv
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;source &lt;/span&gt;bin/activate
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After &lt;em&gt;sourcing&lt;/em&gt; the &lt;code&gt;activate&lt;/code&gt; script, your prompt should look something like this:
+    :::bash
+    (my_project_venv)$ # the virtualenv name prepended to the prompt&lt;/p&gt;
+&lt;p&gt;Now deactivate the virtualenv with the following command:
+    :::bash
+    (my_project_venv)$ deactivate&lt;/p&gt;
+&lt;p&gt;Run the following commands to better understand the difference when you use system-wide installation (deactivate the virtualenv first if it's active).&lt;/p&gt;
+&lt;p&gt;First, let's find out which python/pip executable will be used if I call &lt;code&gt;python&lt;/code&gt; or &lt;code&gt;pip&lt;/code&gt; from the terminal.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;which python
+/usr/bin/python
+&lt;span class="nv"&gt;$ &lt;/span&gt;which pip
+/usr/local/bin/pip
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Learn about the &lt;code&gt;which&lt;/code&gt; command at &lt;a href="http://en.wikipedia.org/wiki/Which_%28Unix%29"&gt;Wikipedia&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Now do it again, but activate the virtualenv first and note the differences in the output. On my machine it looks like this:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;my_project_venv
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;source &lt;/span&gt;bin/activate
+&lt;span class="o"&gt;(&lt;/span&gt;my_project_venv&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;which python
+/home/mir/my_project_venv/bin/python
+&lt;span class="o"&gt;(&lt;/span&gt;my_project_venv&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;which pip
+/home/mir/my_project_venv/bin/pip
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;What &lt;code&gt;virtualenv&lt;/code&gt; did is make a copy of the Python executable, and create a few utility scripts and a place to install project-specific packages that you'll eventually install/upgrade/remove over the lifetime of the project. It also did some package search path/PYTHONPATH magic to ensure that 1) when you install packages, they are installed inside the currently active virtualenv and not the system-wide Python installation and 2) when imported from code, the packages in the currently active virtualenv will take precedence over the ones installed in system-wide Python installations.&lt;/p&gt;
+&lt;p&gt;An important thing to note here is that by default, all the packages installed inside the system-wide Python are automatically available to the virtualenv. That means if you installed the &lt;code&gt;simplejson&lt;/code&gt; package in your system-wide Python installation, it will automatically be available to all the virtualenvs. This behavior can be altered by adding a &lt;code&gt;--no-site-packages&lt;/code&gt; switch at the time of creation of the virtualenv, like so:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;virtualenv my_project_venv --no-site-packages
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;virtualenvwrapper&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;virtualenvwrapper&lt;/code&gt; is a wrapper around &lt;code&gt;virtualenv&lt;/code&gt; which provides some really nice utilities to create/activate/manage/destroy virtual environments, which otherwise will be a chore. To install &lt;code&gt;virtualenvwrapper&lt;/code&gt;, run the following command:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install virtualenvwrapper
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Once installed, you will need to configure it. Here is how I do it:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="sb"&gt;`&lt;/span&gt;id -u&lt;span class="sb"&gt;`&lt;/span&gt; !&lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;0&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;; &lt;span class="k"&gt;then&lt;/span&gt;
+&lt;span class="k"&gt;  &lt;/span&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;VIRTUALENV_USE_DISTRIBUTE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1        &lt;span class="c"&gt;# &amp;lt;-- Always use pip/distribute&lt;/span&gt;
+  &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;WORKON_HOME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;/.virtualenvs       &lt;span class="c"&gt;# &amp;lt;-- Where all virtualenvs will be stored&lt;/span&gt;
+  &lt;span class="nb"&gt;source&lt;/span&gt; /usr/local/bin/virtualenvwrapper.sh
+  &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PIP_VIRTUALENV_BASE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$WORKON_HOME&lt;/span&gt;
+  &lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PIP_RESPECT_VIRTUALENV&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;true&lt;/span&gt;
+&lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Setting &lt;code&gt;WORKON_HOME&lt;/code&gt; and &lt;code&gt;source /usr/local/bin/virtualenvwrapper.sh&lt;/code&gt; are the only required pieces of configuration, rest of the configurations are as per my personal preferences.&lt;/p&gt;
+&lt;p&gt;Add the above configuration at the end of my &lt;code&gt;~/.bashrc&lt;/code&gt; file and run following command once in your current opened shell windows:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt; ~/.bashrc
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Same effect can be achieved by closing all open shell windows and tabs and when you open a shell window or a tab again, &lt;code&gt;~/.bashrc&lt;/code&gt; will be executed, automatically setting the your &lt;code&gt;virtualenvwrapper&lt;/code&gt; configuration properly.&lt;/p&gt;
+&lt;p&gt;Now to create/activate/deactivate/delete a virtualenv, you will run following (self explanatory) commands.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkvirtualenv my_project_venv
+&lt;span class="nv"&gt;$ &lt;/span&gt;workon my_project_venv
+&lt;span class="nv"&gt;$ &lt;/span&gt;deactivate
+&lt;span class="nv"&gt;$ &lt;/span&gt;rmvirtualenv my_project_venv
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Tab-based bash shell command completion also works with virtualenvwrapper.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Go over to &lt;a href="http://www.doughellmann.com/projects/virtualenvwrapper/"&gt;virtualenvwrapper homepage&lt;/a&gt; to learn more about available commands and configuration options.&lt;/p&gt;
+&lt;h3&gt;Basic dependency management with pip and virtualenv&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;pip&lt;/code&gt; in combination with &lt;code&gt;virtualenv&lt;/code&gt; can provide basic dependency management facilities for your project. &lt;/p&gt;
+&lt;p&gt;You can use the &lt;code&gt;pip freeze&lt;/code&gt; command to export the list of currently installed packages. For example, here is the list of Python packages that I use to build this blog:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip freeze -l 
+&lt;span class="nv"&gt;Jinja2&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;2.6
+&lt;span class="nv"&gt;PyYAML&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;3.10
+&lt;span class="nv"&gt;Pygments&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;1.4
+&lt;span class="nv"&gt;distribute&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;0.6.19
+&lt;span class="nv"&gt;markdown2&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;1.0.1.19
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;em&gt;Note the &lt;code&gt;-l&lt;/code&gt; switch. It tells &lt;code&gt;pip&lt;/code&gt; to export only the packages installed in the currently active virtual environment and exclude the globally installed packages from the list.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can save this exported list to a file and add it to your version control system.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip freeze -l  &amp;gt; requirements.txt
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;pip&lt;/code&gt; can also install packages from a file containing the output of the &lt;code&gt;pip freeze&lt;/code&gt; command.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install -r requirements.txt
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Other important tools&lt;/h2&gt;
+&lt;p&gt;While we covered the basics of Python versions, VMs and package management, there are other tasks in day-to-day work which require special-purpose tools to accomplish. While I cannot go into every bit of detail for each of the tools, I will try to you give a basic overview.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Apologies in advance, as most of the tools are specific to web application developers.&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;The Editor&lt;/h3&gt;
+&lt;p&gt;There are quite a number of good editors which provide tools for programming in Python. I, personally, am biased towards Vim, but I do not intend to start the &lt;em&gt;Editor Wars&lt;/em&gt; - or do I ;).&lt;/p&gt;
+&lt;p&gt;Some good editors and IDEs (if you like IDEs) that have support for Python programming are Vim/Gvim, Emacs, GEdit for GNOME, Kate for KDE, Scribes, Komodo Edit/IDE from ActiveState, Wing IDE from WingWare, PyCharm from JetBrains, PyDEV for Eclipse. There are others but these seem to be the most popular ones. Choose whichever works best for you.&lt;/p&gt;
+&lt;h3&gt;Pyflakes: Source checking and linting&lt;/h3&gt;
+&lt;p&gt;Pyflakes is a simple program which checks Python source files for errors by analyzing the text of the file. It checks for syntax and (some) logical errors, imported but unused modules, variables used only once, etc.&lt;/p&gt;
+&lt;p&gt;You can install it with &lt;code&gt;pip&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install pyflakes
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Call it from the terminal with a Python source file as an argument, like so:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pyflakes filename.py
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Pyflakes can be integrated into your editor as well. Here is how it looks on my Vim. Note the &lt;em&gt;red squiggly lines&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="/media/img/content/vim-pyflakes.png" title="Pyflakes"&gt;&lt;img alt="PyFlakes" src="/media/img/content/vim-pyflakes.png" title="Pyflakes" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ask on &lt;a href="http://www.stackoverflow.com"&gt;Stack Overflow&lt;/a&gt; how to add Pyflakes support for the editor of your choice.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://launchpad.net/pyflakes"&gt;Pyflakes website&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Requests: HTTP library for human beings&lt;/h3&gt;
+&lt;p&gt;Requests is a library that makes working with HTTP a breeze. &lt;/p&gt;
+&lt;p&gt;Install it with &lt;code&gt;pip&lt;/code&gt;, like so:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install requests
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Here's a simple example:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;requests&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;https://api.github.com&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;auth&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;user&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;pass&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;status_code&lt;/span&gt;
+&lt;span class="mi"&gt;204&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;headers&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;content-type&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="s"&gt;&amp;#39;application/json&amp;#39;&lt;/span&gt;
+&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;content&lt;/span&gt;
+&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="http://docs.python-requests.org/en/latest/index.html"&gt;Requests documentation&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Flask: Microframework for web development&lt;/h3&gt;
+&lt;p&gt;Flask is a microframework for Python, based on Werkzeug and Jinja2. &lt;/p&gt;
+&lt;p&gt;Install it with &lt;code&gt;pip&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install Flask
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Here's a simple example:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;flask&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Flask&lt;/span&gt;
+&lt;span class="n"&gt;app&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Flask&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;__name__&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nd"&gt;@app.route&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;/&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;hello&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;__main__&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;app&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Run it like so:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;python hello.py
+ * Running on http://localhost:5000/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="http://flask.pocoo.org/"&gt;Flask website&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Django: Full stack framework for web development&lt;/h3&gt;
+&lt;p&gt;Django is a full stack web framework. It provides an ORM, HTTP library, form handling, XSS filtering, and templating, among other things. &lt;/p&gt;
+&lt;p&gt;Install with &lt;code&gt;pip&lt;/code&gt;, like so:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install Django
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Head over to the &lt;a href="http://djangoproject.com"&gt;Django website&lt;/a&gt; and follow the documentation to learn it. It's quite easy.&lt;/p&gt;
+&lt;h3&gt;Fabric: Streamline the use of SSH for deployment and/or system admin tasks&lt;/h3&gt;
+&lt;p&gt;Fabric is a Python library and command-line tool for streamlining the use of SSH for application deployment or systems administration tasks.&lt;/p&gt;
+&lt;p&gt;It provides a basic suite of operations for executing local or remote shell commands (normally or via sudo) and uploading/downloading files, as well as auxiliary functionality such as prompting the running user for input, or aborting execution.&lt;/p&gt;
+&lt;p&gt;You can install Fabric with &lt;code&gt;pip&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;pip install fabric
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Here's a simple task written with Fabric:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;fabric.api&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;run&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;host_type&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="n"&gt;run&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;uname -s&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then you execute the ask on one or more servers like:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;fab -H localhost host_type
+&lt;span class="o"&gt;[&lt;/span&gt;localhost&lt;span class="o"&gt;]&lt;/span&gt; run: uname -s
+&lt;span class="o"&gt;[&lt;/span&gt;localhost&lt;span class="o"&gt;]&lt;/span&gt; out: Linux
+
+Done.
+Disconnecting from localhost... &lt;span class="k"&gt;done&lt;/span&gt;.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;a href="http://fabfile.org"&gt;Fabric website&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;SciPy: tools for scientific computing with Python&lt;/h3&gt;
+&lt;p&gt;If your work involves scientific and numerical computing, the SciPy is an indispensable tool for you.&lt;/p&gt;
+&lt;p&gt;From SciPy website:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;SciPy (pronounced "Sigh Pie") is open-source software for mathematics, science, and engineering. It is also the name of a very popular conference on scientific programming with Python. The SciPy library depends on NumPy, which provides convenient and fast N-dimensional array manipulation. The SciPy library is built to work with NumPy arrays, and provides many user-friendly and efficient numerical routines such as routines for numerical integration and optimization. Together, they run on all popular operating systems, are quick to install, and are free of charge. NumPy and SciPy are easy to use, but powerful enough to be depended upon by some of the world's leading scientists and engineers. If you need to manipulate numbers on a computer and display or publish the results, give SciPy a try! &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Head over to &lt;a href="http://www.scipy.org/"&gt;SciPy website&lt;/a&gt; for detailed download/install instructions and documentation.&lt;/p&gt;
+&lt;h3&gt;PEP 8: Python Style Guide&lt;/h3&gt;
+&lt;p&gt;While not a software tool &lt;em&gt;per se&lt;/em&gt;, PEP 8 is a very important resource related to Python.&lt;/p&gt;
+&lt;p&gt;PEP 8 is a document that defines coding conventions for the Python code comprising the standard library in the main Python distribution. The sole purpose of the document is to ensure that the python code from everywhere follows same physical layout of the code, naming patterns for variables, class and function names. Make sure you understand it thoroughly and follow it. It will ease you life a lot over time.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.python.org/dev/peps/pep-0008/"&gt;PEP 0008&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;The Mighty Python Standard Library&lt;/h3&gt;
+&lt;p&gt;Python's standard library is very extensive, offering a wide range of facilities. The library contains built-in modules (written in C) that provide access to system functionality such as file I/O, as well as modules written in Python that provide standardized solutions for many problems that occur in everyday programming. Some of these modules are explicitly designed to encourage and enhance the portability of Python programs by abstracting away platform-specifics into platform-neutral APIs.&lt;/p&gt;
+&lt;p&gt;Checkout the &lt;a href="http://docs.python.org/library/"&gt;Official documentation for the Standard Library&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;Recommended Reading&lt;/h2&gt;
+&lt;p&gt;David Goodger's &lt;a href="http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html"&gt;Code Like a Pythonista: Idiomatic Python&lt;/a&gt; covers many essential Python idioms and techniques in depth, adding immediately useful tools to your belt. &lt;/p&gt;
+&lt;p&gt;Doug Hellmann's excellent series &lt;a href="http://www.doughellmann.com/PyMOTW/contents.html"&gt;Python Module of the Week&lt;/a&gt;. The focus of the series is building a set of example code for the modules in the Python standard library. &lt;/p&gt;
+&lt;h2&gt;Parting thought&lt;/h2&gt;
+&lt;p&gt;What I have covered so far in this tutorial, is just skimming the surface. There is a vast sea of useful tools, libraries and software available for Python for almost every concievable task and which cannot covered in a single go. You will have to discover them yourself, over time.&lt;/p&gt;
+&lt;p&gt;Python has a great community of really very smart people, who have a very patient and helpful attitude towards new commers to the language. So hang out at IRC channels of your favorite open source projects, follow and ask in mailing lists, talk to people who have experience in implementing small and large systems in Python(and others). Overtime, as your experience/knowledge expands you will become one of them yourself.&lt;/p&gt;
+&lt;p&gt;I leave you with the &lt;strong&gt;Zen Of Python&lt;/strong&gt;. Ponder. Contemplate. Be Enlightened! &lt;em&gt;Happy Pythoning&lt;/em&gt;&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&amp;gt;&amp;gt;&amp;gt; import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren&amp;#39;t special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you&amp;#39;re Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it&amp;#39;s a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let&amp;#39;s do more of those!
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="python"></category><category term="programming"></category><category term="tools"></category><category term="tutorial"></category></entry><entry><title>List of vim plugins I use - with mini tutorials</title><link href="http://mirnazim.org/writings/list-of-vim-plugins-i-use-with-mini-tutorials" rel="alternate"></link><updated>2011-08-14T17:00:00+02:00</updated><author><name>Mir Nazim</name></author><id>tag:mirnazim.org,2011-08-14:writings/list-of-vim-plugins-i-use-with-mini-tutorials</id><summary type="html">&lt;p&gt;I am a vim user, and by user I mean I do all(not counting using the textarea inside the web browser) of my editing inside vim. Even when I need to use a word processor, I first type my content inside vim and then open the word processor to format it.&lt;/p&gt;
+&lt;p&gt;As any vim user knows that Vim experience is not complete without the use of plugins, here is the list of plugins I use on daily basis.&lt;/p&gt;
+&lt;h2&gt;A word about my vim setup&lt;/h2&gt;
+&lt;p&gt;I manage my vim/bash configs in separate directory &lt;code&gt;~/dotfiles&lt;/code&gt;. Here is what it looks like.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;ls
+bash  bin  desktop  utils  vim
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;bash&lt;/code&gt; directory contains my my &lt;code&gt;.bashrc&lt;/code&gt;, &lt;code&gt;.bash_aliases&lt;/code&gt; etc. &lt;code&gt;bin&lt;/code&gt; - not same as &lt;code&gt;~/bin&lt;/code&gt;, contains scripts I use on day to day basis. &lt;code&gt;desktop&lt;/code&gt; contains contains configurations exported from my Ubuntu desktop apps(e.g. my compiz-unity profile).&lt;/p&gt;
+&lt;p&gt;Here is what my &lt;code&gt;vim&lt;/code&gt; directory looks like&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;ls
+autoload  bundle  sessions  undodir  vimrc
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Everything is &lt;em&gt;soft linked&lt;/em&gt; to the relevant locations from here as shown by following commands:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;ln -s ~/dotfiles/vim ~/.vim
+&lt;span class="nv"&gt;$ &lt;/span&gt;ln -s ~/dotfiles/vim/vimrc ~/.vimrc
+&lt;span class="nv"&gt;$ &lt;/span&gt;ln -s ~/dotfiles/bash/bashrc ~/.bashrc
+&lt;span class="nv"&gt;$ &lt;/span&gt;ln -s ~/dotfiles/bash/aliases ~/.bash_aliases
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;1. Pathogen: Vim package manager&lt;/h2&gt;
+&lt;p&gt;&amp;raquo; &lt;a href="https://github.com/tpope/vim-pathogen"&gt;Github repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pathogen helps me keep the &lt;code&gt;.vim&lt;/code&gt; directory clean. When pathogen is used to manage plugins, it is the only plugin that needs to be installed directly by copying the files into &lt;code&gt;.vim&lt;/code&gt; directory.&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;I recommend starting with a blank &lt;code&gt;.vim&lt;/code&gt; directory.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mv ~/.vim ~/vim_old                                           &lt;span class="c"&gt;# 1. Backup your old .vim directory&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir .vim                                                    &lt;span class="c"&gt;# 2. Creat a blank .vim directory&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;git clone git://github.com/tpope/vim-pathogen.git pathogen    &lt;span class="c"&gt;# 3. Clone the pathogen repo&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;mv pathogen/autoload ~/.vim/autoload                          &lt;span class="c"&gt;# 4. Move pathogen to .vim directory&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I also track my configurations with git; you can use whatever version control system you prefer(Hg, Bzr or God forbid svn).&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; .vim
+&lt;span class="nv"&gt;$ &lt;/span&gt;git init
+&lt;span class="nv"&gt;$ &lt;/span&gt;git add .
+&lt;span class="nv"&gt;$ &lt;/span&gt;git commit -m &lt;span class="s2"&gt;&amp;quot;Initial commit&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now edit your &lt;code&gt;.vimrc&lt;/code&gt; and add following lines to the top&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;call&lt;/span&gt; pathogen#runtime_append_all_bundles&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="k"&gt;call&lt;/span&gt; pathogen#&lt;span class="k"&gt;helptags&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That's it! Pathogen is now installed.&lt;/p&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;Any other plugins will be installed by simply copying the plugin files into &lt;code&gt;~/.vim/bundle/plugin_name&lt;/code&gt; directory. Generally, you will download the plugin, extract it and move to &lt;code&gt;~/.vim/bundle/plugin_name&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mv /path/to/plugin ~/.vim/bundle/plugin_name
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Although not required by pathogen, I prefer to manage plugins using &lt;a href="http://progit.org/book/ch6-6.html"&gt;git submodules&lt;/a&gt;. Let's install fugitive plugin for Git integration to demonstrate the process.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.vim
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule add git://github.com/tpope/vim-fugitive.git bundle/fugitive
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule init &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git submodule update
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Note: &lt;code&gt;git submodule init&lt;/code&gt; and &lt;code&gt;git submodule update&lt;/code&gt; need to be run every time a new submodule is added.  &lt;code&gt;git submodule foreach git pull&lt;/code&gt; command is used to pull latest upstream changes.&lt;/p&gt;
+&lt;h2&gt;2. Command-t: Pattern based file opener&lt;/h2&gt;
+&lt;p&gt;&amp;raquo; &lt;a href="https://wincent.com/products/command-t"&gt;Homepage&lt;/a&gt; &amp;raquo; &lt;a href="http://git.wincent.com/command-t.git"&gt;Git repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Command-T plug-in for VIM provides an extremely fast, intuitive mechanism for opening files with a minimal number of keystrokes. It's named "Command-T" because it is inspired by the "Go to File" window bound to &lt;code&gt;Command-T&lt;/code&gt; key in TextMate.&lt;/p&gt;
+&lt;p&gt;Files are selected by typing characters that appear in their paths, and are ordered by an algorithm which knows that characters that appear in certain locations (for example, immediately after a path separator) should be given more weight.&lt;/p&gt;
+&lt;p&gt;Here are is a screenshot of command-t in action while writing this very blog post.&lt;/p&gt;
+&lt;p&gt;&lt;a href="/media/img/content/command-t.png" title="Command-t"&gt;&lt;img alt="Command-t" src="/media/img/content/command-t.png" title="Command-t" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;Command-t is developed in ruby therefore ruby needs to be installed on your system. Here is how to installation on Ubuntu.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo aptitude install ruby ruby-dev
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule add git://git.wincent.com/command-t.git bundle/command-t
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule init &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git submodule update
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.vim/bundle/command-t/ruby/command-t/
+&lt;span class="nv"&gt;$ &lt;/span&gt;ruby extconf.rb
+&lt;span class="nv"&gt;$ &lt;/span&gt;make
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Detailed installation instructions are available at &lt;a href="https://wincent.com/products/command-t"&gt;Command-t homepage&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;Command-t provides three functions&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;CommandT&lt;/code&gt; - opens filelist in current directory&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CommandTBuffer&lt;/code&gt; - opens currently open buffers&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;CommandTFlush&lt;/code&gt; - re-read file list in current directory&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I have mapped these functions as following:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;noremap&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;leader&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;&lt;span class="k"&gt;o&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;Esc&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;:CommandT&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;CR&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nb"&gt;noremap&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;leader&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;O &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;Esc&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;:CommandTFlush&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;CR&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nb"&gt;noremap&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;leader&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;&lt;span class="k"&gt;m&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;Esc&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;:CommandTBuffer&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;CR&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;3. DelimitMate: Intelligent autocompletion for quotes, parenthesis, brackets etc.&lt;/h2&gt;
+&lt;p&gt;&amp;raquo; &lt;a href="https://github.com/Raimondi/delimitMate"&gt;Github repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;DelimitMate provides automatic closing of quotes, parenthesis, brackets, etc., besides some other related features that make my time in insert mode a little bit easier.&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.vim
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule add git://github.com/Raimondi/delimitMate.git bundle/delmitmate
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule init &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git submodule update
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;While I use delimitMate with default confirguration, it can be customized in quite a number of ways. See &lt;code&gt;:help delimitMate&lt;/code&gt; for detailed information on available confirguration options.&lt;/p&gt;
+&lt;h2&gt;4. CloseTag: Intelligently close HTML tags&lt;/h2&gt;
+&lt;p&gt;&amp;raquo; &lt;a href="http://github.com/docunext/closetag.vim"&gt;Github repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;CloseTag is simple plugin that intelligently closes the html tags based of the currently open tag. It is triggered when you type &lt;code&gt;&amp;lt;/&lt;/code&gt;. CloseTag will detect and close the open tag intelligently.&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.vim
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule add git://github.com/docunext/closetag.vim.git bundle/closetag
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule init &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git submodule update
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;For efficiency purposes I have configured CloseTag to load only for html/xml like files. Here is my &lt;code&gt;vimrc&lt;/code&gt; snippet for the same.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;autocmd &lt;span class="nb"&gt;FileType&lt;/span&gt; html&lt;span class="p"&gt;,&lt;/span&gt;htmldjango&lt;span class="p"&gt;,&lt;/span&gt;jinjahtml&lt;span class="p"&gt;,&lt;/span&gt;eruby&lt;span class="p"&gt;,&lt;/span&gt;mako &lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="k"&gt;b&lt;/span&gt;:closetag_html_style&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+autocmd &lt;span class="nb"&gt;FileType&lt;/span&gt; html&lt;span class="p"&gt;,&lt;/span&gt;xhtml&lt;span class="p"&gt;,&lt;/span&gt;xml&lt;span class="p"&gt;,&lt;/span&gt;htmldjango&lt;span class="p"&gt;,&lt;/span&gt;jinjahtml&lt;span class="p"&gt;,&lt;/span&gt;eruby&lt;span class="p"&gt;,&lt;/span&gt;mako source &lt;span class="p"&gt;~&lt;/span&gt;&lt;span class="sr"&gt;/.vim/&lt;/span&gt;bundle&lt;span class="sr"&gt;/closetag/&lt;/span&gt;plugin/closetag.&lt;span class="k"&gt;vim&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;5. Pyflakes: Liniting for python files&lt;/h2&gt;
+&lt;p&gt;&amp;raquo; &lt;a href="http://github.com/kevinw/pyflakes-vim"&gt;Github repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://pypi.python.org/pypi/pyflakes"&gt;Pyflakes&lt;/a&gt; is syntax checking and linting library for python. The vim plugin for same is provides me with syntax check right inside vim. It notifies me of any module I have imported but not used, variables I have assigned and not used, syntax errors etc.&lt;/p&gt;
+&lt;p&gt;Check out the red squiggly lines pointing out an unused variable and a indentation error in the screenshot below; a relevant error message will appear in the statusbar when the cursor is on the error in question.&lt;/p&gt;
+&lt;p&gt;&lt;a href="/media/img/content/vim-pyflakes.png" title="Pyflakes"&gt;&lt;img alt="PyFlakes" src="/media/img/content/vim-pyflakes.png" title="Pyflakes" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.vim
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule add git://github.com/kevinw/pyflakes-vim.git bundle/pyflakes
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule init &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git submodule update
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;Pyflakes should start working automatically as soon as you install it.&lt;/p&gt;
+&lt;h2&gt;6. NERDCommenter: Fast comment manipulations&lt;/h2&gt;
+&lt;p&gt;&amp;raquo; &lt;a href="https://github.com/scrooloose/nerdcommenter"&gt;Github repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;NERDCommenter provides a bunch of key mapping for working with comments in a very fast and efficient manner.&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.vim
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule add git://github.com/scrooloose/nerdcommenter.git bundle/nerdcommenter
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule init &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git submodule update
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;Some useful key mappings that I use regularly are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[count]&amp;lt;leader&amp;gt;ci&lt;/code&gt; - Toggles the comment state of the selected line(s) individually.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[count]&amp;lt;leader&amp;gt;cy&lt;/code&gt;- Same as &lt;leader&gt;cc except that the commented line(s) are yanked first.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;leader&amp;gt;c$&lt;/code&gt; - Comments the current line from the cursor to the end of line.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;leader&amp;gt;cA&lt;/code&gt; - Adds comment delimiters to the end of line and goes into insert mode between them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For complete list of NERDCommenter commands see &lt;code&gt;:help NERDCommenter&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;7. SuperTab: Word completion on steriods&lt;/h2&gt;
+&lt;p&gt;&amp;raquo; &lt;a href="https://github.com/ervandew/supertab"&gt;Github repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SuperTab let's me do all my insert mode completion using the &lt;code&gt;&amp;lt;TAB&amp;gt;&lt;/code&gt; key.&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.vim
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule add git://github.com/vim-scripts/supertab.git bundle/supertab
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule init &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git submodule update
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;Type a couple of letters of the word and press &lt;code&gt;Tab&lt;/code&gt; key and if it occurs somewhere in the open buffers, SuperTab will autocomplete it. E.g. typing &lt;code&gt;He&amp;lt;TAB&amp;gt;&lt;/code&gt;will popup a list of words from open buffers that start with &lt;strong&gt;&lt;em&gt;He&lt;/em&gt;&lt;/strong&gt;. (See screenshot)&lt;/p&gt;
+&lt;p&gt;&lt;a href="/media/img/content/supertab.png" title="SuperTab"&gt;&lt;img alt="SuperTab" src="/media/img/content/supertab.png" title="SuperTab" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SuperTab also works with vim's builtin autocomplete feature OmniComplete. Just add following line after your OmniComplete configurations.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="k"&gt;g&lt;/span&gt;:SuperTabDefaultCompletionType &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;context&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;8. Fugitive: Git integration&lt;/h2&gt;
+&lt;p&gt;&amp;raquo; &lt;a href="https://github.com/tpope/vim-fugitive"&gt;Github repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If had to pick the most awesome vim plugin, it would definitely be Fugitive. It provides an amazingly deep Git integration for vim.&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.vim
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule add git://github.com/tpope/vim-fugitive.git bundle/fugitive
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule init &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git submodule update
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;I am not even going to attempt describing Fugitive usage here. I would rather point you to the awesome &lt;a href="http://vimcasts.org/blog/2011/05/the-fugitive-series/"&gt;5 Part Fugitive Screecasts Series&lt;/a&gt; by &lt;a href="http://drewneil.com/"&gt;Drew Neil&lt;/a&gt;. Go, Learn!&lt;/p&gt;
+&lt;h2&gt;9. Tagbar: Awesome source code [tag]browsing&lt;/h2&gt;
+&lt;p&gt;&amp;raquo; &lt;a href="https://github.com/majutsushi/tagbar"&gt;Github repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tagbar displays the tags of the current file in a sidebar, similar to Taglist, but in a super sexy way - ordered by scope.&lt;/p&gt;
+&lt;p&gt;&lt;a href="/media/img/content/tagbar.png" title="Tagbar"&gt;&lt;img alt="Tagbar" src="/media/img/content/tagbar.png" title="Tagbar" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo aptitude install exuberant-ctags  &lt;span class="c"&gt;# Required by Tagbar&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.vim
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule add git://github.com/majutsushi/tagbar.git bundle/tagbar
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule init &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git submodule update
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Tagbar does not need any configuration by default and can be opened by &lt;code&gt;:TagbarOpen&lt;/code&gt; or &lt;code&gt;:TagbarToggle&lt;/code&gt;, but I have configured it as follows&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="k"&gt;g&lt;/span&gt;:tagbar_usearrows &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;
+&lt;span class="nb"&gt;nnoremap&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;leader&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;&lt;span class="k"&gt;l&lt;/span&gt; :TagbarToggle&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;CR&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;10. Solarized Colorscheme&lt;/h2&gt;
+&lt;p&gt;&amp;raquo; &lt;a href="https://github.com/altercation/vim-colors-solarized"&gt;Github repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Solarized is the awesome colorscheme for vim(and many other apps) by &lt;a href="http://ethanschoonover.com"&gt;Ethan Schoonover&lt;/a&gt;. It provides both light and dark versions. You have already seen the dark colorscheme in the screenshots included above. Here is a screenshots of light version.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ethanschoonover.com/solarized/img/screen-python-light.png"&gt;&lt;img alt="Solarized" src="http://ethanschoonover.com/solarized/img/screen-python-light.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/.vim
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule add  git://github.com/altercation/vim-colors-solarized.git bundle/solarized
+&lt;span class="nv"&gt;$ &lt;/span&gt;git submodule init &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git submodule update
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://github.com/altercation/vim-colors-solarized/blob/master/README.mkd"&gt;Solarized Vim README&lt;/a&gt; contains detailed configuration documentation; here is how I configured my instance&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;background&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;dark&lt;/span&gt;
+&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="k"&gt;g&lt;/span&gt;:solarized_termtrans&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="k"&gt;g&lt;/span&gt;:solarized_termcolors&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="m"&gt;256&lt;/span&gt;
+&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="k"&gt;g&lt;/span&gt;:solarized_contrast&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;high&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;let&lt;/span&gt; &lt;span class="k"&gt;g&lt;/span&gt;:solarized_visibility&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;high&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;colorscheme&lt;/span&gt; solarized
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you want to use solarized in the terminal vim you will need to set &lt;code&gt;TERM&lt;/code&gt; environment variable.&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;TERM&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;xterm-256color&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You can also use &lt;a href="https://github.com/godlygeek/csapprox"&gt;CSAprox&lt;/a&gt; plugin to use gvim themes inside terminal vim.&lt;/p&gt;
+&lt;h2&gt;The rest&lt;/h2&gt;
+&lt;p&gt;While the plugins described above are the ones without which I cannot even imagine working sanely, they are not the only ones. I use a variety of utility and syntax plugins. Some of them are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/tpope/vim-surround"&gt;Surround&lt;/a&gt; - For editing the surroundings of text.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/vim-scripts/Better-CSS-Syntax-for-Vim"&gt;Better CSS Syntax&lt;/a&gt; - Provides better CSS syntax highlighting.&lt;/li&gt;
+&lt;li&gt;&lt;a href="github.com/ap/vim-css-color"&gt;Vim CSS Color&lt;/a&gt; - Sets background of color hex codes to what they are.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/godlygeek/csapprox"&gt;CSAprox&lt;/a&gt; - Allows use of GVim color schemes in almost all terminals&lt;/li&gt;
+&lt;li&gt;Syntax plugins for various programming languages like JavaScript, HTML/XML, PHP, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For curious minds, my vim configurations(along with some other stuff) is available at &lt;a href="https://github.com/mnazim/dotfiles"&gt;github.com/mnazim/dotfiles&lt;/a&gt;.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h4&gt;Updates&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;August 22, 2011:&lt;/em&gt;&lt;/strong&gt; Corrected some mistakes and updated some obsolete repositories to active ones, thanks to the good people over at &lt;a href="http://news.ycombinator.com/item?id=2910350"&gt;Hacker News&lt;/a&gt;, &lt;a href="http://www.reddit.com/r/vim/comments/jkvl9/list_of_vim_plugins_i_use_with_mini_tutorials/"&gt;Reddit&lt;/a&gt; and Stéfan van der Walt who took the time to drop me an email.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;August 26, 2011:&lt;/em&gt;&lt;/strong&gt; A few readers reported confusing language in the para defining soft-linking of files and directories inside &lt;code&gt;~/dotfiles&lt;/code&gt; to relevant locations. Changed naration and added the example commands to be more explicit.&lt;/p&gt;</summary><category term="vim"></category><category term="editor"></category><category term="programming"></category></entry><entry><title>Vim is my choice</title><link href="http://mirnazim.org/writings/vim-is-my-choice" rel="alternate"></link><updated>2010-04-25T02:15:00+02:00</updated><author><name>Mir Nazim</name></author><id>tag:mirnazim.org,2010-04-25:writings/vim-is-my-choice</id><summary type="html">&lt;p&gt;I have been doing programming for 8 years now(6 years professionally). Given the &lt;a href="http://blogoscoped.com/archive/2005-08-24-n14.html"&gt;lazy &amp;amp; dumb person&lt;/a&gt; I am, I am always on a constant lookout for new tools to make my job easy by every passing day. The most important tool in your armoury as a programmer is your text editor. Why the most important? Because that's where you write the code(off course assuming you are not "&lt;a href="http://xkcd.com/378/"&gt;The Real Programmer&lt;/a&gt;").&lt;/p&gt;
+&lt;p&gt;I have used many text editors and IDE in past years. I used Eclipse, NetBeans, Komodo IDE/Edit, Notepad++(still use it if I have to(unavoidably) work on Windows). Tried my best to use GEdit and Kate as productively as possible. With some of these I started off very well; even enjoyed my ride for sometime. But all of them starting falling apart at one point or the other. Some where monsters and others where simply dumb when it came to any sort of serious text manipulation.&lt;/p&gt;
+&lt;p&gt;Then about 6 months back, I started thinking seriously about switching to either Emacs or Vim. Emacs was my first choice because I thought modal editing of Vim is just too big a PITA and always wondered &lt;a href="http://www.viemu.com/a-why-vi-vim.html"&gt;why do those nutheads used Vim&lt;/a&gt;. Least did I know, remembering a gazillion finger breaking key combinations will drive me crazy within a few days only. I have been using Vim on and off for small editing tasks and when I had ssh to remote machines, but I never tried to learn it properly.&lt;/p&gt;
+&lt;p&gt;Suddenly, one day it dawned, on me why Vim is &lt;a href="http://philosecurity.org/2009/03/23/pirates-and-ninjas-emacs-or-vi"&gt;the perfect editor for me&lt;/a&gt; and I said to myself, "enough is enough, I am doing this". Thus started the my journey of Vim discovery. What follows is how I learned to work with Vim. This is in no way the holy grail of learning Vim, its just what worked for me. It might work for you or it might ruin your Vim experience forever. You have been warned. &lt;/p&gt;
+&lt;p&gt;Every tutorial, guide or documentation I checked just scared me with all the details and Vim jargon. Moment you open these, either they bore you with how awesome Vim is or throw a long list of never ending Vim commands and modes. What I actually liked and used was this &lt;a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html"&gt;kick ass, super awesome graphical Vim cheatsheet&lt;/a&gt;. It taught me more about vim in 8 pages what no other tutorial/guide could. I slowly worked my way through each page, learning a page and working with it for few days until I was comfortable. Then I would move on to next page and repeat the process.&lt;/p&gt;
+&lt;p&gt;My idea of starting with Vim is:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Know the 3 modes: Normal mode, Edit mode, Command mode &amp;amp; how to enter/exit the modes &amp;amp; move from one mode to another&lt;/li&gt;
+&lt;li&gt;When not editing/entering the text, try to reaming inside Normal mode as much as possible. &lt;/li&gt;
+&lt;li&gt;Download the cheatsheet, print it and paste is on the wall directly above your monitor where you can just see it.&lt;/li&gt;
+&lt;li&gt;Work through the cheat sheet, 1 page at a time.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Believe you me, thats all how I learned Vim. No big books needed, no lengthy tutorials, no jargon. Just these 8 pages and a great virtue called patience. I still have these pages pasted on the wall in front of me when I work. Also checkout &lt;a href="http://blog.interlinked.org/tutorials/vim_tutorial.html"&gt;this a nice introduction to vim&lt;/a&gt; by &lt;a href="http://blog.interlinked.org/about/index.html"&gt;Micheal Jakl&lt;/a&gt;, only tutorial I know of that introduces Vim modes in 3 lines and single diagram. &lt;/p&gt;
+&lt;p&gt;You just need the basics, everything thing else about vim can wait. If somebody tells you that you need to understand the vim philosophy to use it well, tell them to mind their own damn business; You do not, not at the beginning; Once you start loving vim, the philosophy will dawn on you automatically. If someone asks you to disable the arrow keys and only use &lt;code&gt;h,j,k,l&lt;/code&gt;, plug your ears with your fingers as tight as you can; Once you start picking up more and more of vim, you will disable arrow keys without anyone telling you to do so.&lt;/p&gt;
+&lt;p&gt;Now coming back to my story, I am happily settled with Vim not and am pretty sure that Vim and me are going to stay married for quite a long time. I am still learning, there are still a huge number of things, which I know nothing of; but I have learned from the awesome FOSS community; which we should be really proud of. &lt;/p&gt;
+&lt;p&gt;My vim configurations along with bash and some others, are available at &lt;a href="http://github.com/mnazim/dotfiles"&gt;github.com/mnazim/dotfiles&lt;/a&gt;. Fork it, use it the way you like. Don't forget share it back.&lt;/p&gt;</summary><category term="vim"></category><category term="editor"></category><category term="programming"></category></entry><entry><title>Free Kashmir - An Economic Perspective</title><link href="http://mirnazim.org/writings/free-kashmir-an-economic-perspective" rel="alternate"></link><updated>2010-02-10T18:14:00+01:00</updated><author><name>Mir Nazim</name></author><id>tag:mirnazim.org,2010-02-10:writings/free-kashmir-an-economic-perspective</id><summary type="html">&lt;p&gt;&lt;strong&gt;Update February 10, 2011:&lt;/strong&gt; Due to the popularity of this article and the developments over past 3 years, I am re-writing this article completely. Goal is to make this article more generic and remove the references to certain events/ideas which may or may not be relevant at this time or in future.&lt;/p&gt;
+&lt;p&gt;If you would like to contribute ideas, constructive criticism, corrections, etc., you are welcome to drop me an email at &lt;em&gt;&lt;a href="#"&gt;feedback(at)mirnazim(dot)org&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Originally published 2 years ago(at a url no longer accessible) during the height of &lt;a href="http://en.wikipedia.org/wiki/Amarnath_land_transfer_controversy"&gt;Amarnath land transfer controversy&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Kashmir is burning. Sky roaring freedom slogans, placards saying &lt;strong&gt;"No Agreements, No Compromises, Only Freedom"&lt;/strong&gt;; March to Muzaffarabad; 41 people dead; more than 500 injured ...in just 3 days. &lt;a href="http://mirnazim.wordpress.com/category/kashmir/"&gt;I have already written about atrocities and crimes committed by Indian Security Forces in Kashmir on my old blog at WordPress.com&lt;/a&gt;. This time, let's discuss the idea of 'Free Kashmir' from an economic perspective.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;DISCLAIMER: I am not an economist, neither do I have any formal education in economics. I am a techie, geek or whatever you like to call me. The passages that follow are just my thoughts.&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Current Economy&lt;/h3&gt;
+&lt;p&gt;Kashmir's economy is centred around agriculture. Traditionally the staple crop of the valley has been rice, which forms the chief food of the people. In addition, Indian corn, wheat, barley and oats are also grown, but not much now. Given its temperate climate, it is suited for crops like asparagus, artichoke, sea kale, broad beans, scarlet runners, beetroot, cauliflower, cabbage and other temperate foods. Fruit trees are common in the valley, and the cultivated orchards yield pears, apples, plums, peaches, and cherries. The chief trees are deodar, firs and pines, chinar or plane, maple, birch and walnut, apple, cherry.&lt;/p&gt;
+&lt;p&gt;Historically, Kashmir became known world-wide when &lt;a href="http://en.wikipedia.org/wiki/Cashmere_wool"&gt;Kashmiri Wool&lt;/a&gt;(also called Cashmere Wool) was exported to other regions and nations (exports have ceased due to decreased abundance of the cashmere goat and increased competition from China). Kashmiris are well adept at knitting and making shawls, silk carpets, rugs, kurtas, and pottery. Kashmiri saffron is also very famous and brings the state a handsome amount of foreign exchange. Srinagar is known for its silver-work, &lt;a href="http://en.wikipedia.org/wiki/Papier_mache"&gt;papier mache&lt;/a&gt;, wood-carving, and the weaving of silk.&lt;/p&gt;
+&lt;p&gt;Animal husbandry and tourism are other parts of economy of Kashmir. The Kashmir valley is also known for its sericulture(silk farming) and cold water fisheries. Wood from Kashmir is used to make high-quality cricket bats, popularly known as Kashmir Willow.&lt;/p&gt;
+&lt;p&gt;Kashmir also produces some very high quality nuts like almonds, walnuts, dried peaches, dried grapes etc.&lt;/p&gt;
+&lt;p&gt;Agricultural exports from Jammu and Kashmir include apples, barley, cherries, corn, millet, oranges, rice, peaches, pears, saffron, sorghum, vegetables, and wheat, while manufactured exports include handicrafts, rugs, and shawls.&lt;/p&gt;
+&lt;p&gt;Currently Kashmir is connected to outside world only by India's National Highway No. 1(NH-1). All the supplies, medicines, food items, etc. are brought into Kashmir through NH-1. All the imports and exports go through this very road.&lt;/p&gt;
+&lt;h3&gt;Economic Blockade: An attempt to starve the valley.&lt;/h3&gt;
+&lt;p&gt;In wake of recent Amarnath Land Transfer controversy(which is a different story all together), Jammu and some other states of India like Punjab imposed an economic blockade on Kashmir Valley for 2 long months, stopping all the essential supplies to the Kashmir, leading to acute shortage of essential commodities including life saving medicines. Empty departmental stores and medicine less hospitals are enough proof of it.&lt;/p&gt;
+&lt;p&gt;While Government of India and Jammu(including other states) are consistently denying the economic blockade, one needs to be present here in order to witness it.&lt;/p&gt;
+&lt;p&gt;Now the Kashmiris are on the road again, demanding opening of Muzaffarabad Road, the our traditional and original link to the outside world. The importance of reviving this traditional link is very vital to the survival of Kashmiri fruit business. Fruits of Kashmir was lying in the Valley in export season and roting. Fruit traders had had enough and decided to march to Muzaffarabad. Where more than 15 people  were killed and over 250 were injured when Indian Security Forces opened fire on the people. The very people of a place which India calls its integral part. It should be noted that Muzaffarabad Road is only 'all season' road link to Kashmir, making it's revival even more important.&lt;/p&gt;
+&lt;p&gt;Now we are demanding the opening of Muzaffarabad road and eventually freedom. Why? Because it has been proved that NH-1 is not only our lifeline but also our choke point. Kashmir can easily be starved by choking this particular road. It is being done now. It can be done again.&lt;/p&gt;
+&lt;h2&gt;The Freedom&lt;/h2&gt;
+&lt;p&gt;Now let's talk about the freedom itself. Let's understand the meaning of freedom for an common man's perspective. I talked to some of my friends and I found out that the understanding was unanimous.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;'Freedom from Indian Occupation'&lt;/em&gt;. Is it that we need freedom only from the occupation or are there any other things also that come packaged with freedom?&lt;/p&gt;
+&lt;p&gt;Assuming that we are free from occupation, a few basic questions arise. Where are the policies for &lt;em&gt;Free Kashmir&lt;/em&gt;? Who are the policy makers? How do we ensure that we have enough jobs for our people? What are the major economy boosting sectors in Kashmir? Do we have answer to any of these question as of now? I would like to say that we have the answers, but I am afraid that is not correct. We have no idea how we are going to tackle these questions.&lt;/p&gt;
+&lt;p&gt;Lack of policy makers is the fundamental roadblock in the path to our freedom. There must not and cannot be any freedom if we do not have policy makers. Don't get me wrong, our current leaders like Syed Ali Shah Geelani, Yasin Malik, Mirwaiz Umar Farooq are great leaders as far as leading the freedom struggle goes and I am sure they will prove to be even better leaders in Free Kashmir also. But I am not sure whether they have any ability as far as policy making is concerned. My such opinion may be because they don't have a previous proven record in policy making. I may be wrong, but Huriyat Conference leaders are yet to prove themselves as good policy makers. Compare our leaders with the people who lead the India's freedom struggle: Sadar Valabh Bhai Patel, Pandit Jawahar Lal Nehru, Mohammad Ali Jinnah and M. K. Gandhi, all, in one way or the other, had an idea of how India will be run after independence. The Indian National Congress(INC) under the British Raj was much more coherent, structured and forward thinking. Now compare Hurriyat Conference of this time with INC of pre 1947. But that does not mean we do not have good policy makers. &lt;a href="http://en.wikipedia.org/wiki/Omar_Abdullah"&gt;Omar Abdullah&lt;/a&gt; of &lt;a href="http://en.wikipedia.org/wiki/Jammu_and_Kashmir_National_Conference"&gt;J &amp;amp; K National Conference&lt;/a&gt; is one such leader who has the superb ability in making good policies. He has proven himself at it when he was the Union Minister of Commerce in BJP led NDA government. To this date India is reaping the benefits of his vision when he realized the importance of African markets to India. But problem is that he is from a party that has submitted itself to the constitution on India. We need young leaders like him to make long term policies for a Free Kashmir.&lt;/p&gt;
+&lt;p&gt;The policies need not be detailed to the level of actual execution at this time, but we surely need some top level understanding of where we want to take our nation. We need those policies now. We cannot be lax about them by saying 'That can be taken care of later on, when we are free'. No. This issue needs to be addressed now and we need our policies ready long before we are free so that those can be understood better with time and changed as our understanding of policies &amp;amp; policy making matures, so that when we are free we can say that we have good and well thought out policies in place and we know exactly what we need to do in order make Free Kashmir a a great nation.&lt;/p&gt;
+&lt;h2&gt;The Economics&lt;/h2&gt;
+&lt;p&gt;Is Free Kashmir a viable option? Can Free Kashmir survive on its own? How will the supplies come? Where will the jobs come from? These are few of the numerous myths that are circulated and often talked about.&lt;/p&gt;
+&lt;p&gt;Mauritius is one small countries with a good economy surviving mainly on tourism. Let's compare Mauritius with Kashmir. (Data provided by Wikipedia). &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+  &lt;tr&gt;&lt;th&gt;Item&lt;/th&gt; &lt;th&gt;Mauritius&lt;/th&gt;&lt;th&gt;Kashmir&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;&lt;td&gt;Area&lt;/td&gt;&lt;td&gt;2,040 sq km&lt;/td&gt;&lt;td&gt;78,900 sq km&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Population&lt;/td&gt;&lt;td&gt;~1,000,000&lt;/td&gt;&lt;td&gt;~4,000,000&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;From the above facts it's clear that Mauritius is way smaller than the Kasmir Valley, both in area and population. Now if Mauritius is surviving why can't Kashmir sustain. I understand that its easier said than done, but longest of journeys start with a single step. Man did not conquer space in one step. It took centuries of research on the other founding sciences to actually fuel the conquest of space. Same is the case with Kashmir. The question is, do we have what it takes &amp;amp; are we willing to do that? Lets analyze some of the opportunities available for the economic development of Kashmir.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; &lt;em&gt;Some of the facts presented here were taken from a &lt;a href="http://www.pugwash.org"&gt;Pugwash&lt;/a&gt; Issue Brief titled &lt;a href="http://www.pugwash.org/JammuKashmirIB-6.pdf"&gt;Exploring the Potential for Economic Development and Cross-LOC Collaboration in Jammu and Kashmir&lt;/a&gt;; issued on July 2007 and &lt;a href="http://www.pugwash.org/reports/rc/sa/march2008/SAS2008-report.htm"&gt;Pugwash Workshop on Intra-Kashmir Economic Cooperation Colombo, Sri Lanka, 15-16 March 2008&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Hydro Electricity&lt;/h3&gt;
+&lt;p&gt;Perhaps the most potent economic use of our water resources is its electricity generation potential. The total hydroelectric potential of our water resources is estimated at 20,000 megawatts, which far surpasses the demand of Kashmir, northern India, and Pakistan. Given this fact, it is ironic to note that despite containing watersheds for all major rivers in Punjab, Jammu and Kashmir remains severely energy deficient. Indian Kashmir is the most energy-starved state in the country.&lt;/p&gt;
+&lt;p&gt;Now just imagine the potential of earnable money, waiting to be capitalized by providing the power to area equivalent to full Kashmir, Jammu and Ladakh, Pakistan and Northern India,&lt;/p&gt;
+&lt;h3&gt;Tourism&lt;/h3&gt;
+&lt;p&gt;After Hydro-Electricity, tourism is our another very big opportunity. Few years, back I heard on CNN that the tourism industry touched the Rs. 50 billion(just over USD 1 billion) in 1986-87 just before the insurgency took place. I am not sure how true that is but I am confident that this figure is close to the real. In spite of the tensions, hundreds of thousands of tourists storm to the valley every year to treat themselves to the picturesque views of our Valley.&lt;/p&gt;
+&lt;p&gt;Add to it Gulmarg, a premier destination for skiers from around the world. Thousand of skiers from almost all corners of world come to this beautiful place to ski.&lt;/p&gt;
+&lt;h3&gt;Information Technology&lt;/h3&gt;
+&lt;p&gt;According to the FICCI, at least 10,000 skilled IT professionals are present in Indian Kashmir. Add to it the number of Kashmiri IT professionals working outside Kashmir.&lt;/p&gt;
+&lt;p&gt;The Pugwash report mentions an interesting fact:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Arguably, the demand for IT services on both sides of the LoC could be expected to increase tremendously once Kashmir transforms into a modern economy and banking, e-commerce and e-governance practices are instituted. Therefore, there is a need for Pakistani Kashmir to accelerate IT development in the state. To begin with, Pakistani Kashmir could utilize the software development capacity across the LoC by outsourcing assignments. In order to develop human resource capacity for long term sustainability, Indian IT professionals could be requested to teach at small IT training centers that could be set up in Pakistani Kashmir. The Indian side(of Kashmir) could also help their Pakistani counterparts in setting up software technology parks and other such IT ventures.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I do not say that Kashmir can be transformed in Silicon Valley overnight, but Kashmir definitely has the potential to be a very attractive Grade B IT destination. Information Technology Enabled Services like call centers, support centers, etc. have huge potential here. This is can be deduced from the fact that almost 2500 students pass out every year with graduate level qualification IT and related qualifications like BCA, B.Sc-IT, BIT and some other vocational courses in IT. These people are can easily be absorbed in ITES sector. Add to it nearly 500 passing out with professional and post graduate qualifications like BS, BE, B.Tech, MCA, M.Sc-CS, and other related engineering qualifications etc. While we may not have the potential to build companies like IBM, Microsoft yet but there definitely is potential for exploring the set up small, niche companies in Kashmir that cater to a single technological need and cater well.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(A work in progress)&lt;/em&gt;&lt;/p&gt;</summary><category term="kashmir"></category><category term="freedom"></category><category term="economics"></category></entry></feed>
