@@ -1,32 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mir Nazim</title><link href="http://mirnazim.org/" rel="alternate"></link><link href="http://mirnazim.org/feeds/atom.xml" rel="self"></link><id>http://mirnazim.org/</id><updated>2013-04-02T01:53:00+02:00</updated><entry><title>On Child Education</title><link href="http://mirnazim.org/writings/on-child-education" rel="alternate"></link><updated>2013-04-02T01:53:00+02:00</updated><author><name>Mir Nazim</name></author><id>tag:mirnazim.org,2013-04-02:writings/on-child-education</id><summary type="html">&lt;p&gt;&lt;em&gt;(This is an incomplete work, Only purpose of this page is to serve as a place to collect my thoughts.)&lt;/em&gt;&lt;/p&gt;
-&lt;div class="section" id="you-can-live-without-telivision"&gt;
-&lt;h2&gt;You can live without telivision&lt;/h2&gt;
-&lt;p&gt;Unplug your TV set, pick it up, take it out, and smash it and burn it beyond salvage. Period. No excuses. Disadvantages of TV are far greater than the advantages and those advantages can easily be replaced with better alternatives. Want your children to learn from Discovery Channel - everything available on DVD and P2P networks.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="schools-are-evil"&gt;
-&lt;h2&gt;Schools are evil&lt;/h2&gt;
-&lt;p&gt;Don't send them off to schools. Schools will damage your child in the ways you cannot imagine. Just like TV, the disadvantages of the schools system far outweigh the advantages. You want your children to learn social skills, encourage them to go to parks and play with other kids in your residential locality.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="reading-and-writing-are-primary-skills"&gt;
-&lt;h2&gt;Reading and writing are primary skills&lt;/h2&gt;
-&lt;p&gt;Teach you children to read and write a couple of languages.(your native language, English, and may be one more language of your liking). The key is to start early; you will be amazed to see how fast your 2 year old kids can pick-up reading, even before they start speaking properly.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="books-are-awesome"&gt;
-&lt;h2&gt;Books are awesome&lt;/h2&gt;
-&lt;p&gt;Now give them books. Lot's of them. Not computers, not iPads. The actual physical, paper books. Read with them; write with them but don't force them. Start slow, not more than 30 minutes, once or twice a week. Build up their curiosity a few pages at a time.&lt;/p&gt;
-&lt;!-- Mastakes are tools; use them --&gt;
-&lt;!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --&gt;
-&lt;!--  --&gt;
-&lt;!-- Once they are adults, let them and encourage them make their own decisions. --&gt;
-&lt;!--  --&gt;
-&lt;!--  --&gt;
-&lt;!-- Now, what about those are not fortunate enough to have literate parents and/or have to give up education for earning the basic survival - a real problem in our sub-continent. Identify such kids in your locality; form a group of literate people; GOTO Step 0 above. Encourage your friends and relatives to form similar groups in their respective localities. --&gt;
-&lt;!--  --&gt;
-&lt;!-- Now what about schools completion certificates. The only certificate your child will ever need is the completion of High School and/or Senior School. National Open School is one such alternative. --&gt;
-&lt;!--  --&gt;
-&lt;/div&gt;
-</summary><category term="education"></category></entry><entry><title>Python Ecosystem – An Introduction</title><link href="http://mirnazim.org/writings/python-ecosystem-an-introduction" rel="alternate"></link><updated>2011-11-28T03:00:00+01:00</updated><author><name>Mir Nazim</name></author><id>tag:mirnazim.org,2011-11-28:writings/python-ecosystem-an-introduction</id><summary type="html">&lt;p&gt;When developers shift from PHP, Ruby or any other platform to Python, the very first road block they face (most often) is a lack of an overall understanding of the Python ecosystem. Developers often yearn for a tutorial or resource that explains how to accomplish most tasks in a more or less standard way.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mir Nazim</title><link href="http://mirnazim.org/" rel="alternate"></link><link href="http://mirnazim.org/feeds/atom.xml" rel="self"></link><id>http://mirnazim.org/</id><updated>2011-11-28T03:00:00+01:00</updated><entry><title>Python Ecosystem – An Introduction</title><link href="http://mirnazim.org/writings/python-ecosystem-introduction" rel="alternate"></link><updated>2011-11-28T03:00:00+01:00</updated><author><name>Mir Nazim</name></author><id>tag:mirnazim.org,2011-11-28:writings/python-ecosystem-introduction</id><summary type="html">&lt;p&gt;When developers shift from PHP, Ruby or any other platform to Python, the very first road block they face (most often) is a lack of an overall understanding of the Python ecosystem. Developers often yearn for a tutorial or resource that explains how to accomplish most tasks in a more or less standard way.&lt;/p&gt;
 &lt;p&gt;What follows is an extract from the internal wiki at my &lt;a href="http://ikraftsoft.com/"&gt;workplace&lt;/a&gt;, which documents the basics of the Python ecosystem for web application development for our interns, trainees and experienced developers who shift to Python from other platforms.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This is not a complete resource. My target is to make it &lt;strong&gt;a work in perpetual progress&lt;/strong&gt;. Hopefully, over time, this will develop into an exhaustive tutorial.&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Intended Audience&lt;/h2&gt;
@@ -553,7 +526,7 @@ Although never is often better than *right* now.
 If the implementation is hard to explain, it&amp;#39;s a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let&amp;#39;s do more of those!
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="python"></category><category term="programming"></category><category term="tools"></category><category term="tutorial"></category></entry><entry><title>List of vim plugins I use - with mini tutorials</title><link href="http://mirnazim.org/writings/list-of-vim-plugins-i-use-with-mini-tutorials" rel="alternate"></link><updated>2011-08-14T17:00:00+02:00</updated><author><name>Mir Nazim</name></author><id>tag:mirnazim.org,2011-08-14:writings/list-of-vim-plugins-i-use-with-mini-tutorials</id><summary type="html">&lt;p&gt;I am a vim user, and by user I mean I do all(not counting using the textarea inside the web browser) of my editing inside vim. Even when I need to use a word processor, I first type my content inside vim and then open the word processor to format it.&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="python"></category><category term="programming"></category><category term="tools"></category><category term="tutorial"></category></entry><entry><title>List of vim plugins I use - with mini tutorials</title><link href="http://mirnazim.org/writings/vim-plugins-i-use" rel="alternate"></link><updated>2011-08-14T17:00:00+02:00</updated><author><name>Mir Nazim</name></author><id>tag:mirnazim.org,2011-08-14:writings/vim-plugins-i-use</id><summary type="html">&lt;p&gt;I am a vim user, and by user I mean I do all(not counting using the textarea inside the web browser) of my editing inside vim. Even when I need to use a word processor, I first type my content inside vim and then open the word processor to format it.&lt;/p&gt;
 &lt;p&gt;As any vim user knows that Vim experience is not complete without the use of plugins, here is the list of plugins I use on daily basis.&lt;/p&gt;
 &lt;h2&gt;A word about my vim setup&lt;/h2&gt;
 &lt;p&gt;I manage my vim/bash configs in separate directory &lt;code&gt;~/dotfiles&lt;/code&gt;. Here is what it looks like.&lt;/p&gt;

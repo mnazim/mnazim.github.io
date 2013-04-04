@@ -1,0 +1,160 @@
+@import "normalize";
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+@import  "solarizeddark";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "foundation/foundation-global";
+// @import "foundation/components/grid";
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms";
+// @import "foundation/components/custom-forms";
+// @import "foundation/components/button-groups";
+// @import "foundation/components/dropdown-buttons";
+// @import "foundation/components/split-buttons";
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";
+// @import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+
+.codehilite {
+    background: #002B36 url(../img/code-bg-noise.png);
+    border-radius: 5px;
+    pre {
+        font-family: $code-font-family !important;
+        padding: 12px;
+        margin: 12px auto;
+        font-size: emCalc(16px);
+        overflow: auto;
+        line-height: 1.5em;
+
+        }
+}
+#page {
+    header {
+        margin-top: 5px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        opacity: 0.2;
+        transition: opacity 0.5s ease-in;
+        font-family: "PT Sans Narrow", Helvetica, sans-serif;
+
+        nav {
+            text-transform: uppercase;
+            .title-area h1 a {
+                /*padding: 0;*/
+                font-family: "PT Sans Narrow", Helvetica, sans-serif;
+            }
+            .top-bar-section {
+                a:hover:not(.button) {
+                    background: #fff;
+                }
+            }
+
+        }
+        &:hover {
+            opacity: 1.0;
+        }
+    }
+    #articles {
+        .article {
+            list-style: none;
+            margin-bottom: 18px;
+            .title {
+                display: block;
+            }
+            .meta {
+                border-bottom: 1px solid rgba(125, 125, 125, 0.5);
+                font-variant: small-caps;
+                text-transform: uppercase;
+                /*text-align: right;*/
+                font-size: emCalc(14px);
+                font-family: "PT Sans Narrow", Helvetica, sans-serif;
+            }
+        }
+    }
+    #home {
+    }
+    #tagspage {
+        #tags {
+            .tag {
+                .tagtitle {
+                    border-bottom: 1px solid rgba(125, 125, 125, 0.5);
+                    a {
+                        font-variant: small-caps;
+                        color: #222;
+                    }
+                }
+                #articles {
+                    .article {
+                        margin-bottom: emCalc(12px);
+                        .title {
+                            font-size: emCalc(16px);
+                        }
+                        .meta {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #article {
+        #header {
+            text-align: center;
+            font-family: "PT Sans Narrow", Helvetica, sans-serif;
+            text-transform: uppercase;
+            .meta {
+            }
+            #title {
+            }
+        }
+
+    }
+    footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        margin-top: 64px;
+        font-variant: small-caps;
+        text-transform: uppercase;
+        font-size: emCalc(12px);
+        font-family: "PT Sans Narrow", Helvetica, sans-serif;
+        nav {
+            text-align: right;
+        }
+        ul {
+            li {
+                display: inline;
+                margin-left: 12px;
+            }
+        }
+    }
+}
